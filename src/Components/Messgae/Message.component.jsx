@@ -16,6 +16,7 @@ const Message = () => {
       justifyContent: 'center',
       borderRadius: '50%',
       cursor: 'pointer',
+      zIndex: 9000,
 
       '@media (max-width: 500px)': {
         right: '30px'
