@@ -6,7 +6,7 @@ const Message = () => {
   const styles = makeStyles(theme => ({
     root: {
       position: 'fixed',
-      bottom: '50px',
+      bottom: '70px',
       right: '70px',
       backgroundColor: `${theme.palette.primary.dark}`,
       height: '30px',

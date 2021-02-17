@@ -15,7 +15,8 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 const Footer = () => {
   const classes = footerStyles();
   const theme = useTheme();
-  const matchesXS = useMediaQuery(theme.breakpoints.down("xs"))
+  const matchesXS = useMediaQuery(theme.breakpoints.down("xs"));
+  const year = new Date();
   return (
     <div className={classes.root}>
       <div className={classes.footerGreen}>
@@ -55,7 +56,7 @@ const Footer = () => {
           <Grid item lg={2} md={2} xs={4}>
             <Typography className={classes.footerListHeading} variant="h6" component="h6">Company</Typography>
             <div className={classes.footerList}>
-                <Link className={classes.footerLink}>About</Link>
+                <Link to="/about" className={classes.footerLink}>About</Link>
                 <Link className={classes.footerLink}>FAQ</Link>
                 <Link className={classes.footerLink}>Blog</Link>
                 <Link className={classes.footerLink}>Partners</Link>
@@ -64,7 +65,7 @@ const Footer = () => {
           <Grid item lg={2} md={2} xs={4}>
             <Typography className={classes.footerListHeading} variant="h6" component="h6">Legal</Typography>
             <div className={classes.footerList}>
-            <Link className={classes.footerLink}>About</Link>
+                <Link to="/about" className={classes.footerLink}>About</Link>
                 <Link className={classes.footerLink}>Privacy</Link>
                 <Link className={classes.footerLink}>Terms</Link>
                 <Link className={classes.footerLink}>Dispute</Link>
@@ -89,7 +90,7 @@ const Footer = () => {
               <Link> <img className={classes.extraIcon} src={IGIcon} alt="vault way instagram icon"/> </Link>
             </div>
             <Typography className={clsx(classes.extraText, classes.copyText)} variant="body2" component="p">
-              Copyright &copy; 2021, All Right Reserved
+              Copyright &copy; {year.getFullYear()}, All Right Reserved
             </Typography>
           </div>
         </div>

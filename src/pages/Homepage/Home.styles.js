@@ -1,5 +1,4 @@
 import { makeStyles } from '@material-ui/core';
-// import storiesBg from '../assets/img/story-bg.png';
 
 const homeStyles = makeStyles((theme) => ({
   root: {
