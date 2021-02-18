@@ -56,7 +56,7 @@ const Footer = () => {
           <Grid item lg={2} md={2} xs={4}>
             <Typography className={classes.footerListHeading} variant="h6" component="h6">Company</Typography>
             <div className={classes.footerList}>
-                <Link to="/about" className={classes.footerLink}>About</Link>
+                <Link to="/about#" className={classes.footerLink}>About</Link>
                 <Link className={classes.footerLink}>FAQ</Link>
                 <Link className={classes.footerLink}>Blog</Link>
                 <Link className={classes.footerLink}>Partners</Link>
@@ -65,7 +65,7 @@ const Footer = () => {
           <Grid item lg={2} md={2} xs={4}>
             <Typography className={classes.footerListHeading} variant="h6" component="h6">Legal</Typography>
             <div className={classes.footerList}>
-                <Link to="/about" className={classes.footerLink}>About</Link>
+                <Link to="/about#" className={classes.footerLink}>About</Link>
                 <Link className={classes.footerLink}>Privacy</Link>
                 <Link className={classes.footerLink}>Terms</Link>
                 <Link className={classes.footerLink}>Dispute</Link>

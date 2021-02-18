@@ -182,7 +182,7 @@ const footerStyles = makeStyles((theme) => ({
     marginTop: '40px',
   },
   divider: {
-    width: '90%',
+    width: '100%',
     margin: '0 auto',
     height: '1px',
     backgroundColor: '#6E80A3',
