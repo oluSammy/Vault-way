@@ -2,10 +2,10 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import btnStyles from './ButtonCta.styles';
 
-const ButtonCta = ({ type, bgColor, text, paddingSide, shadow, paddingX }) => {
+const ButtonCta = ({ type, bgColor, text, paddingSide, shadow, paddingX, component, to }) => {
   const classes = btnStyles();
   return (
-    <Button className={classes.root} variant={type} color={bgColor}
+    <Button className={classes.root} variant={type} color={bgColor} component={component} to={to}
       style={{
         fontWeight: type === 'contained' ? 600 : 500,
         paddingRight: paddingSide,

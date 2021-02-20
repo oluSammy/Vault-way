@@ -3,8 +3,6 @@ import bg from '../../assets/img/BG.png';
 
 const aboutStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
-    scrollBehavior: 'smooth',
     position: 'relative',
   },
   lifestyle: {

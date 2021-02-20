@@ -182,7 +182,7 @@ const Home = () => {
                     </Grid>
                 </Grid>
             </div>
-            <div className={classes.stories}>
+            <div id="stories" className={classes.stories}>
                 <Typography variant="h2" component="h2" className={classes.storiesHeading}>
                     Stories from our Community
                 </Typography>

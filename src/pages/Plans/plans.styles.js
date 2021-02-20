@@ -3,7 +3,6 @@ import bg from '../../assets/img/BG.png';
 
 const plansStyles = makeStyles((theme) => ({
   root: {
-    scrollBehavior: 'smooth',
     position: 'relative',
   },
   hero: {

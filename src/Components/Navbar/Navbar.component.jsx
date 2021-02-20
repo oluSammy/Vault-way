@@ -48,15 +48,17 @@ const Navbar = () => {
                     </Link>
                     <ul className={classes.navLinks}>
                         <Link className={classes.navLink} to="/">Save</Link>
-                        <Link className={classes.navLink} to="/">Stories</Link>
+                        <a className={classes.navLink} href="#stories">Stories</a>
                         <Link className={classes.navLink} to="/">FAQ</Link>
                     </ul>
                     <ul className={classes.navCta}>
                         <span className={classes.navBtn}>
-                            <ButtonCta type="outlined" text="log in" bgColor="primary" paddingSide="20px" />
+                            <ButtonCta component={Link} to="/login" type="outlined" text="log in" bgColor="primary" paddingSide="20px" />
                         </span>
                         <span className={clsx(classes.navBtn, classes.create)}>
-                            <ButtonCta type="contained" text="Create An Account" bgColor="primary" paddingSide="20px" />
+                            <ButtonCta component={Link} to="/signup" type="contained" text="Create An Account"
+                                bgColor="primary" paddingSide="20px"
+                            />
                         </span>
                     </ul>
                 </Toolbar>
