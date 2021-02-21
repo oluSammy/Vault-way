@@ -49,7 +49,7 @@ const Navbar = () => {
                     <ul className={classes.navLinks}>
                         <Link className={classes.navLink} to="/">Save</Link>
                         <a className={classes.navLink} href="#stories">Stories</a>
-                        <Link className={classes.navLink} to="/">FAQ</Link>
+                        <Link className={classes.navLink} to="/faq">FAQ</Link>
                     </ul>
                     <ul className={classes.navCta}>
                         <span className={classes.navBtn}>

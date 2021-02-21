@@ -173,7 +173,6 @@ const aboutStyles = makeStyles((theme) => ({
     // marginBottom: '20vh',
   },
   joinImgContainer: {
-    backgroundColor: 'red',
     height: '75vh',
   },
   joinImg: {

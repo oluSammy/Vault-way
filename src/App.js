@@ -4,6 +4,7 @@ import About from './pages/About/About.component';
 import Plans from './pages/Plans/Plans.component';
 import Login from './pages/login/Login.component';
 import Signup from './pages/Signup/Signup.component';
+import Faq from './pages/Faq/Faq.components';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Route exact path="/plans" component={Plans} />
       <Route exact path="/login" component={Login} />
       <Route exact path="/signup" component={Signup} />
+      <Route exact path="/Faq" component={Faq} />
     </Switch>
   );
 }
