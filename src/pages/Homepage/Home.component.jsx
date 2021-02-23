@@ -22,9 +22,26 @@ import Footer from './../../Components/Footer/Footer.component';
 
 const Home = () => {
     const classes = homeStyles();
+    const navLinks =[
+        {
+            title: 'Save',
+            link: '/plans',
+            routerLink: true
+        },
+        {
+            title: 'Stories',
+            routerLink: false,
+            link: '#stories'
+        },
+        {
+            title: 'FAQ',
+            link: '/faq',
+            routerLink: true,
+        },
+    ]
     return (
         <div className={classes.root}>
-            <Navbar />
+            <Navbar navLinks={navLinks} />
             <Message />
             <NavMargin />
             <Hero />

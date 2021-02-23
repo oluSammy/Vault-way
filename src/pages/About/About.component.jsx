@@ -24,11 +24,28 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const About = () => {
   const classes = aboutStyles();
+  const navLinks =[
+    {
+        title: 'Plans',
+        link: '/plans',
+        routerLink: true
+    },
+    {
+        title: 'About',
+        link: '/about',
+        routerLink: true,
+    },
+    {
+        title: 'FAQ',
+        link: '/faq',
+        routerLink: true,
+    },
+  ]
   const theme = useTheme();
   const matchesXS = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <div className={classes.root}>
-      <Navbar />
+      <Navbar navLinks={navLinks} />
       <NavMargin />
       <Message />
       <div className={classes.lifestyle}>

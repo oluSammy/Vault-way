@@ -5,6 +5,22 @@ const navbarStyles = makeStyles((theme) => ({
     backgroundColor: '#F5F7FA',
     boxShadow: 'none',
   },
+  swipeableDrawer: {
+    width: '30%',
+    backgroundColor: theme.palette.primary.main,
+
+    '@media (max-width: 636px)': {
+      width: '35%',
+    },
+
+    '@media (max-width: 536px)': {
+      width: '55%',
+    },
+
+    '@media (max-width: 402px)': {
+      width: '65%',
+    },
+  },
   toolbarStyles: {
     display: 'flex',
     alignItems: 'center',
@@ -74,6 +90,10 @@ const navbarStyles = makeStyles((theme) => ({
       fontWeight: 800,
       color: theme.palette.primary.main,
     }
+  },
+  activeNavLink: {
+    fontWeight: 800,
+    color: theme.palette.primary.main,
   },
   navCta: {
     display: 'flex',

@@ -18,9 +18,26 @@ const Plans = () => {
   const classes = plansStyles();
   const theme = useTheme();
   const matchesXS = useMediaQuery(theme.breakpoints.down("xs"));
+  const navLinks =[
+    {
+        title: 'Plans',
+        link: '/plans',
+        routerLink: true
+    },
+    {
+        title: 'About',
+        link: '/about',
+        routerLink: true,
+    },
+    {
+        title: 'FAQ',
+        link: '/faq',
+        routerLink: true,
+    },
+  ]
   return (
     <div className={classes.root}>
-      <Navbar />
+      <Navbar navLinks={navLinks} />
       <NavMargin />
       <Message />
       <Grid container className={classes.hero} justify="space-evenly" alignItems="center">

@@ -19,9 +19,27 @@ const Faq = () => {
   const handleTabs = (e, value) => {
       setValue(value)
   }
+
+  const navLinks =[
+    {
+        title: 'Plans',
+        link: '/plans',
+        routerLink: true
+    },
+    {
+        title: 'About',
+        routerLink: true,
+        link: '/about'
+    },
+    {
+        title: 'FAQ',
+        link: '/faq',
+        routerLink: true,
+    },
+  ]
   return (
     <div className={classes.root}>
-      <Navbar />
+      <Navbar navLinks={navLinks} />
       <NavMargin />
       <Message />
       <div className={classes.faqHeader}>

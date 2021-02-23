@@ -6,7 +6,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import IconButton from '@material-ui/core/IconButton';
 import logo from '../../assets/img/vault-way-logo.png';
 import navbarStyles from './Navbar.styles';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import clsx from 'clsx';
 import ButtonCta from './../ButtonCta/ButtonCta.component';
 import Sidebar from './../Sidebar/Sidebar.component';
@@ -23,7 +23,7 @@ const HideOnScroll = ({ children }) => {
     )
 }
 
-const Navbar = () => {
+const Navbar = ({ navLinks }) => {
     const classes = navbarStyles();
 
     const [open, setOpen] = React.useState();
@@ -34,9 +34,12 @@ const Navbar = () => {
     return (
         <HideOnScroll>
             <AppBar className={classes.appBarStyles} >
-                <SwipeableDrawer variant="temporary" open={open}
+                <SwipeableDrawer variant="temporary"
+                    open={open}
                     onClose={() => setOpen(false)}
-                    onOpen={() => setOpen(true)}>
+                    onOpen={() => setOpen(true)}
+                    classes={{ paper: classes.swipeableDrawer }}
+                >
                     <Sidebar />
                 </SwipeableDrawer>
                 <Toolbar className={classes.toolbarStyles}>
@@ -47,9 +50,14 @@ const Navbar = () => {
                         <img className={classes.logo} src={logo} alt="vault way"/>
                     </Link>
                     <ul className={classes.navLinks}>
-                        <Link className={classes.navLink} to="/">Save</Link>
-                        <a className={classes.navLink} href="#stories">Stories</a>
-                        <Link className={classes.navLink} to="/faq">FAQ</Link>
+                        {
+                            navLinks.map(link =>
+                                link.routerLink ?
+                                <NavLink className={classes.navLink} activeClassName={classes.activeNavLink}
+                                to={link.link}>{link.title}</NavLink>
+                                : <a className={classes.navLink} href={link.link}>Stories</a>
+                            )
+                        }
                     </ul>
                     <ul className={classes.navCta}>
                         <span className={classes.navBtn}>
