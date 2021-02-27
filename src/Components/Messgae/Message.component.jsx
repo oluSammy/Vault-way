@@ -9,8 +9,8 @@ const Message = () => {
       bottom: '70px',
       right: '70px',
       backgroundColor: `${theme.palette.primary.dark}`,
-      height: '30px',
-      width: '30px',
+      height: '50px',
+      width: '50px',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
@@ -19,7 +19,9 @@ const Message = () => {
       zIndex: 9000,
 
       '@media (max-width: 500px)': {
-        right: '30px'
+        right: '30px',
+        height: '30px',
+        width: '30px',
       },
     }
   }));

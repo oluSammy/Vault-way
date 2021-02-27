@@ -17,8 +17,16 @@ const navbarStyles = makeStyles((theme) => ({
       width: '55%',
     },
 
-    '@media (max-width: 402px)': {
+    '@media (max-width: 443px)': {
       width: '65%',
+    },
+
+    '@media (max-width: 371px)': {
+      width: '75%',
+    },
+
+    '@media (max-width: 333px)': {
+      width: '80%',
     },
   },
   toolbarStyles: {
@@ -78,7 +86,6 @@ const navbarStyles = makeStyles((theme) => ({
   navLink: {
     fontWeight: 500,
     textDecoration: 'none',
-    fontFamily: 'Montserrat',
     marginLeft: '34px',
     fontSize: '12px',
     letterSpacing: '.5px',

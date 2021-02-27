@@ -74,11 +74,12 @@ const Signup = () => {
                     style={{marginBottom: matchesXS ? '30px' : '14px'}}
                   />
                 </FormControl>
-                <Typography className={classes.formTerms} variant="subtitle2" component="a">
+                <Typography className={classes.formTerms} variant="subtitle2" component="p">
                   <Link className={classes.formLink} to="/">Forgot Password</Link>
                 </Typography>
                 <Button className={classes.formBtn} style={{blendMode: 'normal'}} variant="contained" color="primary">Sign In</Button>
-                <Typography style={{ marginTop: '7px', opacity: .9991, fontWeight: '600' }} className={classes.help} variant="subtitle2" component="p">New User?
+                <Typography style={{ marginTop: '7px', opacity: .9991, fontWeight: '600' }} className={classes.help}
+                  variant="subtitle2" component="p">New User?
                   <Link className={classes.signinLink} to="/signup"> Create an account</Link>
                 </Typography>
                 <Typography className={classes.help} variant="subtitle2" component="p">Need Help?

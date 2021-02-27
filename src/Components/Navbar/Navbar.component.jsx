@@ -26,7 +26,7 @@ const HideOnScroll = ({ children }) => {
 const Navbar = ({ navLinks }) => {
     const classes = navbarStyles();
 
-    const [open, setOpen] = React.useState();
+    const [open, setOpen] = React.useState(false);
 
     const handleDrawer = () => {
         setOpen(true);
@@ -43,8 +43,8 @@ const Navbar = ({ navLinks }) => {
                     <Sidebar />
                 </SwipeableDrawer>
                 <Toolbar className={classes.toolbarStyles}>
-                    <IconButton className={classes.iconBtn}>
-                        <MenuIcon color="primary" className={classes.hamburger} onClick={handleDrawer} />
+                    <IconButton className={classes.iconBtn} onClick={handleDrawer}>
+                        <MenuIcon color="primary" className={classes.hamburger} />
                     </IconButton>
                     <Link to="/" className={classes.logoContainer}>
                         <img className={classes.logo} src={logo} alt="vault way"/>
@@ -54,8 +54,10 @@ const Navbar = ({ navLinks }) => {
                             navLinks.map(link =>
                                 link.routerLink ?
                                 <NavLink className={classes.navLink} activeClassName={classes.activeNavLink}
-                                to={link.link}>{link.title}</NavLink>
-                                : <a className={classes.navLink} href={link.link}>Stories</a>
+                                 to={link.link} key={link.link}>
+                                     {link.title}
+                                </NavLink>
+                                : <a className={classes.navLink} key={link.link} href={link.link}>Stories</a>
                             )
                         }
                     </ul>
@@ -65,7 +67,7 @@ const Navbar = ({ navLinks }) => {
                         </span>
                         <span className={clsx(classes.navBtn, classes.create)}>
                             <ButtonCta component={Link} to="/signup" type="contained" text="Create An Account"
-                                bgColor="primary" paddingSide="20px"
+                                bgColor="primary" paddingSide="20px" paddingX="8px" fontSize="12px"
                             />
                         </span>
                     </ul>

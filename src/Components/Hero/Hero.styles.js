@@ -10,7 +10,6 @@ const heroStyles = makeStyles((theme) => ({
     backgroundSize: 'cover',
     backgroundPosition: 'bottom',
     backgroundRepeat: 'no-repeat',
-    fontFamily: 'Montserrat',
 
     '@media (max-width: 560px)': {
       height: '70vh',
@@ -55,7 +54,6 @@ const heroStyles = makeStyles((theme) => ({
     color: '#121E31',
     fontWeight: 800,
     fontSize: '40px',
-    fontFamily: 'Montserrat',
     lineHeight: '60px',
     letterSpacing: '1px',
     marginBottom: '20px',
@@ -77,7 +75,6 @@ const heroStyles = makeStyles((theme) => ({
   },
   subHeading: {
     fontSize: '15px',
-    fontFamily: 'Montserrat',
     fontWeight: 500,
     letterSpacing: '.5',
     color: '#6E80A3',

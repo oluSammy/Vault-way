@@ -45,7 +45,6 @@ const signupStyles = makeStyles((theme) => ({
     color: '#E8EDEA',
     fontWeight: 800,
     fontSize: '40px',
-    fontFamily: 'Montserrat',
     lineHeight: '40px',
     letterSpacing: '1px',
     marginBottom: '20px',
@@ -53,16 +52,26 @@ const signupStyles = makeStyles((theme) => ({
     '@media (max-width: 658px)': {
       fontSize: '30px'
     },
+
+    '@media (max-width: 389px)': {
+      fontSize: '25px',
+      marginBottom: '10px',
+    },
   },
   signupTxt: {
     fontWeight: 400,
     fontSize: '14px',
-    fontFamily: 'Montserrat',
     color: '#F9F9F9',
     marginBottom: '15px',
 
     '@media (max-width: 658px)': {
-      fontSize: '13px'
+      fontSize: '13px',
+      textAlign: 'justify'
+    },
+
+    '@media (max-width: 340px)': {
+      fontSize: '11px',
+      textAlign: 'justify'
     },
   },
   signupImg: {
@@ -73,7 +82,6 @@ const signupStyles = makeStyles((theme) => ({
     color: '#FFFFFF',
     fontWeight: 400,
     fontSize: '11px',
-    fontFamily: 'Montserrat',
     marginTop: '11px',
   },
   formContainer: {
@@ -108,7 +116,6 @@ const signupStyles = makeStyles((theme) => ({
     color: '#121E31',
     fontWeight: 800,
     fontSize: '25px',
-    fontFamily: 'Montserrat',
     textAlign: 'center',
     marginBottom: '5px',
 
@@ -120,7 +127,6 @@ const signupStyles = makeStyles((theme) => ({
     color: '#7A869A',
     fontWeight: 400,
     fontSize: '15px',
-    fontFamily: 'Montserrat',
     textAlign: 'center',
     marginBottom: '35px',
 
@@ -133,7 +139,6 @@ const signupStyles = makeStyles((theme) => ({
     color: '#002251',
     fontWeight: 700,
     fontSize: '12px',
-    fontFamily: 'Montserrat',
 
     '@media (max-width: 467px)': {
       marginBottom: '-12px',
@@ -151,7 +156,6 @@ const signupStyles = makeStyles((theme) => ({
     color: '#B2BCCA',
     fontWeight: 600,
     fontSize: '13px',
-    fontFamily: 'Montserrat',
     marginBottom: '10px',
     opacity: '.99'
   },
@@ -175,7 +179,6 @@ const signupStyles = makeStyles((theme) => ({
     color: '#7A869A',
     fontWeight: 400,
     fontSize: '14px',
-    fontFamily: 'Montserrat',
     textAlign: 'center',
   },
   signinLink: {
@@ -187,7 +190,6 @@ const signupStyles = makeStyles((theme) => ({
     color: '#7A869A',
     fontWeight: 400,
     fontSize: '14px',
-    fontFamily: 'Montserrat',
     opacity: '.7'
   },
   helpLink: {

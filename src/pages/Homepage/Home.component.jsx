@@ -21,6 +21,10 @@ import Footer from './../../Components/Footer/Footer.component';
 
 
 const Home = () => {
+    // useEffect(() => {
+    //     window.scrollTo(0, 0)
+    // }, []);
+
     const classes = homeStyles();
     const navLinks =[
         {
@@ -96,7 +100,7 @@ const Home = () => {
                 <Typography className={classes.planHeading} variant="h2" component="h2">
                     An array of novel savings plans <br/> just for you
                 </Typography>
-                <Grid container justify="space-evenly" alignItems="center">
+                <Grid container justify="space-evenly" alignItems="center" className={classes.planContainer} >
                     <Grid container justify="space-around"  item md={5}>
                         <img src={vaultImg} className={classes.plansImg} alt="vault way vault box"/>
                         {/* <div className={classes.planImgBox}>
@@ -104,8 +108,8 @@ const Home = () => {
                     </Grid>
                     <Grid container  direction="column" item md={5}>
                         <div className={classes.planBox}>
-                            <div className={classes.plansIconBox}>
-                                <img src={regularVaultImg} className={classes.plansIcon}
+                            <div className={`${classes.plansIconBox} ${classes.regularIconBox}`}>
+                                <img src={regularVaultImg} className={`${classes.plansIcon} ${classes.regularIcon}`}
                                 alt="vault way regular plan icon"/>
                             </div>
                             <div className={classes.planContent}>
@@ -117,8 +121,8 @@ const Home = () => {
                             </div>
                         </div>
                         <div className={classes.planBox}>
-                            <div className={classes.plansIconBox}>
-                                <img src={quickVaultImg} className={classes.plansIcon}
+                            <div className={`${classes.plansIconBox} ${classes.quickIconBox}`}>
+                                <img src={quickVaultImg} className={`${classes.plansIcon} ${classes.quickIcon}`}
                                 alt="vault way quick plan icon"/>
                             </div>
                             <div className={classes.planContent}>
@@ -130,8 +134,8 @@ const Home = () => {
                             </div>
                         </div>
                         <div className={classes.planBox}>
-                            <div className={classes.plansIconBox}>
-                                <img src={fundVaultImg} className={classes.plansIcon}
+                            <div className={`${classes.plansIconBox} ${classes.fundIconBox}`}>
+                                <img src={fundVaultImg} className={`${classes.plansIcon} ${classes.fundIcon}`}
                                 alt="vault way fund plan icon"/>
                             </div>
                             <div className={classes.planContent}>
@@ -156,7 +160,9 @@ const Home = () => {
                 <Grid container justify="space-evenly" alignItems="center">
                     <Grid item>
                         <div className={classes.step}>
-                            <div className={classes.number}>1</div>
+                            <div className={classes.number}>
+                               <p className={classes.numberText}>1</p>
+                            </div>
                             <div className={classes.stepContent}>
                                 <Typography className={classes.stepTitle} variant="h5" component="h5">Open An Account</Typography>
                                 <Typography className={classes.stepSubTitle} variant="body2" component="p">
@@ -165,7 +171,9 @@ const Home = () => {
                             </div>
                         </div>
                         <div className={classes.step}>
-                            <div className={classes.number}>2</div>
+                            <div className={classes.number}>
+                               <p className={classes.numberText}>2</p>
+                            </div>
                             <div className={classes.stepContent}>
                                 <Typography className={classes.stepTitle} variant="h5" component="h5">Choose a Plan</Typography>
                                 <Typography className={classes.stepSubTitle} variant="body2" component="p">
@@ -174,7 +182,9 @@ const Home = () => {
                             </div>
                         </div>
                         <div className={classes.step}>
-                            <div className={classes.number}>3</div>
+                            <div className={classes.number}>
+                               <p className={classes.numberText}>3</p>
+                            </div>
                             <div className={classes.stepContent}>
                                 <Typography className={classes.stepTitle} variant="h5" component="h5">
                                     Setup your Payment details
@@ -185,7 +195,9 @@ const Home = () => {
                             </div>
                         </div>
                         <div className={classes.step}>
-                            <div className={classes.number}>4</div>
+                            <div className={classes.number}>
+                               <p className={classes.numberText}>4</p>
+                            </div>
                             <div className={classes.stepContent}>
                                 <Typography className={classes.stepTitle} variant="h5" component="h5">Open An Account</Typography>
                                 <Typography className={classes.stepSubTitle} variant="body2" component="p">

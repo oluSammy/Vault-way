@@ -6,10 +6,10 @@ const theme = createMuiTheme({
           main: '#00A343',
           dark: '#084622',
           light: '#E2FEEB'
-      }
+      },
   },
   typography: {
-    fontFamily: ['Montserrat', 'sans-serif'].join(' '),
+    fontFamily: 'Montserrat, sans-serif'
   },
 });
 

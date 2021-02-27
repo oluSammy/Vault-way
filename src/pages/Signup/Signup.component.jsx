@@ -30,11 +30,12 @@ const Signup = () => {
             <img src={vaultWayIcon} className={classes.vaultWayIcon} alt="vault way icon"/>
           </Link>
         </div>
-        <Grid container justify="space-evenly" alignItems="center" direction={matchesXS ? 'column-reverse' : 'row'} className={classes.signUpContent}>
+        <Grid container justify="space-evenly" alignItems="center" className={classes.signUpContent}>
           <img src={pattern} className={classes.pattern} alt=""/>
           <Grid container item lg={5} md={5} sm={6} direction="column" >
             <div className={classes.signUpTxtBox}>
-              <Typography className={classes.signupHeading} variant="h1" component="h1">Welcome <br /> onboard</Typography>
+              <Typography className={classes.signupHeading} variant="h1" component="h1">Welcome
+                {matchesXS ? '' : <br />}  onboard</Typography>
               <Typography className={classes.signupTxt} variant="subtitle1" component="p">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -102,7 +103,7 @@ const Signup = () => {
                   />
                 </FormControl>
 
-                <Typography className={classes.formTerms} variant="subtitle2" component="a">
+                <Typography className={classes.formTerms} variant="subtitle2" component="p">
                   By creating an account, you agree to our <br />
                   <Link className={classes.formLink} to="/">Terms and conditions</Link>
                 </Typography>

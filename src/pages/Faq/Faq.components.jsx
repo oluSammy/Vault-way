@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect} from 'react'
 import Message from '../../Components/Messgae/Message.component';
 import Navbar from '../../Components/Navbar/Navbar.component';
 import faqStyles from './Faq.styles';
@@ -13,6 +13,10 @@ import Acordion from './../../Components/Accordion/Acordion.component';
 import Footer from '../../Components/Footer/Footer.component';
 
 const Faq = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
+
   const classes = faqStyles();
   const [value, setValue] = React.useState(0);
 

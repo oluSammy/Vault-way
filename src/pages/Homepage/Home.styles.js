@@ -1,16 +1,16 @@
 import { makeStyles } from '@material-ui/core';
+import bg from '../../assets/icons/stories-bg.png'
 
 const homeStyles = makeStyles((theme) => ({
   root: {
     position: 'relative',
   },
   security: {
-    backgroundColor: '#F2F2F2',
+    // backgroundColor: '#F2F2F2',
     padding: '80px 0',
   },
   securityHeading: {
     textAlign: 'center',
-    fontFamily: 'Montserrat',
     fontWeight: '800',
     fontSize: '35px',
     lineHeight: '20px',
@@ -22,14 +22,26 @@ const homeStyles = makeStyles((theme) => ({
     '@media (max-width: 483px)': {
       fontSize: '20px',
     },
+
+    '@media (max-width: 412px)': {
+      fontSize: '17px',
+    },
   },
   securityContainer: {
     display: 'flex',
     justifyContent: 'space-around',
-    padding: '70px 60px',
+    padding: '70px 160px',
+
+    '@media (max-width: 800px)': {
+      padding: '70px 100px',
+    },
 
     '@media (max-width: 781px)': {
-      padding: '70px 20px',
+      padding: '70px 70px',
+    },
+
+    '@media (max-width: 480px)': {
+      padding: '70px 30px',
     },
 
     '@media (max-width: 691px)': {
@@ -37,12 +49,16 @@ const homeStyles = makeStyles((theme) => ({
     },
   },
   securityBox: {
-    width: '30%',
+    width: '35%',
     display: 'flex',
     alignItems: 'flex-start',
 
     '@media (max-width: 1038px)': {
-      width: '40%',
+      width: '45%',
+    },
+
+    '@media (max-width: 872px)': {
+      width: '55%',
     },
 
     '@media (max-width: 691px)': {
@@ -56,7 +72,7 @@ const homeStyles = makeStyles((theme) => ({
     },
 
     '@media (max-width: 417px)': {
-      width: '90%',
+      width: '100%',
     },
   },
   secIconBox: {
@@ -87,26 +103,24 @@ const homeStyles = makeStyles((theme) => ({
     },
   },
   securityTitle: {
-    fontFamily: 'Montserrat',
     fontWeight: 600,
     fontSize: '20px',
     marginBottom: '20px',
   },
   securitySubTitle: {
-    fontFamily: 'Montserrat',
     fontWeight: 400,
     color: '#6E80A3',
     fontSize: '14px',
   },
   vaultWayTxt: {
     textAlign: 'center',
-    fontFamily: 'Montserrat',
     fontWeight: '800',
     fontSize: '20px',
     lineHeight: '20px',
-    color: '#6E80A3',
+    color: 'rgba(110, 128, 163, 0.5)',
     textTransform: 'uppercase',
     letterSpacing: '.5px',
+    marginTop: '50px',
 
     '@media (max-width: 580px)': {
       marginTop: '-35px',
@@ -129,6 +143,16 @@ const homeStyles = makeStyles((theme) => ({
       width: '40px',
       height: '40px',
     },
+
+    '@media (max-width: 465px)': {
+      width: '30px',
+      height: '30px',
+    },
+
+    '@media (max-width: 380px)': {
+      width: '20px',
+      height: '20px',
+    },
   },
   secFooterIcon: {
     width: '70%',
@@ -139,9 +163,8 @@ const homeStyles = makeStyles((theme) => ({
   },
   secFooterTxt: {
     textAlign: 'center',
-    fontFamily: 'Montserrat',
     fontWeight: '700',
-    fontSize: '25px',
+    fontSize: '30px',
     lineHeight: '20px',
     color: '#6E80A3',
     padding: '0 20px',
@@ -155,6 +178,15 @@ const homeStyles = makeStyles((theme) => ({
       fontSize: '15px',
       padding: '0 5px',
     },
+
+    '@media (max-width: 433px)': {
+      fontSize: '12px',
+      padding: '0 2px',
+    },
+
+    '@media (max-width: 380px)': {
+      fontSize: '10px',
+    },
   },
   secFooterSpan: {
     color: theme.palette.primary.main,
@@ -163,9 +195,11 @@ const homeStyles = makeStyles((theme) => ({
     background: 'linear-gradient(250.05deg, #F5F7FA 1.71%, #F4FFF8 95.17%)',
     padding: '60px 0',
   },
+  planContainer: {
+    // padding: '0 300px',
+  },
   planHeading: {
     textAlign: 'center',
-    fontFamily: 'Montserrat',
     fontWeight: '700',
     fontSize: '30px',
     marginBottom: '60px',
@@ -179,18 +213,25 @@ const homeStyles = makeStyles((theme) => ({
     },
   },
   plansImg: {
-    width: '60%',
+    width: '70%',
+    marginLeft: 'auto',
 
     '@media (max-width: 960px)': {
       width: '40%',
+      margin: '0 auto',
       marginBottom: '20px',
     },
   },
   planBox: {
     display: 'flex',
-    width: '60%',
-    margin: '0 auto',
+    width: '65%',
     marginBottom: '30px',
+    marginRight: 'auto',
+
+    '@media (max-width: 959px)': {
+      margin: '0 auto',
+      marginBottom: '30px',
+    },
 
     '@media (max-width: 534px)': {
       width: '70%',
@@ -203,26 +244,38 @@ const homeStyles = makeStyles((theme) => ({
     },
   },
   plansIconBox: {
-    width: '350px',
-    height: '70px',
     marginRight: '25px',
     backgroundColor: '#E2FEEB',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: '15px',
+
+    '@media (max-width: 378px)': {
+      width: '300px',
+    },
   },
-  plansIcon: {
-    width: '50%',
+
+  regularIconBox: {
+    width: '350px',
+    height: '70px',
+  },
+
+  quickIconBox: {
+    width: '250px',
+    height: '70px',
+  },
+
+  fundIconBox: {
+    width: '200px',
+    height: '70px',
   },
   planBoxHeading: {
-    fontFamily: 'Montserrat',
     fontWeight: '800',
     fontSize: '18px',
     marginBottom: '10px',
   },
   planBoxSub: {
-    fontFamily: 'Montserrat',
     fontWeight: '400',
     fontSize: '14px',
     color: '#6E80A3',
@@ -233,14 +286,13 @@ const homeStyles = makeStyles((theme) => ({
   },
   smart: {
     backgroundColor: '#F5F7FA',
-    padding: '80px 0',
+    padding: '80px 60px',
 
     '@media (max-width: 530px)': {
       padding: '40px 0',
     },
   },
   smartHeading: {
-    fontFamily: 'Montserrat',
     fontWeight: '800',
     textAlign: 'center',
     fontSize: '40px',
@@ -261,7 +313,6 @@ const homeStyles = makeStyles((theme) => ({
     },
   },
   smartSubTitle: {
-    fontFamily: 'Montserrat',
     fontWeight: '500',
     textAlign: 'center',
     fontSize: '18px',
@@ -289,33 +340,42 @@ const homeStyles = makeStyles((theme) => ({
     display: 'flex',
     alignItems: 'flex-start',
     marginBottom: '30px',
-    width: '60%',
-    margin: '0 auto',
+    // backgroundColor: 'red',
+    marginLeft: '20%',
 
-    '@media (max-width: 400px)': {
-      width: '70%',
+    '@media (max-width: 406px)': {
+      marginLeft: '10%',
     },
   },
+
+  stepContent: {
+    width: '60%',
+  },
   number: {
-    width: '65px',
-    height: '35px',
     backgroundColor: theme.palette.primary.main,
+    borderRadius: '50%',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: '50%',
-    color: '#FFFFFF',
     marginRight: '30px',
+    height: '36px',
+    width: '36px',
+
+    '@media (max-width: 516px)': {
+      height: '35px',
+      width: '35px',
+    },
+  },
+  numberText: {
+    color: '#FFFFFF',
   },
   stepTitle: {
-    fontFamily: 'Montserrat',
     fontWeight: '800',
     color: '#6E80A3',
     fontSize: '16px',
     marginBottom: '10px',
   },
   stepSubTitle: {
-    fontFamily: 'Montserrat',
     fontWeight: '500',
     color: '#6E80A3',
     fontSize: '10px',
@@ -333,15 +393,14 @@ const homeStyles = makeStyles((theme) => ({
     },
   },
   stories: {
-    // backgroundImage: `url(${storiesBg})`,
-    // height: '100vh',
-    // backgroundSize: 'cover',
-    // backgroundPosition: 'bottom',
-    // backgroundRepeat: 'repeat',
+    backgroundImage: `url(${bg})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'bottom',
+    backgroundRepeat: 'repeat',
     backgroundColor: '#ffffff',
 
     padding: '60px 10px',
-    paddingBottom: '300px',
+    paddingBottom: '250px',
 
     '@media (max-width: 812px)': {
       paddingBottom: '200px',
@@ -357,7 +416,6 @@ const homeStyles = makeStyles((theme) => ({
   },
   storiesHeading: {
     textAlign: 'center',
-    fontFamily: 'Montserrat',
     fontWeight: '800',
     color: '#121E31',
     fontSize: '30px',
@@ -410,14 +468,12 @@ const homeStyles = makeStyles((theme) => ({
     marginTop: '9px',
     color: '#084622',
     fontWeight: '500',
-    fontFamily: 'Montserrat',
     fontSize: '13px',
     lineHeight: '13px',
   },
   storyTestimony: {
     color: '#6E80A3',
     fontWeight: '400',
-    fontFamily: 'Montserrat',
     fontSize: '14px',
     lineHeight: '27px',
 

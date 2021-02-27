@@ -21,8 +21,8 @@ const Footer = () => {
     <div className={classes.root}>
       <div className={classes.footerGreen}>
         <div className={classes.footerBtn}>
-            <ButtonCta className={classes.btn} type="contained" bgColor="#E2FEEB"
-            text="Start Saving Now" paddingSide="20px" paddingX="10px"  />
+            <ButtonCta className={classes.btn} type="contained"
+            text="Start Saving Now" paddingSide={matchesXS ? '12px' : '20px'} paddingX={matchesXS ? '5px' : '10px'}  />
           </div>
         <div className={classes.footerGreener}>
           <div className={classes.footerTxt}>
@@ -45,38 +45,38 @@ const Footer = () => {
           <Grid item lg={2} md={2} xs={4}>
             <Typography className={classes.footerListHeading} variant="h6" component="h6">Products</Typography>
               <div className={classes.footerList}>
-                <Link className={classes.footerLink}>Tyro Vault</Link>
-                <Link className={classes.footerLink}>Reaper Vault</Link>
-                <Link className={classes.footerLink}>Ace Vault</Link>
-                <Link className={classes.footerLink}>Stellar Vault</Link>
-                <Link className={classes.footerLink}>Quick Vault</Link>
-                <Link className={classes.footerLink}>FundMyVault</Link>
+                <Link to="/" className={classes.footerLink}>Tyro Vault</Link>
+                <Link to="/" className={classes.footerLink}>Reaper Vault</Link>
+                <Link to="/" className={classes.footerLink}>Ace Vault</Link>
+                <Link to="/" className={classes.footerLink}>Stellar Vault</Link>
+                <Link to="/" className={classes.footerLink}>Quick Vault</Link>
+                <Link to="/" className={classes.footerLink}>FundMyVault</Link>
               </div>
           </Grid>
           <Grid item lg={2} md={2} xs={4}>
             <Typography className={classes.footerListHeading} variant="h6" component="h6">Company</Typography>
             <div className={classes.footerList}>
                 <Link to="/about#" className={classes.footerLink}>About</Link>
-                <Link className={classes.footerLink}>FAQ</Link>
-                <Link className={classes.footerLink}>Blog</Link>
-                <Link className={classes.footerLink}>Partners</Link>
+                <Link to="/faq" className={classes.footerLink}>FAQ</Link>
+                <Link to="/" className={classes.footerLink}>Blog</Link>
+                <Link to="/" className={classes.footerLink}>Partners</Link>
               </div>
           </Grid>
           <Grid item lg={2} md={2} xs={4}>
             <Typography className={classes.footerListHeading} variant="h6" component="h6">Legal</Typography>
             <div className={classes.footerList}>
                 <Link to="/about#" className={classes.footerLink}>About</Link>
-                <Link className={classes.footerLink}>Privacy</Link>
-                <Link className={classes.footerLink}>Terms</Link>
-                <Link className={classes.footerLink}>Dispute</Link>
+                <Link to="/" className={classes.footerLink}>Privacy</Link>
+                <Link to="/" className={classes.footerLink}>Terms</Link>
+                <Link to="/" className={classes.footerLink}>Dispute</Link>
               </div>
           </Grid>
           <Grid item lg={2} md={2} xs={4}>
             <Typography className={classes.footerListHeading} variant="h6" component="h6">Reach Us</Typography>
             <div className={classes.footerList}>
-                <Link className={classes.footerLink}>Dispute</Link>
-                <Link className={classes.footerLink}>+234 807 3505 624</Link>
-                <Link className={classes.footerLink}>10, Vaultway street, <br/> VI, Lagos</Link>
+                <Link to="/" className={classes.footerLink}>Dispute</Link>
+                <Link to="/" className={classes.footerLink}>+234 807 3505 624</Link>
+                <Link to="/" className={classes.footerLink}>10, Vaultway street, <br/> VI, Lagos</Link>
               </div>
           </Grid>
         </Grid>
@@ -85,9 +85,15 @@ const Footer = () => {
           <div className={classes.extraContainer}>
             <Typography className={clsx(classes.extraText, classes.followText)} variant="body2" component="p">Also Follow Us</Typography>
             <div className={classes.extraIcons}>
-              <Link> <img className={classes.extraIcon} src={twitterIcon} alt="vault way twitter link"/> </Link>
-              <Link> <img className={classes.extraIcon} src={fbIcon} alt="vault way facebook link"/> </Link>
-              <Link> <img className={classes.extraIcon} src={IGIcon} alt="vault way instagram icon"/> </Link>
+              <a className={classes.extraIconsLink} href="google.com">
+                <img className={classes.extraIcon} src={twitterIcon} alt="vault way twitter link"/>
+              </a>
+              <a className={classes.extraIconsLink} href="google.com">
+                <img className={classes.extraIcon} src={fbIcon} alt="vault way facebook link"/>
+              </a>
+              <a className={classes.extraIconsLink} href="google.com">
+                <img className={classes.extraIcon} src={IGIcon} alt="vault way instagram icon"/>
+              </a>
             </div>
             <Typography className={clsx(classes.extraText, classes.copyText)} variant="body2" component="p">
               Copyright &copy; {year.getFullYear()}, All Right Reserved

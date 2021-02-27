@@ -7,7 +7,6 @@ const btnStyles = makeStyles((theme) => ({
     fontWeight: 600,
     borderRadius: '6px',
     lineHeight: '19.5px',
-    fontFamily: 'Montserrat',
 
     '@media (max-width: 583px)': {
       // fontSize: '8px'

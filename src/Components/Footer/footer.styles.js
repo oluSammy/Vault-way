@@ -3,11 +3,11 @@ import { makeStyles } from '@material-ui/core';
 const footerStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: '#F5F7FA',
-    paddingTop: '40px',
+    paddingTop: '30px',
   },
   footerGreen: {
     backgroundColor: theme.palette.primary.main,
-    width: '90%',
+    width: '78%',
     margin: '0 auto',
     marginBottom: '140px',
     borderRadius: '20px',
@@ -26,15 +26,8 @@ const footerStyles = makeStyles((theme) => ({
     },
 
     '@media (max-width: 418px)': {
-      width: '96%',
-    },
-
-    '@media (max-width: 388px)': {
-      marginBottom: '60px',
-    },
-
-    '@media (max-width: 344px)': {
-      width: '98%',
+      width: '85%',
+      borderRadius: '10px',
     },
   },
   footerGreener: {
@@ -55,6 +48,11 @@ const footerStyles = makeStyles((theme) => ({
 
     '@media (max-width: 478px)': {
       clipPath: 'polygon(0 1%, 65% 0%, 47% 100%, 0% 100%)',
+    },
+
+    '@media (max-width: 418px)': {
+      borderRadius: '10px',
+      padding: '15px 15px',
     },
   },
   footerTxt: {
@@ -83,7 +81,7 @@ const footerStyles = makeStyles((theme) => ({
     color: theme.palette.common.white,
     fontSize: '30px',
     lineHeight: '35px',
-    fontFamily: 'Montserrat',
+
     fontWeight: 700,
     marginBottom: '10px',
     textTransform: 'capitalize',
@@ -103,16 +101,21 @@ const footerStyles = makeStyles((theme) => ({
       lineHeight: '18px',
     },
 
-    '@media (max-width: 418px)': {
+    '@media (max-width: 428px)': {
       fontSize: '12px',
       lineHeight: '15px',
+    },
+
+    '@media (max-width: 370px)': {
+      fontSize: '10px',
+      lineHeight: '11px',
     },
   },
   footerSubHeading: {
     color: theme.palette.common.white,
     fontSize: '20px',
     lineHeight: '30px',
-    fontFamily: 'Montserrat',
+
     fontWeight: 400,
 
     '@media (max-width: 888px)': {
@@ -126,7 +129,7 @@ const footerStyles = makeStyles((theme) => ({
     },
 
     '@media (max-width: 478px)': {
-      fontSize: '12px',
+      fontSize: '10px',
       lineHeight: '12px',
     },
 
@@ -134,16 +137,21 @@ const footerStyles = makeStyles((theme) => ({
       fontSize: '10px',
       lineHeight: '10px',
     },
+
+    '@media (max-width: 370px)': {
+      fontSize: '8px',
+      lineHeight: '11px',
+    },
   },
   footerContent: {
-    width: '90%',
+    width: '82%',
     margin: '0 auto',
     paddingBottom: '50px',
 
-    '@media (max-width: 432px)': {
-      width: '98%',
-      marginLeft: '5px',
-    },
+    // '@media (max-width: 432px)': {
+    //   width: '82%',
+    //   marginLeft: '5px',
+    // },
   },
   footerLogo: {
     width: '50%',
@@ -152,7 +160,7 @@ const footerStyles = makeStyles((theme) => ({
     color: '#084622',
     fontSize: '15px',
     lineHeight: '30px',
-    fontFamily: 'Montserrat',
+
     fontWeight: 700,
     marginBottom: '10px',
   },
@@ -166,7 +174,7 @@ const footerStyles = makeStyles((theme) => ({
     color: '#6E80A3',
     fontSize: '12px',
     lineHeight: '20px',
-    fontFamily: 'Montserrat',
+
     fontWeight: 400,
     width: 'max-content',
 
@@ -175,7 +183,7 @@ const footerStyles = makeStyles((theme) => ({
     },
 
     '@media (max-width: 432px)': {
-     fontSize: '10px'
+      fontSize: '10px',
     },
   },
   extras: {
@@ -221,9 +229,12 @@ const footerStyles = makeStyles((theme) => ({
   extraIcon: {
     marginRight: '15px',
   },
+  extraIconsLink: {
+    textDecoration: 'none',
+  },
   extraText: {
     color: '#6E80A3',
-    fontFamily: 'Montserrat',
+
     fontWeight: 400,
     fontSize: '12px',
   },
@@ -232,7 +243,7 @@ const footerStyles = makeStyles((theme) => ({
     '@media (max-width: 519px)': {
       flexGrow: 1,
       textAlign: 'center',
-      marginTop: '20px'
+      marginTop: '20px',
     },
   },
 }));

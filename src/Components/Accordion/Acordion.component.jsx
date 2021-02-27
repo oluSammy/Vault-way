@@ -26,10 +26,10 @@ const Acordion = ({ question, answer, expanded }) => {
           id="panel1a-header"
           className={classes.AccordionTitle}
         >
-          <Typography >{question}</Typography>
+          <Typography variant="h5" component="h5" className={classes.AccordionTitleTxt}>{question}</Typography>
         </AccordionSummary>
         <AccordionDetails className={classes.accordionDetails}>
-          <Typography> {answer} </Typography>
+          <Typography variant="subtitle1" component="p" className={classes.accordionDetailsTxt}> {answer} </Typography>
         </AccordionDetails>
       </Accordion>
     </Grid>

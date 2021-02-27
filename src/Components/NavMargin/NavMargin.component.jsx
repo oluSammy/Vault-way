@@ -5,6 +5,8 @@ const NavMargin = () => {
   const styles = makeStyles(theme => ({
     root: {
       marginTop: '78px',
+      backgroundColor: 'transparent',
+      color: 'transparent',
       '@media (max-width: 584px)': {
         marginTop: '72px'
       },
