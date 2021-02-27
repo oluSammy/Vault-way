@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import homeStyles from './Home.styles';
+import homeStyles from './styles/Home.styles';
 import Navbar from '../../Components/Navbar/Navbar.component';
 import Message from '../../Components/Messgae/Message.component';
 import NavMargin from '../../Components/NavMargin/NavMargin.component';
@@ -28,10 +28,10 @@ const Home = () => {
         window.scrollTo(0, 0)
     }, []);
 
+    const classes = homeStyles();
     const theme = useTheme();
     const matchesXS = useMediaQuery(theme.breakpoints.down("xs"));
 
-    const classes = homeStyles();
     const navLinks =[
         {
             title: 'Save',
@@ -54,7 +54,6 @@ const Home = () => {
             <Navbar navLinks={navLinks} />
             <Message />
             <NavMargin />
-            {/* <Hero /> */}
             <Grid className={classes.hero} container justify="center" alignItems="center">
                 <Grid container item lg={5} md={5} sm={6} xs={9}  justify={matchesXS ? 'flex-start' : 'center'} >
                     <div className={classes.heroText}>

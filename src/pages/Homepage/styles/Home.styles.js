@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core';
-import bg from '../../assets/icons/stories-bg.png';
-import hero from '../../assets/img/BG.png';
+import bg from '../../../assets/icons/stories-bg.png';
+import hero from '../../../assets/img/BG.png';
 
 const homeStyles = makeStyles((theme) => ({
   root: {
