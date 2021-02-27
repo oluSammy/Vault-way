@@ -66,7 +66,7 @@ const Footer = () => {
             <Typography className={classes.footerListHeading} variant="h6" component="h6">Legal</Typography>
             <div className={classes.footerList}>
                 <Link to="/about#" className={classes.footerLink}>About</Link>
-                <Link to="/" className={classes.footerLink}>Privacy</Link>
+                <Link to="/new" className={classes.footerLink}>Privacy</Link>
                 <Link to="/" className={classes.footerLink}>Terms</Link>
                 <Link to="/" className={classes.footerLink}>Dispute</Link>
               </div>
