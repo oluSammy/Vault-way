@@ -90,7 +90,7 @@ const faqStyles = makeStyles((theme) => ({
     padding: '0 100px 260px 100px',
 
     '@media (max-width: 604px)': {
-      padding: '0 20px 140px 20px'
+      padding: '0 20px 140px 20px',
     },
   },
   activeTab: {
@@ -102,26 +102,26 @@ const faqStyles = makeStyles((theme) => ({
     transition: 'all .4s',
 
     '@media (max-width: 904px)': {
-      minWidth: '100px',
-      minHeight: '40px'
+      minWidth: '100px !important',
+      minHeight: '40px !important',
     },
 
     '@media (max-width: 542px)': {
-      minWidth: '90px',
-      minHeight: '30px',
-      borderRadius: '9px',
-      fontSize: '10px'
+      minWidth: '90px !important',
+      minHeight: '30px !important',
+      borderRadius: '9px !important',
+      fontSize: '10px !important',
     },
 
     '@media (max-width: 482px)': {
-      minWidth: '70px',
-      minHeight: '30px',
+      minWidth: '70px !important',
+      minHeight: '30px !important',
     },
 
     '@media (max-width: 400px)': {
-      minWidth: '40px',
-      minHeight: '20px',
-      fontSize: '8px'
+      minWidth: '40px !important',
+      minHeight: '20px !important',
+      fontSize: '8px !important',
     },
   },
   inactiveTab: {
@@ -130,30 +130,32 @@ const faqStyles = makeStyles((theme) => ({
     transition: 'all .4s',
 
     '@media (max-width: 904px)': {
-      minWidth: '100px',
-      minHeight: '40px'
+      minWidth: '100px !important',
+      minHeight: '40px !important',
     },
 
     '@media (max-width: 542px)': {
-      minWidth: '90px',
-      minHeight: '30px',
-      borderRadius: '9px',
-      fontSize: '10px'
+      minWidth: '90px !important',
+      minHeight: '30px !important',
+      borderRadius: '9px !important',
+      fontSize: '10px !important',
     },
 
     '@media (max-width: 482px)': {
-      minWidth: '70px',
-      minHeight: '30px',
+      minWidth: '70px !important',
+      minHeight: '30px !important',
     },
 
     '@media (max-width: 400px)': {
-      minWidth: '40px',
-      minHeight: '20px',
-      fontSize: '8px'
+      minWidth: '40px !important',
+      minHeight: '20px !important',
+      fontSize: '8px !important',
     },
   },
   indicator: {
-    backgroundColor: 'transparent',
+    backgroundColor: 'white !important',
+    display: 'none !important',
+    opacity: '0 !important',
   },
 }));
 

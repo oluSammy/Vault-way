@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import homeStyles from './Home.styles';
 import Navbar from '../../Components/Navbar/Navbar.component';
 import Hero from '../../Components/Hero/Hero.components';
@@ -21,9 +21,9 @@ import Footer from './../../Components/Footer/Footer.component';
 
 
 const Home = () => {
-    // useEffect(() => {
-    //     window.scrollTo(0, 0)
-    // }, []);
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
 
     const classes = homeStyles();
     const navLinks =[
@@ -60,7 +60,7 @@ const Home = () => {
                         </div>
                         <div className={classes.securityContent}>
                             <Typography className={classes.securityTitle} variant="h4" component="h4">
-                                256 bits SSl <br/> security
+                                256 bit SSl <br/> security
                             </Typography>
                             <Typography className={classes.securitySubTitle} variant="body1" component="h4">
                                 vault Way offers you state-of-the-art internet security technology, through the use of

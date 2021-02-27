@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Message from '../../Components/Messgae/Message.component';
 import Navbar from '../../Components/Navbar/Navbar.component';
 import NavMargin from '../../Components/NavMargin/NavMargin.component';
@@ -19,9 +19,9 @@ import checkIcon from '../../assets/icons/double-check-icon.png';
 
 
 const Plans = () => {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0)
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
   const classes = plansStyles();
   const theme = useTheme();
   const matchesXS = useMediaQuery(theme.breakpoints.down("xs"));

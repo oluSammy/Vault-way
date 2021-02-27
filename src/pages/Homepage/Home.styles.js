@@ -164,7 +164,7 @@ const homeStyles = makeStyles((theme) => ({
   secFooterTxt: {
     textAlign: 'center',
     fontWeight: '700',
-    fontSize: '30px',
+    fontSize: '34ypx',
     lineHeight: '20px',
     color: '#6E80A3',
     padding: '0 20px',
