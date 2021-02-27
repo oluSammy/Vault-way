@@ -1,10 +1,74 @@
 import { makeStyles } from '@material-ui/core';
-import bg from '../../assets/icons/stories-bg.png'
+import bg from '../../assets/icons/stories-bg.png';
+import hero from '../../assets/img/BG.png';
 
 const homeStyles = makeStyles((theme) => ({
   root: {
     position: 'relative',
   },
+  hero: {
+    backgroundImage: `url(${hero})`,
+    minHeight: '85vh',
+    backgroundSize: 'cover',
+    backgroundPosition: 'bottom',
+    backgroundRepeat: 'no-repeat',
+  },
+
+  heroText: {
+    '@media (max-width: 600px)': {
+      marginTop: '30px',
+    },
+  },
+
+  heading: {
+    color: '#121E31',
+    fontWeight: 800,
+    fontSize: '40px',
+    lineHeight: '60px',
+    letterSpacing: '1px',
+    marginBottom: '20px',
+
+    '@media (max-width: 800px)': {
+      fontSize: '30px',
+      lineHeight: '40px',
+      marginBottom: '10px',
+      letterSpacing: '.7px',
+    },
+
+    '@media (max-width: 511px)': {
+      fontSize: '20px',
+      lineHeight: '25px',
+    },
+  },
+
+   headingSpan: {
+    color: theme.palette.primary.main,
+  },
+  subHeading: {
+    fontSize: '15px',
+    fontWeight: 500,
+    letterSpacing: '.5',
+    color: '#6E80A3',
+    marginBottom: '20px',
+
+    '@media (max-width: 800px)': {
+      fontSize: '11px',
+      marginBottom: '10px',
+    },
+  },
+
+  img: {
+    height: '85vh',
+
+    '@media (max-width: 600px)': {
+      height: '65vh',
+    },
+
+    '@media (max-width: 490px)': {
+      height: '55vh',
+    },
+  },
+
   security: {
     // backgroundColor: '#F2F2F2',
     padding: '80px 0',

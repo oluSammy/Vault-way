@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import homeStyles from './Home.styles';
 import Navbar from '../../Components/Navbar/Navbar.component';
-import Hero from '../../Components/Hero/Hero.components';
 import Message from '../../Components/Messgae/Message.component';
 import NavMargin from '../../Components/NavMargin/NavMargin.component';
 import secureIcon from '../../assets/icons/securityIcon.png'
@@ -16,14 +15,21 @@ import twitterIcon from '../../assets/icons/twitter-icon.png'
 import quickVaultImg from '../../assets/icons/quick-vault-icon.png'
 import fundVaultImg from '../../assets/icons/fund-vault-icon.png'
 import computerImg from '../../assets/img/computer.png'
-import storySampleImg from '../../assets/img/story-sample-img.png'
+import storySampleImg from '../../assets/img/story-sample-img.png';
+import HeroImg from '../../assets/img/Hero-img.png';
 import Footer from './../../Components/Footer/Footer.component';
+import ButtonCta from '../../Components/ButtonCta/ButtonCta.component';
+import { useTheme } from '@material-ui/core';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 
 const Home = () => {
     useEffect(() => {
         window.scrollTo(0, 0)
     }, []);
+
+    const theme = useTheme();
+    const matchesXS = useMediaQuery(theme.breakpoints.down("xs"));
 
     const classes = homeStyles();
     const navLinks =[
@@ -48,7 +54,29 @@ const Home = () => {
             <Navbar navLinks={navLinks} />
             <Message />
             <NavMargin />
-            <Hero />
+            {/* <Hero /> */}
+            <Grid className={classes.hero} container justify="center" alignItems="center">
+                <Grid container item lg={5} md={5} sm={6} xs={9}  justify={matchesXS ? 'flex-start' : 'center'} >
+                    <div className={classes.heroText}>
+                        <Typography className={classes.heading} variant="h1" component="h1">
+                            Save your way <br/> into the <span className={classes.headingSpan}>future</span>
+                        </Typography>
+                        <Typography className={classes.subHeading} variant="subtitle1">
+                            Enjoy amazing interest rates and achieve more <br/> financial freedom by saving through the simplest, <br/>
+                            smartest amd most comfortable way.
+                        </Typography>
+                        <ButtonCta  type="contained" text="Start Saving Now" bgColor="primary"
+                            shadow={true}
+                            paddingSide={matchesXS ? '22px' : '25px'}
+                            paddingX={matchesXS ? '10px' : '12px'}
+                            fontSize={matchesXS ? '12px' : '15px'}
+                        />
+                    </div>
+                </Grid>
+                <Grid container item lg={5} md={5} sm={6} xs={9}  justify={matchesXS ? 'flex-end' : 'center'} >
+                    <img className={classes.img} src={HeroImg} alt=""/>
+                </Grid>
+            </Grid>
             <div className={classes.security}>
                 <Typography className={classes.securityHeading} variant="h2" component="h2">
                     Save with the assurance of security
