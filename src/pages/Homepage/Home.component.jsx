@@ -6,7 +6,6 @@ import NavMargin from '../../Components/NavMargin/NavMargin.component';
 import secureIcon from '../../assets/icons/securityIcon.png'
 import authIcon from '../../assets/icons/authenticationIcon.png'
 import steerIcon from '../../assets/icons/steerIcon.png'
-import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import vaultImg from '../../assets/img/vault-Image.png'
@@ -77,22 +76,22 @@ const Home = () => {
                 </Grid>
             </Grid>
             <div className={classes.security}>
-                <Typography className={classes.securityHeading} variant="h2" component="h2">
+                <h2 className={classes.securityHeading}>
                     Save with the assurance of security
-                </Typography>
+                </h2>
                 <div className={classes.securityContainer}>
                     <div className={classes.securityBox}>
                         <div className={classes.secIconBox}>
                             <img src={secureIcon} className={classes.securityIcon} alt="vault way secure"/>
                         </div>
                         <div className={classes.securityContent}>
-                            <Typography className={classes.securityTitle} variant="h4" component="h4">
-                                256 bit SSl <br/> security
-                            </Typography>
-                            <Typography className={classes.securitySubTitle} variant="body1" component="h4">
+                            <h4 className={classes.securityTitle} >
+                                256 bits SSl <br/> security
+                            </h4>
+                            <p className={classes.securitySubTitle} >
                                 vault Way offers you state-of-the-art internet security technology, through the use of
                                 256 bits SSl security encryption in order to safeguard your information from duplicity.
-                            </Typography>
+                            </p>
                         </div>
                     </div>
                     <div className={classes.securityBox}>
@@ -100,38 +99,36 @@ const Home = () => {
                             <img src={authIcon} className={classes.securityIcon} alt="vault way authentication"/>
                         </div>
                         <div className={classes.securityContent}>
-                            <Typography className={classes.securityTitle} variant="h4" component="h4">
+                            <h4 className={classes.securityTitle} >
                                 Two-factor <br/> authentication
-                            </Typography>
-                            <Typography className={classes.securitySubTitle} variant="body1" component="h4">
+                            </h4>
+                            <p className={classes.securitySubTitle}>
                                 Vault way savings account are protected by Two-factor Authentication (2FA) by default,
                                 to guaranty the safety of your account from unauthorized access.
-                            </Typography>
+                            </p>
                         </div>
                     </div>
                 </div>
-                <Typography className={classes.vaultWayTxt} variant="h4" component="h4">With vault way</Typography>
+                <h4 className={classes.vaultWayTxt} >With vault way</h4>
                 <div className={classes.securityFooter}>
                     <div className={classes.secFooterIconBox}>
                         <img src={steerIcon} className={classes.secFooterIcon} alt="vault way icon"/>
                     </div>
-                    <Typography className={classes.secFooterTxt} variant="h6" component="h4">
+                    <h4 className={classes.secFooterTxt} >
                         Meet your financial goals... <span className={classes.secFooterSpan}>and then, beat 'em!</span>
-                    </Typography>
+                    </h4>
                     <div className={classes.secFooterIconBox}>
                         <img src={steerIcon} className={classes.secFooterIcon} alt="vault way icon"/>
                     </div>
                 </div>
             </div>
             <div className={classes.plan}>
-                <Typography className={classes.planHeading} variant="h2" component="h2">
+                <h2 className={classes.planHeading} >
                     An array of novel savings plans <br/> just for you
-                </Typography>
+                </h2>
                 <Grid container justify="space-evenly" alignItems="center" className={classes.planContainer} >
                     <Grid container justify="space-around"  item md={5}>
                         <img src={vaultImg} className={classes.plansImg} alt="vault way vault box"/>
-                        {/* <div className={classes.planImgBox}>
-                        </div> */}
                     </Grid>
                     <Grid container  direction="column" item md={5}>
                         <div className={classes.planBox}>
@@ -140,11 +137,11 @@ const Home = () => {
                                 alt="vault way regular plan icon"/>
                             </div>
                             <div className={classes.planContent}>
-                                <Typography className={classes.planBoxHeading} variant="h6" component="h6">Regular Vaults</Typography>
-                                <Typography className={classes.planBoxSub} variant="body1" component="p">
+                                <h6 className={classes.planBoxHeading}>Regular Vaults</h6>
+                                <p className={classes.planBoxSub} >
                                     Never miss out on earning up to 20% interest on your savings in the first month and 5% interest
                                     in the subsequent months with unique savings plans that even allows you to automate your savings
-                                </Typography>
+                                </p>
                             </div>
                         </div>
                         <div className={classes.planBox}>
@@ -153,11 +150,11 @@ const Home = () => {
                                 alt="vault way quick plan icon"/>
                             </div>
                             <div className={classes.planContent}>
-                                <Typography className={classes.planBoxHeading} variant="h6" component="h6">Quick Vault</Typography>
-                                <Typography className={classes.planBoxSub} variant="body1" component="p">
+                                <h6 className={classes.planBoxHeading} >Quick Vault</h6>
+                                <p className={classes.planBoxSub} >
                                     Maintain a strict spending culture and avoid temptations by locking away your money for
                                     brief durations with no access to it until you set a due date
-                                </Typography>
+                                </p>
                             </div>
                         </div>
                         <div className={classes.planBox}>
@@ -166,24 +163,24 @@ const Home = () => {
                                 alt="vault way fund plan icon"/>
                             </div>
                             <div className={classes.planContent}>
-                                <Typography className={classes.planBoxHeading} variant="h6" component="h6">Fund My Vault</Typography>
-                                <Typography className={classes.planBoxSub} variant="body1" component="p">
+                                <h6 className={classes.planBoxHeading} >Fund My Vault</h6>
+                                <p className={classes.planBoxSub}>
                                     Easily get family, friends and loved ones to donate funds and save up with you on
                                     projects that are dear to your heart
-                                </Typography>
+                                </p>
                             </div>
                         </div>
                     </Grid>
                 </Grid>
             </div>
             <div className={classes.smart}>
-                <Typography className={classes.smartHeading} variant="h2" component="h2">
+                <h2 className={classes.smartHeading}>
                     Smart saving now made easy
-                </Typography>
-                <Typography className={classes.smartSubTitle} variant="body2" component="p">
+                </h2>
+                <p className={classes.smartSubTitle} >
                     You can start saving and earning amazing interest in just
                     <br/> four simple steps
-                </Typography>
+                </p>
                 <Grid container justify="space-evenly" alignItems="center">
                     <Grid item>
                         <div className={classes.step}>
@@ -191,10 +188,10 @@ const Home = () => {
                                <p className={classes.numberText}>1</p>
                             </div>
                             <div className={classes.stepContent}>
-                                <Typography className={classes.stepTitle} variant="h5" component="h5">Open An Account</Typography>
-                                <Typography className={classes.stepSubTitle} variant="body2" component="p">
+                                <h5 className={classes.stepTitle}>Open An Account</h5>
+                                <p className={classes.stepSubTitle}>
                                     create your own savings account with your name, email and password
-                                </Typography>
+                                </p>
                             </div>
                         </div>
                         <div className={classes.step}>
@@ -202,10 +199,10 @@ const Home = () => {
                                <p className={classes.numberText}>2</p>
                             </div>
                             <div className={classes.stepContent}>
-                                <Typography className={classes.stepTitle} variant="h5" component="h5">Choose a Plan</Typography>
-                                <Typography className={classes.stepSubTitle} variant="body2" component="p">
+                                <h5 className={classes.stepTitle}>Choose a Plan</h5>
+                                <p className={classes.stepSubTitle}>
                                     Select a savings plan that suits your financial goals and time frame
-                                </Typography>
+                                </p>
                             </div>
                         </div>
                         <div className={classes.step}>
@@ -213,12 +210,12 @@ const Home = () => {
                                <p className={classes.numberText}>3</p>
                             </div>
                             <div className={classes.stepContent}>
-                                <Typography className={classes.stepTitle} variant="h5" component="h5">
+                                <p className={classes.stepTitle} >
                                     Setup your Payment details
-                                </Typography>
-                                <Typography className={classes.stepSubTitle} variant="body2" component="p">
+                                </p>
+                                <p className={classes.stepSubTitle} >
                                     Add your bank account and debit card details for ease of payments and withdrawals.
-                                </Typography>
+                                </p>
                             </div>
                         </div>
                         <div className={classes.step}>
@@ -226,10 +223,10 @@ const Home = () => {
                                <p className={classes.numberText}>4</p>
                             </div>
                             <div className={classes.stepContent}>
-                                <Typography className={classes.stepTitle} variant="h5" component="h5">Open An Account</Typography>
-                                <Typography className={classes.stepSubTitle} variant="body2" component="p">
+                                <p className={classes.stepTitle} >Open An Account</p>
+                                <p className={classes.stepSubTitle} >
                                 Watch your financial goals move closer to achievement each day as your savings grow.
-                                </Typography>
+                                </p>
                             </div>
                         </div>
                     </Grid>
@@ -239,9 +236,9 @@ const Home = () => {
                 </Grid>
             </div>
             <div id="stories" className={classes.stories}>
-                <Typography variant="h2" component="h2" className={classes.storiesHeading}>
+                <h2 className={classes.storiesHeading}>
                     Stories from our Community
-                </Typography>
+                </h2>
                 <Grid container className={classes.storiesContainer} spacing={2}>
                     <Grid item md={4} sm={6}>
                         <div className={classes.story}>
@@ -249,12 +246,12 @@ const Home = () => {
                                 <div className={classes.storyImgContainer}>
                                    <img src={storySampleImg} className={classes.name} alt=""/>
                                 </div>
-                                <Typography className={classes.nameTxt} variant="body2" component="p">Ayodeji O.</Typography>
+                                <p className={classes.nameTxt}>Ayodeji O.</p>
                             </div>
-                            <Typography className={classes.storyTestimony} variant="body1" component="p">
+                            <p className={classes.storyTestimony}>
                                 Wahala for person wey no use Vault Way ooo. My interest rates keeps coming in daily
                                 like what was promised in the lords prayer
-                            </Typography>
+                            </p>
                             <img src={twitterIcon} className={classes.StoryIcon} alt="vault way testimony icon"/>
                         </div>
                     </Grid>
@@ -264,12 +261,12 @@ const Home = () => {
                                 <div className={classes.storyImgContainer}>
                                    <img src={storySampleImg} className={classes.name} alt=""/>
                                 </div>
-                                <Typography className={classes.nameTxt} variant="body2" component="p">Ayodeji O.</Typography>
+                                <p className={classes.nameTxt}>Ayodeji O.</p>
                             </div>
-                            <Typography className={classes.storyTestimony} variant="body1" component="p">
+                            <p className={classes.storyTestimony}>
                                 Wahala for person wey no use Vault Way ooo. My interest rates keeps coming in daily
                                 like what was promised in the lords prayer
-                            </Typography>
+                            </p>
                             <img src={twitterIcon} className={classes.StoryIcon} alt="vault way testimony icon"/>
                         </div>
                     </Grid>
@@ -279,12 +276,12 @@ const Home = () => {
                                 <div className={classes.storyImgContainer}>
                                    <img src={storySampleImg} className={classes.name} alt=""/>
                                 </div>
-                                <Typography className={classes.nameTxt} variant="body2" component="p">Ayodeji O.</Typography>
+                                <p className={classes.nameTxt}>Ayodeji O.</p>
                             </div>
-                            <Typography className={classes.storyTestimony} variant="body1" component="p">
+                            <p className={classes.storyTestimony}>
                                 Wahala for person wey no use Vault Way ooo. My interest rates keeps coming in daily
                                 like what was promised in the lords prayer
-                            </Typography>
+                            </p>
                             <img src={twitterIcon} className={classes.StoryIcon} alt="vault way testimony icon"/>
                         </div>
                     </Grid>

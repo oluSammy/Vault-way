@@ -15,6 +15,8 @@ const homeStyles = makeStyles(() => ({
   },
 
   heroText: {
+    fontFamily: 'Montserrat',
+
     '@media (max-width: 600px)': {
       marginTop: '30px',
     },
@@ -27,6 +29,8 @@ const homeStyles = makeStyles(() => ({
     lineHeight: '60px',
     letterSpacing: '1px',
     marginBottom: '20px',
+    fontFamily: 'Montserrat',
+
 
     '@media (max-width: 800px)': {
       fontSize: '30px',
@@ -82,9 +86,11 @@ const homeStyles = makeStyles(() => ({
     '@media (max-width: 774px)': {
       fontSize: '25px',
       lineHeight: '25px',
+      marginTop: '-8px'
     },
     '@media (max-width: 483px)': {
       fontSize: '20px',
+      marginTop: '-30px'
     },
 
     '@media (max-width: 412px)': {
@@ -101,11 +107,11 @@ const homeStyles = makeStyles(() => ({
     },
 
     '@media (max-width: 781px)': {
-      padding: '70px 70px',
+      padding: '60px 70px',
     },
 
     '@media (max-width: 480px)': {
-      padding: '70px 30px',
+      padding: '40px 30px',
     },
 
     '@media (max-width: 691px)': {
@@ -167,9 +173,10 @@ const homeStyles = makeStyles(() => ({
     },
   },
   securityTitle: {
-    fontWeight: 600,
+    fontWeight: 700,
     fontSize: '20px',
     marginBottom: '20px',
+    marginTop: '-2px'
   },
   securitySubTitle: {
     fontWeight: 400,
@@ -228,7 +235,7 @@ const homeStyles = makeStyles(() => ({
   secFooterTxt: {
     textAlign: 'center',
     fontWeight: '700',
-    fontSize: '34ypx',
+    fontSize: '34px',
     lineHeight: '20px',
     color: '#6E80A3',
     padding: '0 20px',
@@ -336,12 +343,13 @@ const homeStyles = makeStyles(() => ({
   },
   planBoxHeading: {
     fontWeight: '800',
-    fontSize: '18px',
+    fontSize: '20px',
     marginBottom: '10px',
+    marginTop: '-3px'
   },
   planBoxSub: {
     fontWeight: '400',
-    fontSize: '14px',
+    fontSize: '15px',
     color: '#6E80A3',
 
     '@media (max-width: 444px)': {
@@ -436,8 +444,9 @@ const homeStyles = makeStyles(() => ({
   stepTitle: {
     fontWeight: '800',
     color: '#6E80A3',
-    fontSize: '16px',
+    fontSize: '18px',
     marginBottom: '10px',
+    marginTop: '-3px'
   },
   stepSubTitle: {
     fontWeight: '500',
