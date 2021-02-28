@@ -33,7 +33,7 @@ const footerStyles = makeStyles((theme) => ({
   footerGreener: {
     display: 'flex',
     alignItems: 'center',
-    padding: '40px 80px',
+    padding: '20px 80px',
     backgroundColor: '#084622',
     clipPath: 'polygon(0 1%, 70% 0%, 55% 100%, 0% 100%)',
     borderRadius: '20px',
@@ -148,21 +148,33 @@ const footerStyles = makeStyles((theme) => ({
     margin: '0 auto',
     paddingBottom: '50px',
 
-    // '@media (max-width: 432px)': {
-    //   width: '82%',
-    //   marginLeft: '5px',
-    // },
+    '@media (max-width: 415px)': {
+      width: '90%',
+    },
   },
   footerLogo: {
     width: '50%',
+
+    '@media (max-width: 409px)': {
+      width: '40%',
+      marginTop: '6px'
+    },
+
+    '@media (max-width: 373px)': {
+      width: '30%',
+    },
   },
   footerListHeading: {
     color: '#084622',
     fontSize: '15px',
     lineHeight: '30px',
-
     fontWeight: 700,
     marginBottom: '10px',
+    marginTop: '-2px',
+
+    '@media (max-width: 409px)': {
+      fontSize: '13px',
+    },
   },
   footerList: {
     display: 'flex',

@@ -63,6 +63,7 @@ const homeStyles = makeStyles(() => ({
 
   img: {
     height: '85vh',
+    transition: 'all .2s ease',
 
     '@media (max-width: 600px)': {
       height: '65vh',

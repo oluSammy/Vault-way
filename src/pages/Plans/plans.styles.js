@@ -70,6 +70,7 @@ const plansStyles = makeStyles((theme) => ({
   },
   vaultImg: {
     width: '70%',
+    transition: 'all .2s ease',
 
     '@media (max-width: 600px)': {
       width: '40%',

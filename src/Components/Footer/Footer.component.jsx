@@ -1,6 +1,5 @@
 import React from 'react'
 import footerStyles from './footer.styles';
-import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import ButtonCta from '../ButtonCta/ButtonCta.component';
 import vaultWayLogo from '../../assets/icons/vault-way-logo.svg'
@@ -26,24 +25,24 @@ const Footer = () => {
           </div>
         <div className={classes.footerGreener}>
           <div className={classes.footerTxt}>
-            <Typography  className={classes.footerHeading} variant="h6" component="h6">
+            <h6  className={classes.footerHeading} >
               Join Our community of <br/> savers today.
-            </Typography>
-            <Typography  className={classes.footerSubHeading} variant="body1" component="p">
+            </h6>
+            <p  className={classes.footerSubHeading} >
                 Take a big leap towards more <br/> financial freedom.
-            </Typography>
+            </p>
           </div>
         </div>
       </div>
       <div className={classes.footerContent}>
         <Grid container justify={matchesXS ? 'flex-start' : 'space-evenly'} >
-          <Grid item lg={2} md={2}>
+          <Grid item lg={2} md={2} xs={4}>
             <div className={classes.test}>
               <img src={vaultWayLogo} className={classes.footerLogo} alt="vault way logo"/>
             </div>
           </Grid>
           <Grid item lg={2} md={2} xs={4}>
-            <Typography className={classes.footerListHeading} variant="h6" component="h6">Products</Typography>
+            <h6 className={classes.footerListHeading} >Products</h6>
               <div className={classes.footerList}>
                 <Link to="/" className={classes.footerLink}>Tyro Vault</Link>
                 <Link to="/" className={classes.footerLink}>Reaper Vault</Link>
@@ -54,7 +53,7 @@ const Footer = () => {
               </div>
           </Grid>
           <Grid item lg={2} md={2} xs={4}>
-            <Typography className={classes.footerListHeading} variant="h6" component="h6">Company</Typography>
+            <h6 className={classes.footerListHeading}>Company</h6>
             <div className={classes.footerList}>
                 <Link to="/about#" className={classes.footerLink}>About</Link>
                 <Link to="/faq" className={classes.footerLink}>FAQ</Link>
@@ -63,7 +62,7 @@ const Footer = () => {
               </div>
           </Grid>
           <Grid item lg={2} md={2} xs={4}>
-            <Typography className={classes.footerListHeading} variant="h6" component="h6">Legal</Typography>
+            <h6 className={classes.footerListHeading}>Legal</h6>
             <div className={classes.footerList}>
                 <Link to="/about#" className={classes.footerLink}>About</Link>
                 <Link to="/" className={classes.footerLink}>Privacy</Link>
@@ -72,7 +71,7 @@ const Footer = () => {
               </div>
           </Grid>
           <Grid item lg={2} md={2} xs={4}>
-            <Typography className={classes.footerListHeading} variant="h6" component="h6">Reach Us</Typography>
+            <h6 className={classes.footerListHeading} >Reach Us</h6>
             <div className={classes.footerList}>
                 <Link to="/" className={classes.footerLink}>Dispute</Link>
                 <Link to="/" className={classes.footerLink}>+234 807 3505 624</Link>
@@ -83,7 +82,7 @@ const Footer = () => {
         <div className={classes.extras}>
           <div className={classes.divider} />
           <div className={classes.extraContainer}>
-            <Typography className={clsx(classes.extraText, classes.followText)} variant="body2" component="p">Also Follow Us</Typography>
+            <p className={clsx(classes.extraText, classes.followText)} >Also Follow Us</p>
             <div className={classes.extraIcons}>
               <a className={classes.extraIconsLink} href="google.com">
                 <img className={classes.extraIcon} src={twitterIcon} alt="vault way twitter link"/>
@@ -95,9 +94,9 @@ const Footer = () => {
                 <img className={classes.extraIcon} src={IGIcon} alt="vault way instagram icon"/>
               </a>
             </div>
-            <Typography className={clsx(classes.extraText, classes.copyText)} variant="body2" component="p">
+            <p className={clsx(classes.extraText, classes.copyText)} >
               Copyright &copy; {year.getFullYear()}, All Right Reserved
-            </Typography>
+            </p>
           </div>
         </div>
       </div>

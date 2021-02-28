@@ -171,6 +171,7 @@ const aboutStyles = makeStyles((theme) => ({
     },
 
     '@media (max-width: 876px)': {
+      minHeight: '55vh',
       padding: '15px 10px'
     },
   },

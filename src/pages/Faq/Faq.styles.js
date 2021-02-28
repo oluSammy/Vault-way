@@ -96,7 +96,7 @@ const faqStyles = makeStyles((theme) => ({
   activeTab: {
     backgroundColor: theme.palette.primary.main,
     textTransform: 'capitalize',
-    color: theme.palette.common.white,
+    color: '#ffffff !important',
     padding: '2px 10px',
     borderRadius: '15px',
     transition: 'all .4s',
