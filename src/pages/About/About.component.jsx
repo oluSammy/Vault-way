@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import Navbar from '../../Components/Navbar/Navbar.component';
 import NavMargin from '../../Components/NavMargin/NavMargin.component';
 import aboutStyles from './About.styles';
-import Typography from '@material-ui/core/Typography';
 // import Card from '@material-ui/core/Card';
 // import CardActionArea from '@material-ui/core/CardActionArea';
 // import CardMedia from '@material-ui/core/CardMedia';
@@ -59,24 +58,24 @@ const About = () => {
       <NavMargin />
       <Message />
       <div className={classes.lifestyle}>
-        <Typography className={classes.lifestyleHeading} variant="h3" component="h1">
+        <h1 className={classes.lifestyleHeading}>
           We are turning <br/> <span className={classes.span}>savings into lifestyle</span>
-        </Typography>
-        <Typography className={classes.lifestyleSub} variant="h6" component="h6">
+        </h1>
+        <h6 className={classes.lifestyleSub} >
           Our desire is to help you save smartly, easily and securely towards your goals while you get competitive
           values for your saving activities.
-        </Typography>
+        </h6>
       </div>
       <Grid container className={classes.aboutSection} justify="space-evenly" alignItems="center">
         <Grid container item lg={5} md={5} sm={6} xs={8} justify="space-evenly" >
           <div className={classes.aboutSectionTxt}>
-            <Typography variant="h2" component="h2" className={classes.aboutSectionHeading}>
+            <h2 className={classes.aboutSectionHeading}>
               Raising the bar for financial freedom and control
-            </Typography>
-            <Typography variant="body1" component="p" className={classes.aboutSectionSub}>
+            </h2>
+            <p className={classes.aboutSectionSub}>
               This is why we offer premium savings plans that give you 100% control over your funds
               and enable you stay aloft your financial demands.
-            </Typography>
+            </p>
           </div>
         </Grid>
         <Grid justify="space-evenly" container item lg={5} md={5} sm={6} xs={4}>
@@ -91,13 +90,13 @@ const About = () => {
         </Grid>
         <Grid container item lg={5} md={5} sm={6} xs={8} justify="space-evenly" >
           <div className={classes.aboutSectionTxt}>
-            <Typography variant="h2" component="h2" className={classes.aboutSectionHeading}>
+            <h2 className={classes.aboutSectionHeading}>
               Leading the journey to financial literacy and discipline
-            </Typography>
-            <Typography variant="body1" component="p" className={classes.aboutSectionSub}>
+            </h2>
+            <p className={classes.aboutSectionSub}>
               We do not just help you save profitably, we also keep you in the know about relevant
               financial trends while helping you maintain a high level of discipline in managing your finances.
-            </Typography>
+            </p>
           </div>
         </Grid>
       </Grid>
@@ -107,13 +106,13 @@ const About = () => {
         <img src={designThree} className={`${classes.designIcon} ${classes.designTop} ${classes.designThree}`} alt=""/>
         <img src={designFour} className={`${classes.designIcon} ${classes.designTop} ${classes.designFour}`} alt=""/>
         <Grid item lg={6} md={5} sm={5}  >
-          <Typography className={classes.redefineHeading} variant="h4" component="h4">We are redefining the art of saving…</Typography>
+          <h4 className={classes.redefineHeading} >We are redefining the art of saving…</h4>
         </Grid>
         <Grid item lg={6} md={5} sm={5} >
-          <Typography className={classes.redefineSub} variant="subtitle1" component="p">
+          <p className={classes.redefineSub} >
             We are determined to help everyone fulfill their life dreams one at a time by presenting
             “Savings” to them as being attractive and easy, through quirky rewards and highly interactive platforms.
-          </Typography>
+          </p>
         </Grid>
       </Grid>
       <Grid container className={classes.aboutSection} justify="space-evenly" alignItems="center"
@@ -124,23 +123,23 @@ const About = () => {
         </Grid>
         <Grid container item lg={5} md={5} sm={6} xs={8} justify="space-evenly" >
           <div className={classes.aboutSectionTxt}>
-            <Typography variant="h2" component="h2" className={classes.aboutSectionHeading}>
+            <h2 className={classes.aboutSectionHeading}>
               What drives us
-            </Typography>
-            <Typography variant="body1" component="p" className={classes.aboutSectionSub}>
+            </h2>
+            <p className={classes.aboutSectionSub}>
               We will count our successes in the number of dreams we have helped fulfill, lives we
               have helped change for better and communities we have helped attain higher levels of development,
               as we evolve into Africa’s most trusted financial institution.
-            </Typography>
+            </p>
           </div>
         </Grid>
       </Grid>
       <div className={classes.company}>
-        <Typography className={classes.companyTitle} variant="h2" component="h2">What we stand for</Typography>
-        <Typography className={classes.companySubTitle} variant="body1" component="p">
+        <h2 className={classes.companyTitle} >What we stand for</h2>
+        <p className={classes.companySubTitle}>
           We are guided by strong, valid and non-negotiable values that
           take the front-seat in our professional dealings and relationships
-        </Typography>
+        </p>
         <Grid container justify="space-evenly">
           <Grid item lg={3} md={3} sm={3}>
             <div className={classes.companyBox}>
@@ -148,13 +147,13 @@ const About = () => {
                 <img className={classes.companyIcon} src={visionIcon} alt="vault way vision"/>
               </div>
               <div className={classes.companyContent}>
-                <Typography className={classes.companyHeading} variant="h4" component="h4">
+                <h4 className={classes.companyHeading} >
                   We are not afraid of being honest
-                </Typography>
-                <Typography className={classes.companyTxt} variant="body1"component="p">
+                </h4>
+                <p className={classes.companyTxt} >
                 This is why we operate at the highest level of integrity and within the strictest system of
                 provisional work ethics. We do what is right at all times and we take full responsibilities for our actions.
-                </Typography>
+                </p>
               </div>
             </div>
           </Grid>
@@ -164,13 +163,13 @@ const About = () => {
                   <img className={classes.companyIcon} src={missionIcon} alt="vault way vision"/>
                 </div>
                 <div className={classes.companyContent}>
-                  <Typography className={classes.companyHeading} variant="h4" component="h4">
+                  <h4 className={classes.companyHeading}>
                     We are committed without restraints
-                  </Typography>
-                  <Typography className={classes.companyTxt} variant="body1"component="p">
+                  </h4>
+                  <p className={classes.companyTxt}>
                     Our pursuit of excellence has no reservation. This explains our passion for the satisfaction
                     and retention of our customers and the provision and delivery of the best savings services for everyone. 
-                  </Typography>
+                  </p>
                 </div>
               </div>
           </Grid>
@@ -180,14 +179,14 @@ const About = () => {
                   <img className={classes.companyIcon} src={valuesIcon} alt="vault way vision"/>
                 </div>
                 <div className={classes.companyContent}>
-                  <Typography className={classes.companyHeading} variant="h4" component="h4">
+                  <h4 className={classes.companyHeading}>
                     We are one single, unbroken unit
-                  </Typography>
-                  <Typography className={classes.companyTxt} variant="body1"component="p">
+                  </h4>
+                  <p className={classes.companyTxt}>
                     We are intentional about creating an atmosphere where everyone is known, accepted, loved,
                     respected and driven to be the best version of themselves as we jointly move towards the
                     actualisation of a shared vision.
-                  </Typography>
+                  </p>
                 </div>
             </div>
           </Grid>
@@ -199,11 +198,11 @@ const About = () => {
         </Grid>
         <Grid item container alignItems="center" justify="center" lg={6} md={6} sm={6}>
           <div className={classes.joinContainer}>
-            <Typography className={classes.joinHeading} variant="h3" component="h3">Join Us</Typography>
-            <Typography className={classes.joinTxt} variant="body1" component="p">
+            <h3 className={classes.joinHeading}>Join Us</h3>
+            <p className={classes.joinTxt}>
               Be part of a people passionate about creating solid, positive relationships as they work together
               towards ensuring that everyone lives an optimal life.
-            </Typography>
+            </p>
             <ButtonCta type="contained" text="Careers" bgColor="primary"
               shadow={true} paddingX="8px" paddingSide="55px" fontSize="12px"
             />
