@@ -3,7 +3,6 @@ import Grid from '@material-ui/core/Grid';
 import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
-import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import acordionStyles from './Acordion.styles';
 
@@ -26,10 +25,10 @@ const Acordion = ({ question, answer, expanded }) => {
           id="panel1a-header"
           className={classes.AccordionTitle}
         >
-          <Typography variant="h5" component="h5" className={classes.AccordionTitleTxt}>{question}</Typography>
+          <h5 className={classes.AccordionTitleTxt}>{question}</h5>
         </AccordionSummary>
         <AccordionDetails className={classes.accordionDetails}>
-          <Typography variant="subtitle1" component="p" className={classes.accordionDetailsTxt}> {answer} </Typography>
+          <p className={classes.accordionDetailsTxt}> {answer} </p>
         </AccordionDetails>
       </Accordion>
     </Grid>

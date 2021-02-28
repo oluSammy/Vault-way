@@ -24,6 +24,7 @@ const acordionStyles = makeStyles(theme => ({
   AccordionTitleTxt: {
     fontSize: '15px',
     fontWeight: 500,
+    margin: 0,
 
     '@media (max-width: 1032px)': {
       fontSize: '13px',
@@ -32,6 +33,7 @@ const acordionStyles = makeStyles(theme => ({
   accordionDetailsTxt: {
     color: '#6E80A3',
     fontSize: '15px',
+    margin: 0,
 
     '@media (max-width: 1032px)': {
       fontSize: '13px',

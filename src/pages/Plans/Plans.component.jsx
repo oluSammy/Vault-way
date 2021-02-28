@@ -4,7 +4,6 @@ import Navbar from '../../Components/Navbar/Navbar.component';
 import NavMargin from '../../Components/NavMargin/NavMargin.component';
 import plansStyles from './plans.styles';
 import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
 import vaultImg from '../../assets/img/vault-green.png'
 import regularVault from '../../assets/icons/tyro-icon.png';
 import AceVault from '../../assets/icons/ace.png';
@@ -50,13 +49,13 @@ const Plans = () => {
       <Grid container className={classes.hero} justify="space-evenly" alignItems="center">
         <Grid className={classes.heroText} container item justify="flex-end" lg={5} md={5} sm={5}>
           <div className={classes.heroTextContainer}>
-            <Typography variant="h1" component="h1" className={classes.heroHeading}>
+            <h1 className={classes.heroHeading}>
               Save more to <br /> achieve more
-            </Typography>
-            <Typography variant="subtitle1" component="h6" className={classes.heroSubHeading}>
+            </h1>
+            <h6 className={classes.heroSubHeading}>
               Attain your set financial goals and even more. Start saving through smart plans that
               make saving a lot better than you ever thought.
-            </Typography>
+            </h6>
             <ButtonCta  type="contained" text="Start Saving Now" bgColor="primary"
               shadow={true}
               paddingSide={matchesXS ? '22px' : '25px'}
@@ -70,9 +69,9 @@ const Plans = () => {
         </Grid>
       </Grid>
       <div className={classes.vaultwaySection}>
-        <Typography className={classes.vaultwaySectionHeading} variant="h2" component="h2">
+        <h2 className={classes.vaultwaySectionHeading} >
           The best way to save <br /> is the vault way
-        </Typography>
+        </h2>
         <Grid container justify="center" alignItems="center" direction={matchesXS ? "column-reverse" : "row"}>
           <Grid item container justify="center"  lg={5} md={5} sm={6}>
             <div className={classes.vaultSaveRect}></div>
@@ -83,13 +82,13 @@ const Plans = () => {
                 <img className={classes.saveVaultBoxRectImg} src={checkIcon} alt="vault way check"/>
               </div>
               <div className={classes.saveVaultBoxContent}>
-                <Typography className={classes.saveVaultHeading} variant="h6" component="h6">
+                <h6 className={classes.saveVaultHeading} >
                   Have a great time building your funds
-                </Typography>
-                <Typography className={classes.saveVaultSub} variant="body1" component="p">
+                </h6>
+                <p className={classes.saveVaultSub} >
                   Get to automate your savings or choose to top-up directly. Have lots of fun while you save
                   and enjoy awesome interest rates your bank will never offer you.
-                </Typography>
+                </p>
               </div>
             </div>
             <div className={classes.saveVaultBox}>
@@ -97,13 +96,13 @@ const Plans = () => {
                 <img className={classes.saveVaultBoxRectImg} src={checkIcon} alt="vault way check"/>
               </div>
               <div className={classes.saveVaultBoxContent}>
-                <Typography className={classes.saveVaultHeading} variant="h6" component="h6">
+                <h6 className={classes.saveVaultHeading}>
                   Do it like you aren’t even doing it
-                </Typography>
-                <Typography className={classes.saveVaultSub} variant="body1" component="p">
+                </h6>
+                <p className={classes.saveVaultSub}>
                   Avoid all the “familiar” hassles. Stay free from hidden charges. Experience the ease
                   of saving just like breathing in and out.
-                </Typography>
+                </p>
               </div>
             </div>
             <div className={classes.saveVaultBox}>
@@ -111,23 +110,23 @@ const Plans = () => {
                 <img className={classes.saveVaultBoxRectImg} src={checkIcon} alt="vault way check"/>
               </div>
               <div className={classes.saveVaultBoxContent}>
-                <Typography className={classes.saveVaultHeading} variant="h6" component="h6">
+                <h6 className={classes.saveVaultHeading}>
                   Hold the reins and stay in charge
-                </Typography>
-                <Typography className={classes.saveVaultSub} variant="body1" component="p">
+                </h6>
+                <p className={classes.saveVaultSub} >
                   Save at your own pace. Grow on your own terms and maintain more
                   control over your funds than you have ever had.
-                </Typography>
+                </p>
               </div>
             </div>
           </Grid>
         </Grid>
       </div>
       <div className={classes.regularVault}>
-        <Typography variant="h2" component="h2" className={classes.regularVaultHeading}>Regular vaults</Typography>
-        <Typography variant="subtitle1" component="p" className={classes.regularVaultSub}>
+        <h2 className={classes.regularVaultHeading}>Regular vaults</h2>
+        <p className={classes.regularVaultSub}>
           Enjoy amazing interests every time you <br /> save and for as long as you save
-        </Typography>
+        </p>
         <Grid container justify="space-evenly" >
           <Grid container item lg={5} md={5} sm={6}>
             <div className={classes.regularVaultBox}>
@@ -135,11 +134,11 @@ const Plans = () => {
                 <img src={regularVault} className={classes.regularVaultIcon} alt="Tyro vault icon"/>
               </div>
               <div className={classes.regularVaultContent}>
-                <Typography className={classes.regularHeading} variant="h6" component="h6">Tyro Vault</Typography>
-                <Typography className={classes.regularSub} variant="body1" component="p">
+                <h6 className={classes.regularHeading}>Tyro Vault</h6>
+                <p className={classes.regularSub} >
                   Save for a period of two months. Earn up to 5% interest on your savings in the first
                   month and 1% in the subsequent month.
-                </Typography>
+                </p>
                 <Button className={classes.regularBtn} endIcon={<ArrowForwardIosIcon style={{ fontSize: 10 }}/>}>
                   Create Vault Now
                 </Button>
@@ -152,11 +151,11 @@ const Plans = () => {
                 <img src={reaperVault} className={classes.regularVaultIcon} alt="Tyro vault icon"/>
               </div>
               <div className={classes.regularVaultContent}>
-                <Typography className={classes.regularHeading} variant="h6" component="h6">Reaper Vault</Typography>
-                <Typography className={classes.regularSub} variant="body1" component="p">
+                <p className={classes.regularHeading}>Reaper Vault</p>
+                <p className={classes.regularSub} >
                   Save for a period of four months. Earn up to 10% interest on your savings in the first
                   month and 2% in the subsequent months.
-                </Typography>
+                </p>
                 <Button className={classes.regularBtn} endIcon={<ArrowForwardIosIcon style={{ fontSize: 10 }}/>}>
                   Create Vault Now
                 </Button>
@@ -169,11 +168,11 @@ const Plans = () => {
                 <img src={AceVault} className={classes.regularVaultIcon} alt="Tyro vault icon"/>
               </div>
               <div className={classes.regularVaultContent}>
-                <Typography className={classes.regularHeading} variant="h6" component="h6">Ace Vault</Typography>
-                <Typography className={classes.regularSub} variant="body1" component="p">
+                <p className={classes.regularHeading}>Ace Vault</p>
+                <p className={classes.regularSub} >
                   Save for a period of six months. Earn up to 15% interest on your savings in the first month
                   and 3% in the subsequent months.
-                </Typography>
+                </p>
                 <Button className={classes.regularBtn} endIcon={<ArrowForwardIosIcon style={{ fontSize: 10 }}/>}>
                   Create Vault Now
                 </Button>
@@ -186,11 +185,11 @@ const Plans = () => {
                 <img src={AceVault} className={classes.regularVaultIcon} alt="Tyro vault icon"/>
               </div>
               <div className={classes.regularVaultContent}>
-                <Typography className={classes.regularHeading} variant="h6" component="h6">Stellar Vault</Typography>
-                <Typography className={classes.regularSub} variant="body1" component="p">
+                <p className={classes.regularHeading}>Stellar Vault</p>
+                <p className={classes.regularSub} >
                   Save for a period of twelve months. Earn up to 20% interest on your savings in the first
                   month and 4% in the subsequent months.
-                </Typography>
+                </p>
                 <Button className={classes.regularBtn} endIcon={<ArrowForwardIosIcon style={{ fontSize: 10 }}/>}>
                   Create Vault Now
                 </Button>
@@ -202,30 +201,30 @@ const Plans = () => {
       <Grid container justify="space-evenly" alignItems="center" className={classes.quickVault}>
         <Grid container justify="center" item lg={5} md={5} sm={6}>
           <div className={classes.quickVaultContent}>
-            <Typography className={classes.quickVaultHeading} variant="h2" component="h2">Quick Vault</Typography>
+            <p className={classes.quickVaultHeading}>Quick Vault</p>
             <div className={classes.quickVaultDetail}>
               <div className={classes.quickVaultRect}>
                 <img className={classes.saveVaultBoxRectImg} src={checkIcon} alt="vault way check"/>
               </div>
-              <Typography className={classes.quickVaultBody} variant="body1" component="p">
+              <p className={classes.quickVaultBody}>
                 Stop yourself from spending without a budget and maintain a top level of financial discipline.
-              </Typography>
+              </p>
             </div>
             <div className={classes.quickVaultDetail}>
               <div className={classes.quickVaultRect}>
                 <img className={classes.saveVaultBoxRectImg} src={checkIcon} alt="vault way check"/>
               </div>
-              <Typography className={classes.quickVaultBody} variant="body1" component="p">
+              <p className={classes.quickVaultBody}>
                 Stop yourself from spending without a budget and maintain a top level of financial discipline.
-              </Typography>
+              </p>
             </div>
             <div className={classes.quickVaultDetail}>
               <div className={classes.quickVaultRect}>
                 <img className={classes.saveVaultBoxRectImg} src={checkIcon} alt="vault way check"/>
               </div>
-              <Typography className={classes.quickVaultBody} variant="body1" component="p">
+              <p className={classes.quickVaultBody}>
                 Stop yourself from spending without a budget and maintain a top level of financial discipline.
-              </Typography>
+              </p>
             </div>
             <div className={classes.vaultBtn} >
               <ButtonCta type="contained"
@@ -249,32 +248,32 @@ const Plans = () => {
         </Grid>
         <Grid container justify="center" item lg={5} md={5} sm={6}>
           <div className={classes.quickVaultContent}>
-            <Typography className={classes.quickVaultHeading} variant="h2" component="h2">Fund MyVault</Typography>
+            <p className={classes.quickVaultHeading} variant="h2" component="h2">Fund MyVault</p>
             <div className={classes.quickVaultDetail}>
               <div className={classes.quickVaultRect}>
                 <img className={classes.saveVaultBoxRectImg} src={checkIcon} alt="vault way check"/>
               </div>
-              <Typography className={classes.quickVaultBody} variant="body1" component="p">
+              <p className={classes.quickVaultBody}>
                 Create Vaults for big goals or projects that are highly important to you and set
                 targets for amounts and completion dates.
-              </Typography>
+              </p>
             </div>
             <div className={classes.quickVaultDetail}>
               <div className={classes.quickVaultRect}>
                 <img className={classes.saveVaultBoxRectImg} src={checkIcon} alt="vault way check"/>
               </div>
-              <Typography className={classes.quickVaultBody} variant="body1" component="p">
+              <p className={classes.quickVaultBody}>
                 Make it easy for your friends, family and loved ones to donate funds and join you
                 in saving up to realise the goal or project.
-              </Typography>
+              </p>
             </div>
             <div className={classes.quickVaultDetail}>
               <div className={classes.quickVaultRect}>
                 <img className={classes.saveVaultBoxRectImg} src={checkIcon} alt="vault way check"/>
               </div>
-              <Typography className={classes.quickVaultBody} variant="body1" component="p">
+              <p className={classes.quickVaultBody}>
                 Get your fund released to you without stress on your completion date once you make a request to withdraw.
-              </Typography>
+              </p>
             </div>
             <div className={classes.vaultBtn} >
               <ButtonCta type="contained"

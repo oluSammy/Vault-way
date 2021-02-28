@@ -2,7 +2,6 @@ import React, { useEffect} from 'react'
 import Message from '../../Components/Messgae/Message.component';
 import Navbar from '../../Components/Navbar/Navbar.component';
 import faqStyles from './Faq.styles';
-import Typography from '@material-ui/core/Typography';
 import NavMargin from '../../Components/NavMargin/NavMargin.component';
 import SearchIcon from '@material-ui/icons/Search';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -47,7 +46,7 @@ const Faq = () => {
       <NavMargin />
       <Message />
       <div className={classes.faqHeader}>
-        <Typography className={classes.faqHeading} variant="h1" component="h1">Frequently asked < br /> questions</Typography>
+        <h1 className={classes.faqHeading} >Frequently asked < br /> questions</h1>
         <form className={classes.faqForm} >
           <input  className={classes.faqSearch}  type="search" name="search" placeholder="Search" />
           <button className={classes.faqSubmit} type="submit">

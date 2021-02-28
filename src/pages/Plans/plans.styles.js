@@ -151,6 +151,7 @@ const plansStyles = makeStyles((theme) => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    marginTop: '50px',
 
     '@media (max-width: 670px)': {
       height: '27px',
@@ -161,6 +162,8 @@ const plansStyles = makeStyles((theme) => ({
 
   saveVaultBoxContent: {
     width: '60%',
+    marginTop: '2px',
+
 
     '@media (max-width: 1048px)': {
       width: '70%',
@@ -238,6 +241,7 @@ const plansStyles = makeStyles((theme) => ({
 
   regularVaultIconBox: {
     marginRight: '20px',
+    marginTop: '30px',
 
     '@media (max-width: 960px)': {
       marginRight: '10px',
@@ -344,6 +348,7 @@ const plansStyles = makeStyles((theme) => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    marginTop: '20px',
 
     '@media (max-width: 517px)': {
       height: '34px',

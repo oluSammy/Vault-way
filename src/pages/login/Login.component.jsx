@@ -2,7 +2,6 @@ import React from 'react'
 import vaultWayIcon from '../../assets/icons/vault-way-white-icon.png';
 import Grid from '@material-ui/core/Grid';
 import pattern from '../../assets/icons/Pattern.png'
-import Typography from '@material-ui/core/Typography';
 import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
 // import VisibilityIcon from '@material-ui/icons/Visibility';
 import InputAdornment from '@material-ui/core/InputAdornment';
@@ -33,23 +32,23 @@ const Signup = () => {
           <img src={pattern} className={classes.pattern} alt=""/>
           <Grid container item lg={5} md={5} sm={6} direction="column" >
             <div className={classes.signUpTxtBox}>
-              <Typography className={classes.signupHeading} variant="h1" component="h1"
+              <h1 className={classes.signupHeading}
                 style={{ marginBottom: matchesXS ?  '2px' : '' }}
-              >Welcome Back</Typography>
-              <Typography className={classes.signupTxt} variant="subtitle1" component="p"
+              >Welcome Back</h1>
+              <p className={classes.signupTxt}
                 style={{ marginBottom: matchesXS ?  '2px' : '' }}
               >
               Glad to have you back, keep making money moves
-              </Typography>
+              </p>
             </div>
           </Grid>
           <Grid container item lg={5} md={5} sm={6}>
             <div className={classes.formContainer}>
               <form >
-                <Typography className={classes.formHeading} variant="h3" component="h3">Sign in to continue</Typography>
-                <Typography className={classes.formSubHeading} variant="subtitle2" component="p">
+                <h3 className={classes.formHeading}>Sign in to continue</h3>
+                <p className={classes.formSubHeading}>
                   The Vault’s high level security protects you
-                </Typography>
+                </p>
                 <FormControl className={classes.formInput}>
                   <label className={classes.label} htmlFor="email">Email Address</label>
                   <Input
@@ -74,17 +73,16 @@ const Signup = () => {
                     style={{marginBottom: matchesXS ? '30px' : '14px'}}
                   />
                 </FormControl>
-                <Typography className={classes.formTerms} variant="subtitle2" component="p">
+                <p className={classes.formTerms} >
                   <Link className={classes.formLink} to="/">Forgot Password</Link>
-                </Typography>
+                </p>
                 <Button className={classes.formBtn} style={{blendMode: 'normal'}} variant="contained" color="primary">Sign In</Button>
-                <Typography style={{ marginTop: '7px', opacity: .9991, fontWeight: '600' }} className={classes.help}
-                  variant="subtitle2" component="p">New User?
+                <p style={{ marginTop: '7px', opacity: .9991, fontWeight: '600' }} className={classes.help}>New User?
                   <Link className={classes.signinLink} to="/signup"> Create an account</Link>
-                </Typography>
-                <Typography className={classes.help} variant="subtitle2" component="p">Need Help?
+                </p>
+                <p className={classes.help} >Need Help?
                   <Link className={classes.helpLink} to="/"> Contact support</Link>
-                </Typography>
+                </p>
               </form>
             </div>
           </Grid>

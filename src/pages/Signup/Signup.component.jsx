@@ -4,7 +4,6 @@ import vaultWayIcon from '../../assets/icons/vault-way-white-icon.png';
 import ceoSignature from '../../assets/icons/ceo-signature.png';
 import Grid from '@material-ui/core/Grid';
 import pattern from '../../assets/icons/Pattern.png'
-import Typography from '@material-ui/core/Typography';
 import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import InputAdornment from '@material-ui/core/InputAdornment';
@@ -34,26 +33,26 @@ const Signup = () => {
           <img src={pattern} className={classes.pattern} alt=""/>
           <Grid container item lg={5} md={5} sm={6} direction="column" >
             <div className={classes.signUpTxtBox}>
-              <Typography className={classes.signupHeading} variant="h1" component="h1">Welcome
-                {matchesXS ? '' : <br />}  onboard</Typography>
-              <Typography className={classes.signupTxt} variant="subtitle1" component="p">
+              <h1 className={classes.signupHeading}>Welcome
+                {matchesXS ? '' : <br />}  onboard</h1>
+              <p className={classes.signupTxt}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
                 in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                 cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-              </Typography>
+              </p>
               <img className={classes.signupImg} src={ceoSignature} alt="ceo signature"/>
-              <Typography className={classes.signupCeo} variant="subtitle1" component="p">CEO, Vault Way</Typography>
+              <p className={classes.signupCeo}>CEO, Vault Way</p>
             </div>
           </Grid>
           <Grid container item lg={5} md={5} sm={6}>
             <div className={classes.formContainer}>
               <form >
-                <Typography className={classes.formHeading} variant="h3" component="h3">Create an account</Typography>
-                <Typography className={classes.formSubHeading} variant="subtitle2" component="p">
+                <h3 className={classes.formHeading}>Create an account</h3>
+                <p className={classes.formSubHeading}>
                   Sign up to start living the Vault Way life
-                </Typography>
+                </p>
                 <FormControl className={classes.formInput}>
                   <label className={classes.label} htmlFor="name">Full Name</label>
                   <Input
@@ -103,17 +102,17 @@ const Signup = () => {
                   />
                 </FormControl>
 
-                <Typography className={classes.formTerms} variant="subtitle2" component="p">
+                <p className={classes.formTerms}>
                   By creating an account, you agree to our <br />
                   <Link className={classes.formLink} to="/">Terms and conditions</Link>
-                </Typography>
+                </p>
                 <Button className={classes.formBtn} style={{blendMode: 'normal'}} variant="contained" color="primary">Get Started</Button>
-                <Typography style={{ marginTop: '7px' }} className={classes.help} variant="subtitle2" component="p">Already have an account?
+                <p style={{ marginTop: '7px' }} className={classes.help}>Already have an account?
                   <Link className={classes.signinLink} to="/login"> Sign in</Link>
-                </Typography>
-                <Typography className={classes.help} variant="subtitle2" component="p">Need Help?
+                </p>
+                <p className={classes.help}>Need Help?
                   <Link className={classes.helpLink} to="/"> Contact support</Link>
-                </Typography>
+                </p>
               </form>
             </div>
           </Grid>
