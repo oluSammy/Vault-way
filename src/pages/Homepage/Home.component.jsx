@@ -57,13 +57,13 @@ const Home = () => {
             <Grid className={classes.hero} container justify="center" alignItems="center">
                 <Grid container item lg={5} md={5} sm={6} xs={9}  justify={matchesXS ? 'flex-start' : 'center'} >
                     <div className={classes.heroText}>
-                        <Typography className={classes.heading} variant="h1" component="h1">
+                        <h1 className={classes.heading}>
                             Save your way <br/> into the <span className={classes.headingSpan}>future</span>
-                        </Typography>
-                        <Typography className={classes.subHeading} variant="subtitle1">
+                        </h1>
+                        <p className={classes.subHeading}>
                             Enjoy amazing interest rates and achieve more <br/> financial freedom by saving through the simplest, <br/>
                             smartest amd most comfortable way.
-                        </Typography>
+                        </p>
                         <ButtonCta  type="contained" text="Start Saving Now" bgColor="primary"
                             shadow={true}
                             paddingSide={matchesXS ? '22px' : '25px'}

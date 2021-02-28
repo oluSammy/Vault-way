@@ -16,16 +16,16 @@ const homeStyles = makeStyles(() => ({
 
   heroText: {
     '@media (max-width: 600px)': {
-      marginTop: '2.5rem',
+      marginTop: '30px',
     },
   },
 
   heading: {
     color: '#121E31',
     fontWeight: 800,
-    fontSize: '2.8rem',
-    lineHeight: '3.5rem',
-    letterSpacing: '.1rem',
+    fontSize: '40px',
+    lineHeight: '60px',
+    letterSpacing: '1px',
     marginBottom: '20px',
 
     '@media (max-width: 800px)': {
