@@ -1,8 +1,8 @@
 import { makeStyles } from '@material-ui/core';
-import bg from '../../../assets/icons/stories-bg.png';
-import hero from '../../../assets/img/BG.png';
+import bg from '../../assets/icons/stories-bg.png';
+import hero from '../../assets/img/BG.png';
 
-const homeStyles = makeStyles((theme) => ({
+const homeStyles = makeStyles(() => ({
   root: {
     position: 'relative',
   },
@@ -16,16 +16,16 @@ const homeStyles = makeStyles((theme) => ({
 
   heroText: {
     '@media (max-width: 600px)': {
-      marginTop: '30px',
+      marginTop: '2.5rem',
     },
   },
 
   heading: {
     color: '#121E31',
     fontWeight: 800,
-    fontSize: '40px',
-    lineHeight: '60px',
-    letterSpacing: '1px',
+    fontSize: '2.8rem',
+    lineHeight: '3.5rem',
+    letterSpacing: '.1rem',
     marginBottom: '20px',
 
     '@media (max-width: 800px)': {
@@ -42,7 +42,7 @@ const homeStyles = makeStyles((theme) => ({
   },
 
    headingSpan: {
-    color: theme.palette.primary.main,
+    color: '#00A343',
   },
   subHeading: {
     fontSize: '15px',
@@ -253,7 +253,7 @@ const homeStyles = makeStyles((theme) => ({
     },
   },
   secFooterSpan: {
-    color: theme.palette.primary.main,
+    color: '#00A343',
   },
   plan: {
     background: 'linear-gradient(250.05deg, #F5F7FA 1.71%, #F4FFF8 95.17%)',
@@ -416,7 +416,7 @@ const homeStyles = makeStyles((theme) => ({
     width: '60%',
   },
   number: {
-    backgroundColor: theme.palette.primary.main,
+    backgroundColor: '#00A343',
     borderRadius: '50%',
     display: 'flex',
     alignItems: 'center',

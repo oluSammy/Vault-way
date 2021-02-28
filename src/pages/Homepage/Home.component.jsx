@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import homeStyles from './styles/Home.styles';
+import homeStyles from './Home.styles';
 import Navbar from '../../Components/Navbar/Navbar.component';
 import Message from '../../Components/Messgae/Message.component';
 import NavMargin from '../../Components/NavMargin/NavMargin.component';
