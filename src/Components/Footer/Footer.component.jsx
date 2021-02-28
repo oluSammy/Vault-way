@@ -95,7 +95,7 @@ const Footer = () => {
               </a>
             </div>
             <p className={clsx(classes.extraText, classes.copyText)} >
-              Copyright &copy; {year.getFullYear()}, All Right Reserved
+              Copyright &copy; {year.getFullYear()}, All Rights Reserved
             </p>
           </div>
         </div>
