@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import vaultWayIcon from '../../assets/icons/vault-way-white-icon.png';
 import Grid from '@material-ui/core/Grid';
 import pattern from '../../assets/icons/Pattern.png'
@@ -17,6 +17,10 @@ import signupStyles from './../Signup/Signup.styles';
 
 
 const Signup = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
+
   const classes = signupStyles();
   const theme = useTheme();
   const matchesXS = useMediaQuery(theme.breakpoints.down("xs"));

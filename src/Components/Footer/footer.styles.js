@@ -106,7 +106,7 @@ const footerStyles = makeStyles((theme) => ({
       lineHeight: '15px',
     },
 
-    '@media (max-width: 370px)': {
+    '@media (max-width: 378px)': {
       fontSize: '10px',
       lineHeight: '11px',
     },
@@ -138,7 +138,7 @@ const footerStyles = makeStyles((theme) => ({
       lineHeight: '10px',
     },
 
-    '@media (max-width: 370px)': {
+    '@media (max-width: 378px)': {
       fontSize: '8px',
       lineHeight: '11px',
     },

@@ -21,8 +21,8 @@ const navbarStyles = makeStyles((theme) => ({
       width: '65%',
     },
 
-    '@media (max-width: 371px)': {
-      width: '75%',
+    '@media (max-width: 376px)': {
+      width: '70%',
     },
 
     '@media (max-width: 333px)': {

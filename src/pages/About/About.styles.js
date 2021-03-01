@@ -149,6 +149,7 @@ const aboutStyles = makeStyles((theme) => ({
 
   aboutSectionImg: {
     width: '80%',
+    alignSelf: 'flex-start',
   },
 
   redefine: {
@@ -159,20 +160,20 @@ const aboutStyles = makeStyles((theme) => ({
     position: 'relative',
 
     '@media (max-width: 1289px)': {
-      padding: '5px 100px'
+      padding: '5px 100px',
     },
 
     '@media (max-width: 1160px)': {
-      padding: '5px 70px'
+      padding: '5px 70px',
     },
 
     '@media (max-width: 1071px)': {
-      padding: '5px 30px'
+      padding: '5px 30px',
     },
 
     '@media (max-width: 876px)': {
-      minHeight: '5y5vh',
-      padding: '15px 10px'
+      minHeight: '55vh',
+      padding: '15px 10px',
     },
   },
 
@@ -202,11 +203,11 @@ const aboutStyles = makeStyles((theme) => ({
   },
 
   designBottom: {
-    width: '20%'
+    width: '20%',
   },
 
   designTop: {
-    height: '54%'
+    height: '54%',
   },
 
   redefineHeading: {
@@ -234,7 +235,7 @@ const aboutStyles = makeStyles((theme) => ({
 
     '@media (max-width: 600px)': {
       fontSize: '22px',
-      textAlign: 'center'
+      textAlign: 'center',
     },
   },
 
@@ -255,11 +256,11 @@ const aboutStyles = makeStyles((theme) => ({
     '@media (max-width: 600px)': {
       fontSize: '12px',
       textAlign: 'justify',
-      marginTop: '-60px'
+      marginTop: '-60px',
     },
 
     '@media (max-width: 355px)': {
-      marginTop: '-20px'
+      marginTop: '-20px',
     },
   },
 

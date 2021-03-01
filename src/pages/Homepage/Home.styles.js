@@ -31,7 +31,6 @@ const homeStyles = makeStyles(() => ({
     marginBottom: '20px',
     fontFamily: 'Montserrat',
 
-
     '@media (max-width: 800px)': {
       fontSize: '30px',
       lineHeight: '40px',
@@ -45,7 +44,7 @@ const homeStyles = makeStyles(() => ({
     },
   },
 
-   headingSpan: {
+  headingSpan: {
     color: '#00A343',
   },
   subHeading: {
@@ -87,11 +86,11 @@ const homeStyles = makeStyles(() => ({
     '@media (max-width: 774px)': {
       fontSize: '25px',
       lineHeight: '25px',
-      marginTop: '-8px'
+      marginTop: '-8px',
     },
     '@media (max-width: 483px)': {
       fontSize: '20px',
-      marginTop: '-30px'
+      marginTop: '-30px',
     },
 
     '@media (max-width: 412px)': {
@@ -177,7 +176,7 @@ const homeStyles = makeStyles(() => ({
     fontWeight: 700,
     fontSize: '20px',
     marginBottom: '20px',
-    marginTop: '-2px'
+    marginTop: '-2px',
   },
   securitySubTitle: {
     fontWeight: 400,
@@ -287,6 +286,7 @@ const homeStyles = makeStyles(() => ({
   plansImg: {
     width: '70%',
     marginLeft: 'auto',
+    alignSelf: 'flex-start',
 
     '@media (max-width: 960px)': {
       width: '40%',
@@ -346,7 +346,7 @@ const homeStyles = makeStyles(() => ({
     fontWeight: '800',
     fontSize: '20px',
     marginBottom: '10px',
-    marginTop: '-3px'
+    marginTop: '-3px',
   },
   planBoxSub: {
     fontWeight: '400',
@@ -447,7 +447,7 @@ const homeStyles = makeStyles(() => ({
     color: '#6E80A3',
     fontSize: '18px',
     marginBottom: '10px',
-    marginTop: '-3px'
+    marginTop: '-3px',
   },
   stepSubTitle: {
     fontWeight: '500',
