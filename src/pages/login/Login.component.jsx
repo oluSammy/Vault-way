@@ -29,7 +29,7 @@ const Signup = () => {
       <div className={classes.root}>
         <div className={classes.iconBox}>
           <Link to="/">
-              <img src={vaultWayIcon} className={classes.vaultWayIcon} alt="vault way icon"/>
+              <img src={vaultWayIcon} className={classes.vaultWayIcon} alt="vaultway icon"/>
           </Link>
         </div>
         <Grid container justify="space-evenly" alignItems="center" className={classes.signUpContent}>

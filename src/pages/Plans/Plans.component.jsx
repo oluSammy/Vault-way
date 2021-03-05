@@ -65,12 +65,12 @@ const Plans = () => {
           </div>
         </Grid>
         <Grid className={classes.heroImg} container item justify="space-around" lg={5} md={5} sm={5} >
-          <img src={vaultImg} className={classes.vaultImg} alt="vault way save pic"/>
+          <img src={vaultImg} className={classes.vaultImg} alt="vaultway save pic"/>
         </Grid>
       </Grid>
       <div className={classes.vaultwaySection}>
         <h2 className={classes.vaultwaySectionHeading} >
-          The best way to save <br /> is the vault way
+          The best way to save <br /> is the vaultway
         </h2>
         <Grid container justify="center" alignItems="center" direction={matchesXS ? "column-reverse" : "row"}>
           <Grid item container justify="center"  lg={5} md={5} sm={6}>
@@ -79,7 +79,7 @@ const Plans = () => {
           <Grid item container justify="center"  lg={5} md={5} sm={6}>
             <div className={classes.saveVaultBox}>
               <div className={classes.saveVaultBoxRect}>
-                <img className={classes.saveVaultBoxRectImg} src={checkIcon} alt="vault way check"/>
+                <img className={classes.saveVaultBoxRectImg} src={checkIcon} alt="vaultway check"/>
               </div>
               <div className={classes.saveVaultBoxContent}>
                 <h6 className={classes.saveVaultHeading} >
@@ -93,7 +93,7 @@ const Plans = () => {
             </div>
             <div className={classes.saveVaultBox}>
               <div className={classes.saveVaultBoxRect}>
-                <img className={classes.saveVaultBoxRectImg} src={checkIcon} alt="vault way check"/>
+                <img className={classes.saveVaultBoxRectImg} src={checkIcon} alt="vaultway check"/>
               </div>
               <div className={classes.saveVaultBoxContent}>
                 <h6 className={classes.saveVaultHeading}>
@@ -107,7 +107,7 @@ const Plans = () => {
             </div>
             <div className={classes.saveVaultBox}>
               <div className={classes.saveVaultBoxRect}>
-                <img className={classes.saveVaultBoxRectImg} src={checkIcon} alt="vault way check"/>
+                <img className={classes.saveVaultBoxRectImg} src={checkIcon} alt="vaultway check"/>
               </div>
               <div className={classes.saveVaultBoxContent}>
                 <h6 className={classes.saveVaultHeading}>
@@ -122,8 +122,8 @@ const Plans = () => {
           </Grid>
         </Grid>
       </div>
-      <div className={classes.regularVault}>
-        <h2 className={classes.regularVaultHeading}>Regular vaults</h2>
+      <div id="regular" className={classes.regularVault}>
+        <h2 className={classes.regularVaultHeading}>Regular Vaults</h2>
         <p className={classes.regularVaultSub}>
           Enjoy amazing interests every time you <br /> save and for as long as you save
         </p>
@@ -198,13 +198,13 @@ const Plans = () => {
           </Grid>
         </Grid>
       </div>
-      <Grid container justify="space-evenly" alignItems="center" className={classes.quickVault}>
+      <Grid  id="quick" container justify="space-evenly" alignItems="center" className={classes.quickVault}>
         <Grid container justify="center" item lg={5} md={5} sm={6}>
           <div className={classes.quickVaultContent}>
             <p className={classes.quickVaultHeading}>Quick Vault</p>
             <div className={classes.quickVaultDetail}>
               <div className={classes.quickVaultRect}>
-                <img className={classes.saveVaultBoxRectImg} src={checkIcon} alt="vault way check"/>
+                <img className={classes.saveVaultBoxRectImg} src={checkIcon} alt="vaultway check"/>
               </div>
               <p className={classes.quickVaultBody}>
                 Stop yourself from spending without a budget and maintain a top level of financial discipline.
@@ -212,18 +212,18 @@ const Plans = () => {
             </div>
             <div className={classes.quickVaultDetail}>
               <div className={classes.quickVaultRect}>
-                <img className={classes.saveVaultBoxRectImg} src={checkIcon} alt="vault way check"/>
+                <img className={classes.saveVaultBoxRectImg} src={checkIcon} alt="vaultway check"/>
               </div>
               <p className={classes.quickVaultBody}>
-                Stop yourself from spending without a budget and maintain a top level of financial discipline.
+                Lock your funds away for short periods of time - from as brief as 48 hours to as extended as 30 days.
               </p>
             </div>
             <div className={classes.quickVaultDetail}>
               <div className={classes.quickVaultRect}>
-                <img className={classes.saveVaultBoxRectImg} src={checkIcon} alt="vault way check"/>
+                <img className={classes.saveVaultBoxRectImg} src={checkIcon} alt="vaultway check"/>
               </div>
               <p className={classes.quickVaultBody}>
-                Stop yourself from spending without a budget and maintain a top level of financial discipline.
+                Gain access to them only when your set due date matures and get paid immediately you make a withdrawal.
               </p>
             </div>
             <div className={classes.vaultBtn} >
@@ -246,12 +246,12 @@ const Plans = () => {
         <Grid container justify="center" item lg={5} md={5} sm={6}>
             <div className={classes.vaultMainRect}></div>
         </Grid>
-        <Grid container justify="center" item lg={5} md={5} sm={6}>
+        <Grid  id="fundMyVault" container justify="center" item lg={5} md={5} sm={6}>
           <div className={classes.quickVaultContent}>
-            <p className={classes.quickVaultHeading} variant="h2" component="h2">Fund MyVault</p>
+            <h6 className={classes.quickVaultHeading} variant="h2" component="h2">FundMyVault</h6>
             <div className={classes.quickVaultDetail}>
               <div className={classes.quickVaultRect}>
-                <img className={classes.saveVaultBoxRectImg} src={checkIcon} alt="vault way check"/>
+                <img className={classes.saveVaultBoxRectImg} src={checkIcon} alt="vaultway check"/>
               </div>
               <p className={classes.quickVaultBody}>
                 Create Vaults for big goals or projects that are highly important to you and set
@@ -260,7 +260,7 @@ const Plans = () => {
             </div>
             <div className={classes.quickVaultDetail}>
               <div className={classes.quickVaultRect}>
-                <img className={classes.saveVaultBoxRectImg} src={checkIcon} alt="vault way check"/>
+                <img className={classes.saveVaultBoxRectImg} src={checkIcon} alt="vaultway check"/>
               </div>
               <p className={classes.quickVaultBody}>
                 Make it easy for your friends, family and loved ones to donate funds and join you
@@ -269,7 +269,7 @@ const Plans = () => {
             </div>
             <div className={classes.quickVaultDetail}>
               <div className={classes.quickVaultRect}>
-                <img className={classes.saveVaultBoxRectImg} src={checkIcon} alt="vault way check"/>
+                <img className={classes.saveVaultBoxRectImg} src={checkIcon} alt="vaultway check"/>
               </div>
               <p className={classes.quickVaultBody}>
                 Get your fund released to you without stress on your completion date once you make a request to withdraw.

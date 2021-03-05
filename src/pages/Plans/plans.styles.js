@@ -46,10 +46,11 @@ const plansStyles = makeStyles((theme) => ({
   },
   heroHeading: {
     fontWeight: 800,
-    fontSize: '38px',
+    fontSize: '40px',
     color: '#121E31',
     marginBottom: '30px',
     lineHeight: '50px',
+    textTransform: 'capitalize',
 
     '@media (max-width: 797px)': {
       fontSize: '25px',
@@ -59,9 +60,10 @@ const plansStyles = makeStyles((theme) => ({
   },
   heroSubHeading: {
     fontWeight: 500,
-    fontSize: '16px',
+    fontSize: '18px',
     color: '#6E80A3',
     marginBottom: '25px',
+    lineHeight: '26px',
 
     '@media (max-width: 756px)': {
       fontSize: '13px',
@@ -177,7 +179,7 @@ const plansStyles = makeStyles((theme) => ({
 
   saveVaultHeading: {
     fontWeight: 700,
-    fontSize: '20px',
+    fontSize: '22px',
     lineHeight: '24px',
     marginBottom: '7px',
     color: '#121E31',
@@ -190,11 +192,11 @@ const plansStyles = makeStyles((theme) => ({
 
   saveVaultSub: {
     fontWeight: 500,
-    fontSize: '13px',
+    fontSize: '15px',
     color: '#6E80A3',
 
     '@media (max-width: 670px)': {
-      fontSize: '11px',
+      fontSize: '12px',
     },
   },
 

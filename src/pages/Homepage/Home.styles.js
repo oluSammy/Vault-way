@@ -445,14 +445,14 @@ const homeStyles = makeStyles(() => ({
   stepTitle: {
     fontWeight: '800',
     color: '#6E80A3',
-    fontSize: '18px',
+    fontSize: '20px',
     marginBottom: '10px',
     marginTop: '-3px',
   },
   stepSubTitle: {
     fontWeight: '500',
     color: '#6E80A3',
-    fontSize: '10px',
+    fontSize: '14px',
     lineHeight: '20px',
   },
   smartImg: {

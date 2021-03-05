@@ -79,7 +79,7 @@ const About = () => {
           </div>
         </Grid>
         <Grid justify="space-evenly" container item lg={5} md={5} sm={6} xs={4}>
-          <img src={eagleCoin} className={classes.aboutSectionImg} alt="vault way financial freedom"/>
+          <img src={eagleCoin} className={classes.aboutSectionImg} alt="vaultway financial freedom"/>
         </Grid>
       </Grid>
       <Grid container className={classes.aboutSection} justify="space-evenly" alignItems="center"
@@ -144,7 +144,7 @@ const About = () => {
           <Grid item lg={3} md={3} sm={3}>
             <div className={classes.companyBox}>
               <div  className={classes.companyIconBox}>
-                <img className={classes.companyIcon} src={visionIcon} alt="vault way vision"/>
+                <img className={classes.companyIcon} src={visionIcon} alt="vaultway vision"/>
               </div>
               <div className={classes.companyContent}>
                 <h4 className={classes.companyHeading} >
@@ -160,7 +160,7 @@ const About = () => {
           <Grid item lg={3} md={3} sm={3}>
             <div className={classes.companyBox}>
                 <div className={classes.companyIconBox}>
-                  <img className={classes.companyIcon} src={missionIcon} alt="vault way vision"/>
+                  <img className={classes.companyIcon} src={missionIcon} alt="vaultway vision"/>
                 </div>
                 <div className={classes.companyContent}>
                   <h4 className={classes.companyHeading}>
@@ -176,7 +176,7 @@ const About = () => {
           <Grid item lg={3} md={3} sm={3}>
             <div className={classes.companyBox}>
                 <div className={classes.companyIconBox}>
-                  <img className={classes.companyIcon} src={valuesIcon} alt="vault way vision"/>
+                  <img className={classes.companyIcon} src={valuesIcon} alt="vaultway vision"/>
                 </div>
                 <div className={classes.companyContent}>
                   <h4 className={classes.companyHeading}>
@@ -217,7 +217,7 @@ const About = () => {
               <CardActionArea>
                 <CardMedia
                   component="img"
-                  alt="vault way image"
+                  alt="vaultway image"
                   image={cardImg1}
                   height="170"
                   title="High return on investments is what you should expect"
@@ -247,7 +247,7 @@ const About = () => {
                 <CardActionArea>
                   <CardMedia
                     component="img"
-                    alt="vault way image"
+                    alt="vaultway image"
                     image={cardImg2}
                     height="170"
                     title="4 Things parents learned from their finance in 2020"
@@ -277,7 +277,7 @@ const About = () => {
                 <CardActionArea>
                   <CardMedia
                     component="img"
-                    alt="vault way image"
+                    alt="vaultway image"
                     image={cardImg3}
                     height="170"
                     title="Vaultway listed as the top most influential in Nigeria"

@@ -5,6 +5,7 @@ import Plans from './pages/Plans/Plans.component';
 import Login from './pages/login/Login.component';
 import Signup from './pages/Signup/Signup.component';
 import Faq from './pages/Faq/Faq.components';
+import Dashboard from './pages/Dashboard/Dashboard.component';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Route exact path="/login" component={Login} />
       <Route exact path="/signup" component={Signup} />
       <Route exact path="/Faq" component={Faq} />
+      <Route path="/dashboard" component={Dashboard} />
     </Switch>
   );
 }

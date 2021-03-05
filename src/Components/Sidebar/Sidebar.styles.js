@@ -52,6 +52,9 @@ const sidebarStyles = makeStyles((theme) => ({
   activeNavLink: {
     backgroundColor: theme.palette.primary.light,
     color: theme.palette.primary.main
+  },
+  endIcon: {
+    marginLeft: 'auto'
   }
 }));
 

@@ -31,7 +31,7 @@ const Signup = () => {
       <div className={classes.root}>
         <div className={classes.iconBox}>
           <Link to="/">
-            <img src={vaultWayIcon} className={classes.vaultWayIcon} alt="vault way icon"/>
+            <img src={vaultWayIcon} className={classes.vaultWayIcon} alt="vaultway icon"/>
           </Link>
         </div>
         <Grid container justify="space-evenly" alignItems="center" className={classes.signUpContent}>
@@ -48,7 +48,7 @@ const Signup = () => {
                 cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
               </p>
               <img className={classes.signupImg} src={ceoSignature} alt="ceo signature"/>
-              <p className={classes.signupCeo}>CEO, Vault Way</p>
+              <p className={classes.signupCeo}>CEO, VaultWay</p>
             </div>
           </Grid>
           <Grid container item lg={5} md={5} sm={6}>
@@ -56,7 +56,7 @@ const Signup = () => {
               <form >
                 <h3 className={classes.formHeading}>Create an account</h3>
                 <p className={classes.formSubHeading}>
-                  Sign up to start living the Vault Way life
+                  Sign up to start living the VaultWay life
                 </p>
                 <FormControl className={classes.formInput}>
                   <label className={classes.label} htmlFor="name">Full Name</label>

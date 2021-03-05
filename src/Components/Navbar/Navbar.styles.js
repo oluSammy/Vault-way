@@ -78,6 +78,8 @@ const navbarStyles = makeStyles((theme) => ({
   },
   navLinks: {
     textDecoration: 'none',
+    display: 'flex',
+    alignItems: 'center',
 
     '@media (max-width: 815px)': {
       display: 'none',
@@ -92,6 +94,7 @@ const navbarStyles = makeStyles((theme) => ({
     lineHeight: '30px',
     color: '#6E80A3',
     transition: 'all .2s',
+    cursor: 'pointer',
 
     '&:hover': {
       fontWeight: 800,
@@ -118,6 +121,31 @@ const navbarStyles = makeStyles((theme) => ({
       display: 'none',
     },
   },
+  navLinkWithIcon: {
+    display: 'flex',
+    alignItems: 'center'
+  },
+  navDropDown: {
+    marginTop: '40px',
+  },
+  rotateEndIcon: {
+    transform: 'rotate(180deg)',
+    transition: 'all .5s ease-in-out'
+  },
+  menuItem: {
+    display: 'flex',
+    textDecoration: 'none',
+    alignItems: 'center'
+  },
+  dropIcon: {
+    fontSize: '15px',
+    marginRight: '10px'
+  },
+  menuItemLink: {
+    color: '#6E80A3',
+    fontWeight: '500',
+    fontSize: '14px'
+  }
 }));
 
 export default navbarStyles;

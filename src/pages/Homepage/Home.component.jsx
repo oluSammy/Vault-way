@@ -82,43 +82,43 @@ const Home = () => {
                 <div className={classes.securityContainer}>
                     <div className={classes.securityBox}>
                         <div className={classes.secIconBox}>
-                            <img src={secureIcon} className={classes.securityIcon} alt="vault way secure"/>
+                            <img src={secureIcon} className={classes.securityIcon} alt="vaultway secure"/>
                         </div>
                         <div className={classes.securityContent}>
                             <h4 className={classes.securityTitle} >
                                 256 bits SSl <br/> security
                             </h4>
                             <p className={classes.securitySubTitle} >
-                                vault Way offers you state-of-the-art internet security technology, through the use of
+                                vaultWay offers you state-of-the-art internet security technology, through the use of
                                 256 bits SSl security encryption in order to safeguard your information from duplicity.
                             </p>
                         </div>
                     </div>
                     <div className={classes.securityBox}>
                         <div className={classes.secIconBox}>
-                            <img src={authIcon} className={classes.securityIcon} alt="vault way authentication"/>
+                            <img src={authIcon} className={classes.securityIcon} alt="vaultway authentication"/>
                         </div>
                         <div className={classes.securityContent}>
                             <h4 className={classes.securityTitle} >
                                 Two-factor <br/> authentication
                             </h4>
                             <p className={classes.securitySubTitle}>
-                                Vault way savings account are protected by Two-factor Authentication (2FA) by default,
+                                Vaultway savings account are protected by Two-factor Authentication (2FA) by default,
                                 to guaranty the safety of your account from unauthorized access.
                             </p>
                         </div>
                     </div>
                 </div>
-                <h4 className={classes.vaultWayTxt} >With vault way</h4>
+                <h4 className={classes.vaultWayTxt} >With vaultway</h4>
                 <div className={classes.securityFooter}>
                     <div className={classes.secFooterIconBox}>
-                        <img src={steerIcon} className={classes.secFooterIcon} alt="vault way icon"/>
+                        <img src={steerIcon} className={classes.secFooterIcon} alt="vaultway icon"/>
                     </div>
                     <h4 className={classes.secFooterTxt} >
                         Meet your financial goals... <span className={classes.secFooterSpan}>and then, beat 'em!</span>
                     </h4>
                     <div className={classes.secFooterIconBox}>
-                        <img src={steerIcon} className={classes.secFooterIcon} alt="vault way icon"/>
+                        <img src={steerIcon} className={classes.secFooterIcon} alt="vaultway icon"/>
                     </div>
                 </div>
             </div>
@@ -128,13 +128,13 @@ const Home = () => {
                 </h2>
                 <Grid container justify="space-evenly" alignItems="center" className={classes.planContainer} >
                     <Grid container justify="space-around"  item md={5}>
-                        <img src={vaultImg} className={classes.plansImg} alt="vault way vault box"/>
+                        <img src={vaultImg} className={classes.plansImg} alt="vaultway vault box"/>
                     </Grid>
                     <Grid container  direction="column" item md={5}>
                         <div className={classes.planBox}>
                             <div className={`${classes.plansIconBox} ${classes.regularIconBox}`}>
                                 <img src={regularVaultImg} className={`${classes.plansIcon} ${classes.regularIcon}`}
-                                alt="vault way regular plan icon"/>
+                                alt="vaultway regular plan icon"/>
                             </div>
                             <div className={classes.planContent}>
                                 <h6 className={classes.planBoxHeading}>Regular Vaults</h6>
@@ -147,7 +147,7 @@ const Home = () => {
                         <div className={classes.planBox}>
                             <div className={`${classes.plansIconBox} ${classes.quickIconBox}`}>
                                 <img src={quickVaultImg} className={`${classes.plansIcon} ${classes.quickIcon}`}
-                                alt="vault way quick plan icon"/>
+                                alt="vaultway quick plan icon"/>
                             </div>
                             <div className={classes.planContent}>
                                 <h6 className={classes.planBoxHeading} >Quick Vault</h6>
@@ -160,10 +160,10 @@ const Home = () => {
                         <div className={classes.planBox}>
                             <div className={`${classes.plansIconBox} ${classes.fundIconBox}`}>
                                 <img src={fundVaultImg} className={`${classes.plansIcon} ${classes.fundIcon}`}
-                                alt="vault way fund plan icon"/>
+                                alt="vaultway fund plan icon"/>
                             </div>
                             <div className={classes.planContent}>
-                                <h6 className={classes.planBoxHeading} >Fund My Vault</h6>
+                                <h6 className={classes.planBoxHeading} >FundMyVault</h6>
                                 <p className={classes.planBoxSub}>
                                     Easily get family, friends and loved ones to donate funds and save up with you on
                                     projects that are dear to your heart
@@ -231,7 +231,7 @@ const Home = () => {
                         </div>
                     </Grid>
                     <Grid item>
-                        <img src={computerImg} className={classes.smartImg} alt="vault way computer"/>
+                        <img src={computerImg} className={classes.smartImg} alt="vaultway computer"/>
                     </Grid>
                 </Grid>
             </div>
@@ -249,10 +249,10 @@ const Home = () => {
                                 <p className={classes.nameTxt}>Ayodeji O.</p>
                             </div>
                             <p className={classes.storyTestimony}>
-                                Wahala for person wey no use Vault Way ooo. My interest rates keeps coming in daily
+                                Wahala for person wey no use VaultWay ooo. My interest rates keeps coming in daily
                                 like what was promised in the lords prayer
                             </p>
-                            <img src={twitterIcon} className={classes.StoryIcon} alt="vault way testimony icon"/>
+                            <img src={twitterIcon} className={classes.StoryIcon} alt="vaultway testimony icon"/>
                         </div>
                     </Grid>
                     <Grid item md={4} sm={6}>
@@ -264,10 +264,10 @@ const Home = () => {
                                 <p className={classes.nameTxt}>Ayodeji O.</p>
                             </div>
                             <p className={classes.storyTestimony}>
-                                Wahala for person wey no use Vault Way ooo. My interest rates keeps coming in daily
+                                Wahala for person wey no use VaultWay ooo. My interest rates keeps coming in daily
                                 like what was promised in the lords prayer
                             </p>
-                            <img src={twitterIcon} className={classes.StoryIcon} alt="vault way testimony icon"/>
+                            <img src={twitterIcon} className={classes.StoryIcon} alt="vaultway testimony icon"/>
                         </div>
                     </Grid>
                     <Grid item md={4} sm={6}>
@@ -279,10 +279,10 @@ const Home = () => {
                                 <p className={classes.nameTxt}>Ayodeji O.</p>
                             </div>
                             <p className={classes.storyTestimony}>
-                                Wahala for person wey no use Vault Way ooo. My interest rates keeps coming in daily
+                                Wahala for person wey no use VaultWay ooo. My interest rates keeps coming in daily
                                 like what was promised in the lords prayer
                             </p>
-                            <img src={twitterIcon} className={classes.StoryIcon} alt="vault way testimony icon"/>
+                            <img src={twitterIcon} className={classes.StoryIcon} alt="vaultway testimony icon"/>
                         </div>
                     </Grid>
                 </Grid>

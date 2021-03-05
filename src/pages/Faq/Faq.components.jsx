@@ -67,90 +67,90 @@ const Faq = () => {
       </Toolbar>
       <TabPanel value={value} index={0}  >
         <Grid container justify="space-evenly" className={classes.tabPanel}>
-          <Acordion question="Who is behing Vault Way?"
+          <Acordion question="Who is behing VaultWay?"
             answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci"
             expanded={true}
           />
-          <Acordion question="Why should i choose a to save with Vault Way?"
+          <Acordion question="Why should i choose a to save with VaultWay?"
             answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci"
             expanded={true}
           />
-          <Acordion question="Who is behing Vault Way?"
+          <Acordion question="Who is behing VaultWay?"
             answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci"
           />
-          <Acordion question="Why should i choose a to save with Vault Way?"
+          <Acordion question="Why should i choose a to save with VaultWay?"
             answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci"
           />
         </Grid>
       </TabPanel>
       <TabPanel value={value} index={1} >
         <Grid container justify="space-evenly" className={classes.tabPanel}>
-          <Acordion question="Where is behing Vault Way?"
+          <Acordion question="Where is behing VaultWay?"
             answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci"
             expanded={true}
           />
-          <Acordion question="Why should i choose a to save with Vault Way?"
+          <Acordion question="Why should i choose a to save with VaultWay?"
             answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci"
             expanded={true}
           />
-          <Acordion question="Who is behing Vault Way?"
+          <Acordion question="Who is behing VaultWay?"
             answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci"
           />
-          <Acordion question="Why should i choose a to save with Vault Way?"
+          <Acordion question="Why should i choose a to save with VaultWay?"
             answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci"
           />
         </Grid>
       </TabPanel>
       <TabPanel value={value} index={2} >
         <Grid container justify="space-evenly" className={classes.tabPanel}>
-          <Acordion question="Who is behing Vault Way?"
+          <Acordion question="Who is behing VaultWay?"
             answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci"
             expanded={true}
           />
-          <Acordion question="Why should i choose a to save with Vault Way?"
+          <Acordion question="Why should i choose a to save with VaultWay?"
             answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci"
             expanded={true}
           />
-          <Acordion question="Who is behing Vault Way?"
+          <Acordion question="Who is behing VaultWay?"
             answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci"
           />
-          <Acordion question="Why should i choose a to save with Vault Way?"
+          <Acordion question="Why should i choose a to save with VaultWay?"
             answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci"
           />
         </Grid>
       </TabPanel>
       <TabPanel value={value} index={3} >
         <Grid container justify="space-evenly" className={classes.tabPanel}>
-          <Acordion question="Who is behing Vault Way?"
+          <Acordion question="Who is behing VaultWay?"
             answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci"
             expanded={true}
           />
-          <Acordion question="Why should i choose a to save with Vault Way?"
+          <Acordion question="Why should i choose a to save with VaultWay?"
             answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci"
             expanded={true}
           />
-          <Acordion question="Who is behing Vault Way?"
+          <Acordion question="Who is behing VaultWay?"
             answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci"
           />
-          <Acordion question="Why should i choose a to save with Vault Way?"
+          <Acordion question="Why should i choose a to save with VaultWay?"
             answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci"
           />
         </Grid>
       </TabPanel>
       <TabPanel value={value} index={4} >
         <Grid container justify="space-evenly" className={classes.tabPanel}>
-          <Acordion question="Who is behing Vault Way?"
+          <Acordion question="Who is behing VaultWay?"
             answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci"
             expanded={true}
           />
-          <Acordion question="Why should i choose a to save with Vault Way?"
+          <Acordion question="Why should i choose a to save with VaultWay?"
             answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci"
             expanded={true}
           />
-          <Acordion question="Who is behing Vault Way?"
+          <Acordion question="Who is behing VaultWay?"
             answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci"
           />
-          <Acordion question="Why should i choose a to save with Vault Way?"
+          <Acordion question="Why should i choose a to save with VaultWay?"
             answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci"
           />
         </Grid>

@@ -38,7 +38,7 @@ const Footer = () => {
         <Grid container justify={matchesXS ? 'flex-start' : 'space-evenly'} >
           <Grid item lg={2} md={2} xs={4}>
             <div className={classes.test}>
-              <img src={vaultWayLogo} className={classes.footerLogo} alt="vault way logo"/>
+              <img src={vaultWayLogo} className={classes.footerLogo} alt="vaultway logo"/>
             </div>
           </Grid>
           <Grid item lg={2} md={2} xs={4}>
@@ -59,12 +59,12 @@ const Footer = () => {
                 <Link to="/faq" className={classes.footerLink}>FAQ</Link>
                 <Link to="/" className={classes.footerLink}>Blog</Link>
                 <Link to="/" className={classes.footerLink}>Partners</Link>
+                <Link to="/" className={classes.footerLink}>Careers</Link>
               </div>
           </Grid>
           <Grid item lg={2} md={2} xs={4}>
             <h6 className={classes.footerListHeading}>Legal</h6>
             <div className={classes.footerList}>
-                <Link to="/about#" className={classes.footerLink}>About</Link>
                 <Link to="/" className={classes.footerLink}>Privacy</Link>
                 <Link to="/" className={classes.footerLink}>Terms</Link>
                 <Link to="/" className={classes.footerLink}>Dispute</Link>
@@ -73,7 +73,7 @@ const Footer = () => {
           <Grid item lg={2} md={2} xs={4}>
             <h6 className={classes.footerListHeading} >Reach Us</h6>
             <div className={classes.footerList}>
-                <Link to="/" className={classes.footerLink}>Dispute</Link>
+                <Link to="/" className={classes.footerLink}>vaultway@hello.com</Link>
                 <Link to="/" className={classes.footerLink}>+234 807 3505 624</Link>
                 <Link to="/" className={classes.footerLink}>10, Vaultway street, <br/> VI, Lagos</Link>
               </div>
@@ -85,13 +85,13 @@ const Footer = () => {
             <p className={clsx(classes.extraText, classes.followText)} >Also Follow Us</p>
             <div className={classes.extraIcons}>
               <a className={classes.extraIconsLink} href="google.com">
-                <img className={classes.extraIcon} src={twitterIcon} alt="vault way twitter link"/>
+                <img className={classes.extraIcon} src={twitterIcon} alt="vaultway twitter link"/>
               </a>
               <a className={classes.extraIconsLink} href="google.com">
-                <img className={classes.extraIcon} src={fbIcon} alt="vault way facebook link"/>
+                <img className={classes.extraIcon} src={fbIcon} alt="vaultway facebook link"/>
               </a>
               <a className={classes.extraIconsLink} href="google.com">
-                <img className={classes.extraIcon} src={IGIcon} alt="vault way instagram icon"/>
+                <img className={classes.extraIcon} src={IGIcon} alt="vaultway instagram icon"/>
               </a>
             </div>
             <p className={clsx(classes.extraText, classes.copyText)} >

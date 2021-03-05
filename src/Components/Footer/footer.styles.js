@@ -149,7 +149,7 @@ const footerStyles = makeStyles((theme) => ({
     paddingBottom: '50px',
 
     '@media (max-width: 415px)': {
-      width: '90%',
+      // width: '90%',
     },
   },
   footerLogo: {
