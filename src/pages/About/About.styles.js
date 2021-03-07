@@ -390,11 +390,7 @@ const aboutStyles = makeStyles((theme) => ({
     },
   },
   companyIcon: {
-    width: '55%',
-
-    '@media (max-width: 352px)': {
-      width: '40%',
-    },
+    width: '35%',
   },
   companyHeading: {
     fontWeight: '800',

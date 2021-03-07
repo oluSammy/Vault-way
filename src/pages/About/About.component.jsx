@@ -7,9 +7,9 @@ import aboutStyles from './About.styles';
 // import CardMedia from '@material-ui/core/CardMedia';
 // import CardContent from '@material-ui/core/CardContent';
 import Grid from '@material-ui/core/Grid';
-import visionIcon from '../../assets/icons/Vision.png'
-import missionIcon from '../../assets/icons/Mission.png'
-import valuesIcon from '../../assets/icons/Values.png'
+import loveIcon from '../../assets/icons/love-icon.png';
+import committedIcon from '../../assets/icons/commited-icon.png';
+import unitedIcon from '../../assets/icons/unity-icon.png'
 import Message from './../../Components/Messgae/Message.component';
 import img from '../../assets/img/about-page-img.png';
 import ButtonCta from '../../Components/ButtonCta/ButtonCta.component';
@@ -144,7 +144,7 @@ const About = () => {
           <Grid item lg={3} md={3} sm={3}>
             <div className={classes.companyBox}>
               <div  className={classes.companyIconBox}>
-                <img className={classes.companyIcon} src={visionIcon} alt="vaultway vision"/>
+                <img className={classes.companyIcon} src={loveIcon} alt="vaultway vision"/>
               </div>
               <div className={classes.companyContent}>
                 <h4 className={classes.companyHeading} >
@@ -160,7 +160,7 @@ const About = () => {
           <Grid item lg={3} md={3} sm={3}>
             <div className={classes.companyBox}>
                 <div className={classes.companyIconBox}>
-                  <img className={classes.companyIcon} src={missionIcon} alt="vaultway vision"/>
+                  <img className={classes.companyIcon} src={committedIcon} alt="vaultway vision"/>
                 </div>
                 <div className={classes.companyContent}>
                   <h4 className={classes.companyHeading}>
@@ -176,7 +176,7 @@ const About = () => {
           <Grid item lg={3} md={3} sm={3}>
             <div className={classes.companyBox}>
                 <div className={classes.companyIconBox}>
-                  <img className={classes.companyIcon} src={valuesIcon} alt="vaultway vision"/>
+                  <img className={classes.companyIcon} src={unitedIcon} alt="vaultway vision"/>
                 </div>
                 <div className={classes.companyContent}>
                   <h4 className={classes.companyHeading}>

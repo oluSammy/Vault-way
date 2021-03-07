@@ -5,9 +5,10 @@ import NavMargin from '../../Components/NavMargin/NavMargin.component';
 import plansStyles from './plans.styles';
 import Grid from '@material-ui/core/Grid';
 import vaultImg from '../../assets/img/vault-green.png'
-import regularVault from '../../assets/icons/tyro-icon.png';
-import AceVault from '../../assets/icons/ace.png';
-import reaperVault from '../../assets/icons/reaper-icon.png';
+import AceVault from '../../assets/icons/six-icon.png';
+import tyroVault from '../../assets/icons/two-icon.png';
+import reaperVault from '../../assets/icons/four-icon.png';
+import stellarVault from '../../assets/icons/twelve-icon.png';
 import ButtonCta from '../../Components/ButtonCta/ButtonCta.component';
 import { useTheme } from '@material-ui/core';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
@@ -131,7 +132,7 @@ const Plans = () => {
           <Grid container item lg={5} md={5} sm={6}>
             <div className={classes.regularVaultBox}>
               <div className={classes.regularVaultIconBox}>
-                <img src={regularVault} className={classes.regularVaultIcon} alt="Tyro vault icon"/>
+                <img src={tyroVault} className={classes.regularVaultIcon} alt="Tyro vault icon"/>
               </div>
               <div className={classes.regularVaultContent}>
                 <h6 className={classes.regularHeading}>Tyro Vault</h6>
@@ -182,7 +183,7 @@ const Plans = () => {
           <Grid container item lg={5} md={5} sm={6}>
             <div className={classes.regularVaultBox}>
               <div className={classes.regularVaultIconBox}>
-                <img src={AceVault} className={classes.regularVaultIcon} alt="Tyro vault icon"/>
+                <img src={stellarVault} className={classes.regularVaultIcon} alt="Tyro vault icon"/>
               </div>
               <div className={classes.regularVaultContent}>
                 <p className={classes.regularHeading}>Stellar Vault</p>

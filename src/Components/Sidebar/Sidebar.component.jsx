@@ -94,7 +94,7 @@ const Sidebar = () => {
                   <GrainOutlinedIcon className={classes.navIcon} />
                     <span className={classes.navText}>Quick Vault</span>
                 </HashLink>
-                <HashLink to="#fundMyVault" className={classes.navItem} >
+                <HashLink to="/plans#fundMyVault" className={classes.navItem} >
                   <BlurOnOutlinedIcon className={classes.navIcon} />
                     <span className={classes.navText}>FundMyVault</span>
                 </HashLink>
