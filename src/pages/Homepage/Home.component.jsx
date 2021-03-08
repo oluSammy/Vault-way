@@ -146,7 +146,7 @@ const Home = () => {
                         </div>
                         <div className={classes.planBox}>
                             <div className={`${classes.plansIconBox} ${classes.quickIconBox}`}>
-                                <img src={quickVaultImg} className={`${classes.plansIcon} ${classes.quickIcon}`}
+                                <img src={fundVaultImg} className={`${classes.plansIcon} ${classes.quickIcon}`}
                                 alt="vaultway quick plan icon"/>
                             </div>
                             <div className={classes.planContent}>
@@ -159,7 +159,7 @@ const Home = () => {
                         </div>
                         <div className={classes.planBox}>
                             <div className={`${classes.plansIconBox} ${classes.fundIconBox}`}>
-                                <img src={fundVaultImg} className={`${classes.plansIcon} ${classes.fundIcon}`}
+                                <img src={quickVaultImg} className={`${classes.plansIcon} ${classes.fundIcon}`}
                                 alt="vaultway fund plan icon"/>
                             </div>
                             <div className={classes.planContent}>
@@ -223,7 +223,7 @@ const Home = () => {
                                <p className={classes.numberText}>4</p>
                             </div>
                             <div className={classes.stepContent}>
-                                <p className={classes.stepTitle} >Open An Account</p>
+                                <p className={classes.stepTitle} >Begin your Savings Journey</p>
                                 <p className={classes.stepSubTitle} >
                                 Watch your financial goals move closer to achievement each day as your savings grow.
                                 </p>

@@ -10,6 +10,21 @@ const dashboardStyles = makeStyles((theme) => ({
     boxShadow: 'none',
     backgroundColor: '#FFFFFF',
   },
+  swipeableDrawer: {
+    width: '40vw',
+
+    '@media (max-width: 696px)': {
+      width: '50vw',
+    },
+
+    '@media (max-width: 498px)': {
+      width: '60vw',
+    },
+
+    '@media (max-width: 398px)': {
+      width: '70vw',
+    },
+  },
   toolbarStyles: {
     padding: '14px 2%',
     display: 'flex',

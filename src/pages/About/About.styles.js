@@ -22,7 +22,7 @@ const aboutStyles = makeStyles((theme) => ({
   lifestyleHeading: {
     fontWeight: '800',
     fontSize: '55px',
-    lineHeight: '50px',
+    lineHeight: '70px',
     color: '#121E31',
     marginBottom: '30px',
     textAlign: 'center',

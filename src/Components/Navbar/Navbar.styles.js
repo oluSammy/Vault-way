@@ -80,6 +80,7 @@ const navbarStyles = makeStyles((theme) => ({
     textDecoration: 'none',
     display: 'flex',
     alignItems: 'center',
+    marginRight: '25px',
 
     '@media (max-width: 815px)': {
       display: 'none',

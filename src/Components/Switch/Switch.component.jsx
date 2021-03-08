@@ -15,9 +15,14 @@ const MuiSwitch = () => {
   const styles = makeStyles(() => ({
     label: {
       fontSize: '14px',
+      color: '#737588',
 
       '@media (max-width: 832px)': {
         fontSize: '12px'
+      },
+
+      '@media (max-width: 415px)': {
+        fontSize: '10px'
       },
     }
   }));

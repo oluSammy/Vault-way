@@ -1,5 +1,5 @@
 import React from 'react'
-import { Switch, useRouteMatch, Route, Link, NavLink } from 'react-router-dom';
+import { Switch, useRouteMatch, Route, Link } from 'react-router-dom';
 import DashboardHome from './../DashboardHome/DashboardHome.component';
 import Vault from './../Vault/Vault.component';
 import AppBar from '@material-ui/core/AppBar';
@@ -8,24 +8,17 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Drawer from '@material-ui/core/Drawer';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
 import clsx from 'clsx';
 import dashboardStyles from './dashboard.styles';
 import logo from '../../assets/img/vault-way-logo.png';
 import MuiSwitch from './../../Components/Switch/Switch.component';
 import AccountCircleOutlinedIcon from '@material-ui/icons/AccountCircleOutlined';
-import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
-import VerifiedUserOutlinedIcon from '@material-ui/icons/VerifiedUserOutlined';
-import FolderOpenOutlinedIcon from '@material-ui/icons/FolderOpenOutlined';
-import FlightTakeoffOutlinedIcon from '@material-ui/icons/FlightTakeoffOutlined';
-import SettingsOutlinedIcon from '@material-ui/icons/SettingsOutlined';
 import { useTheme } from '@material-ui/core';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import Hidden from '@material-ui/core/Hidden';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
+import DashboardSidebar from './../../Components/DashboardSidebar/DashboardSidebar.component';
+import DashboardNavList from './../../Components/DashboardNavList/DashboardNavList.component';
 
 
 const Dashboard = () => {
@@ -55,35 +48,6 @@ const Dashboard = () => {
     marginClosed = '0px';
   }
 
-  const navLinks = [
-    {
-      icon: <HomeOutlinedIcon className={classes.listIcon} />,
-      text: 'Home',
-      route: '/dashboard'
-    },
-    {
-      icon: <VerifiedUserOutlinedIcon className={classes.listIcon} />,
-      text: 'Vaults',
-      route: '/dashboard/vaults'
-    },
-    {
-      icon: <FolderOpenOutlinedIcon className={classes.listIcon} />,
-      text: 'Tooltip',
-      route: '/dashboard/tooltip'
-    },
-    {
-      icon: <FlightTakeoffOutlinedIcon className={classes.listIcon} />,
-      text: 'Referral',
-      route: '/dashboard/referral'
-    },
-    {
-      icon: <SettingsOutlinedIcon className={classes.listIcon} />,
-      text: 'Settings',
-      route: '/dashboard/settings'
-    }
-
-  ]
-
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -94,7 +58,7 @@ const Dashboard = () => {
             onOpen={() => setOpenTemporaryDrawer(true)}
             classes={{ paper: classes.swipeableDrawer }}
         >
-            <h2>Hello Sidebar</h2>
+            <DashboardSidebar closeSidebar={() => setOpenTemporaryDrawer(false)} temporarySidebar={true} />
         </SwipeableDrawer>
         <Toolbar className={classes.toolbarStyles}>
           <Hidden smDown>
@@ -140,17 +104,7 @@ const Dashboard = () => {
             }),
           }}
         >
-          <List className={classes.navList} style={{ marginRight: '10px', marginLeft: '10px' }}>
-            {navLinks.map(listItem =>
-              <ListItem button className={classes.listItem} component={NavLink} to={listItem.route}
-                activeClassName={classes.activeNavLink} exact={true} key={listItem.text}>
-                  <ListItemIcon> {listItem.icon} </ListItemIcon>
-                  <ListItemText primary={listItem.text} className={classes.listText}
-                    classes= {{ primary: classes.listText }}
-                  />
-              </ListItem>
-              ) }
-          </List>
+          <DashboardNavList />
         </Drawer>
       </Hidden>
       <main className={classes.mainContent} style={{ marginLeft: open ? marginOpen : marginClosed }}>

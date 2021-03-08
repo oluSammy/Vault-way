@@ -83,7 +83,7 @@ const Plans = () => {
                 <img className={classes.saveVaultBoxRectImg} src={checkIcon} alt="vaultway check"/>
               </div>
               <div className={classes.saveVaultBoxContent}>
-                <h6 className={classes.saveVaultHeading} >
+                <h6 className={classes.saveVaultHeading}  >
                   Have a great time building your funds
                 </h6>
                 <p className={classes.saveVaultSub} >

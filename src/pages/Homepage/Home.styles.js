@@ -187,7 +187,7 @@ const homeStyles = makeStyles(() => ({
     textAlign: 'center',
     fontWeight: '800',
     fontSize: '20px',
-    lineHeight: '20px',
+    lineHeight: '0px',
     color: 'rgba(110, 128, 163, 0.5)',
     textTransform: 'uppercase',
     letterSpacing: '.5px',

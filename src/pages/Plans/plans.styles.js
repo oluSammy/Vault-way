@@ -133,7 +133,7 @@ const plansStyles = makeStyles((theme) => ({
 
   saveVaultBox: {
     display: 'flex',
-    marginBottom: '23px',
+    marginBottom: '35px',
 
     '@media (max-width: 600px)': {
       width: '80%',
@@ -154,7 +154,6 @@ const plansStyles = makeStyles((theme) => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: '50px',
 
     '@media (max-width: 670px)': {
       height: '27px',
@@ -165,7 +164,6 @@ const plansStyles = makeStyles((theme) => ({
 
   saveVaultBoxContent: {
     width: '60%',
-    marginTop: '2px',
 
 
     '@media (max-width: 1048px)': {
@@ -181,7 +179,7 @@ const plansStyles = makeStyles((theme) => ({
     fontWeight: 700,
     fontSize: '22px',
     lineHeight: '24px',
-    marginBottom: '7px',
+    marginBottom: '9px',
     color: '#121E31',
 
     '@media (max-width: 670px)': {
@@ -337,7 +335,7 @@ const plansStyles = makeStyles((theme) => ({
   },
 
   quickVaultDetail: {
-    marginBottom: '24px',
+    marginBottom: '30px',
     display: 'flex',
     // alignItems: 'flex-start'
   },
@@ -351,7 +349,6 @@ const plansStyles = makeStyles((theme) => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: '20px',
 
     '@media (max-width: 517px)': {
       height: '34px',

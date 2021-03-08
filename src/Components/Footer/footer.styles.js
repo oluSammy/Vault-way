@@ -36,6 +36,7 @@ const footerStyles = makeStyles((theme) => ({
     padding: '20px 80px',
     backgroundColor: '#084622',
     clipPath: 'polygon(0 1%, 70% 0%, 55% 100%, 0% 100%)',
+    webkitClipPath: 'polygon(0 1%, 70% 0%, 55% 100%, 0% 100%)',
     borderRadius: '20px',
 
     '@media (max-width: 766px)': {
