@@ -44,8 +44,8 @@ const Dashboard = () => {
   const matchesSm = useMediaQuery(theme.breakpoints.down("sm"));
 
   if (matchesSm) {
-    marginOpen = '0px';
-    marginClosed = '0px';
+    marginOpen = '3vw';
+    marginClosed = '3vw';
   }
 
   return (
