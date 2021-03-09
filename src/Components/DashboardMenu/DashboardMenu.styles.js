@@ -7,7 +7,7 @@ const dashboardMenuStyles = makeStyles(theme => ({
   quickBox: {
     display: 'flex',
     alignItems: 'center',
-    background: '#EAF1F5',
+    background: '#FFFFFF',
     padding: '12px 15px',
     width: '250px',
     margin: '0 20px',

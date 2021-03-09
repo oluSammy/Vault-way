@@ -17,7 +17,7 @@ const MenuItem = ({text, selected}) => {
   return(
     <div className={`${classes.quickBox } menu-item ${selected ? "active" : ""}`}>
       <p className={classes.quickBoxText}>{text}</p>
-      <div className={classes.arrowIcon}>&rarr;</div>
+      <div className={classes.arrowIcon}><ArrowForwardIcon className={classes.arrowIconGreen} /></div>
     </div>)
 };
 
