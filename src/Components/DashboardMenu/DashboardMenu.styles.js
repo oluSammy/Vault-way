@@ -2,7 +2,11 @@ import { makeStyles } from '@material-ui/core';
 
 const dashboardMenuStyles = makeStyles(theme => ({
   menuContainer: {
-    marginRight: '25px'
+    marginRight: '25px',
+
+    '@media (max-width: 750px)': {
+      marginRight: '15px',
+    },
   },
   quickBox: {
     display: 'flex',
@@ -10,13 +14,27 @@ const dashboardMenuStyles = makeStyles(theme => ({
     background: '#FFFFFF',
     padding: '12px 15px',
     width: '250px',
-    margin: '0 20px',
     borderRadius: '10px',
-    cursor: 'pointer'
+    cursor: 'pointer',
+
+    '@media (max-width: 1007px)': {
+      minWidth: '200px',
+    },
+    '@media (max-width: 750px)': {
+      width: '160px',
+    },
   },
   quickBoxText: {
     marginRight: 'auto',
-    fontSize: '14px'
+    fontSize: '14px',
+
+    '@media (max-width: 1007px)': {
+      fontSize: '12px',
+    },
+
+    '@media (max-width: 750px)': {
+      fontSize: '10px',
+    },
   },
   arrowIcon: {
     color: theme.palette.primary.main,

@@ -5,9 +5,16 @@
   cursor: pointer;
   border: none;
 }
-.menu-item-wrapper.active {
-  /* border: 1px blue solid; */
+.menu-item-wrapper {
+  margin-right: 20px;
 }
+
+@media screen and (max-width: 521px) {
+  .menu-item-wrapper {
+    margin-right: 15px;
+  }
+}
+
 .menu-item.active {
   /* border: 1px green solid; */
 }

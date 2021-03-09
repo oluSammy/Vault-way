@@ -11,70 +11,62 @@ const DashboardHome = () => {
   return (
     <div className={classes.root}>
       <div className={classes.balanceContainer}>
-        <div item lg={3} md={3}>
-          <div className={classes.balance}>
-            <div className={classes.balanceTop}>
-              <h5 className={classes.balanceTitle}>Wallet Ballance</h5>
-              <div className={classes.balanceIconBox}>
-                <img src={walletIcon} className={classes.balanceIcon} alt="vaultway wallet icon"/>
-              </div>
+        <div className={classes.balance}>
+          <div className={classes.balanceTop}>
+            <h5 className={classes.balanceTitle}>Wallet Ballance</h5>
+            <div className={classes.balanceIconBox}>
+              <img src={walletIcon} className={classes.balanceIcon} alt="vaultway wallet icon"/>
             </div>
-            <div className={classes.balanceBottom}>
-              <p className={classes.amount}>
-                <span className={classes.naira}>&#x20A6;</span>
-                  200,000
-                <span className={classes.kobo}>.00</span>
-              </p>
-            </div>
+          </div>
+          <div className={classes.balanceBottom}>
+            <p className={classes.amount}>
+              <span className={classes.naira}>&#x20A6;</span>
+                200,000
+              <span className={classes.kobo}>.00</span>
+            </p>
           </div>
         </div>
-        <div item lg={3} md={3}>
-          <div className={classes.balance}>
-            <div className={classes.balanceTop}>
-              <h5 className={classes.balanceTitle}>Vault Balance</h5>
-              <div className={classes.balanceIconBox}>
-                <img src={savingsIcon} className={classes.balanceIcon} alt="vaultway wallet icon"/>
-              </div>
+        <div className={classes.balance}>
+          <div className={classes.balanceTop}>
+            <h5 className={classes.balanceTitle}>Vault Balance</h5>
+            <div className={classes.balanceIconBox}>
+              <img src={savingsIcon} className={classes.balanceIcon} alt="vaultway wallet icon"/>
             </div>
-            <div className={classes.balanceBottom}>
-              <p className={classes.amount}>
-                <span className={classes.naira}>&#x20A6;</span>
-                  150,000
-                <span className={classes.kobo}>.00</span>
-              </p>
-            </div>
+          </div>
+          <div className={classes.balanceBottom}>
+            <p className={classes.amount}>
+              <span className={classes.naira}>&#x20A6;</span>
+                150,000
+              <span className={classes.kobo}>.00</span>
+            </p>
           </div>
         </div>
-        <div item lg={3} md={3}>
-          <div className={classes.balance}>
-            <div className={classes.balanceTop}>
-              <h5 className={classes.balanceTitle}>Wallet Ballance</h5>
-              <div className={classes.balanceIconBox}>
-                <img src={balanceIcon} className={classes.balanceIcon} alt="vaultway wallet icon"/>
-              </div>
+        <div className={classes.balance}>
+          <div className={classes.balanceTop}>
+            <h5 className={classes.balanceTitle}>Wallet Ballance</h5>
+            <div className={classes.balanceIconBox}>
+              <img src={balanceIcon} className={classes.balanceIcon} alt="vaultway wallet icon"/>
             </div>
-            <div className={classes.balanceBottom}>
-              <p className={classes.amount}>
-                  5
-                <span className={classes.kobo}>vault(s)</span>
-              </p>
-            </div>
+          </div>
+          <div className={classes.balanceBottom}>
+            <p className={classes.amount}>
+                5
+              <span className={classes.kobo}>vault(s)</span>
+            </p>
           </div>
         </div>
-        <div item lg={3} md={3}>
-          <div className={classes.wallet}>
-            <div className={classes.walletContent}>
-              <div className={classes.walletTop}>
-                <div className={classes.walletIconBox}>
-                  <img src={walletIcon} className={classes.balanceIcon}  alt="vaultway fund wallet icon"/>
-                </div>
-                <h5 className={classes.walletHeading}>Fund Wallet</h5>
+        <div className={classes.wallet}>
+          <div className={classes.walletContent}>
+            <div className={classes.walletTop}>
+              <div className={classes.walletIconBox}>
+                <img src={walletIcon} className={classes.balanceIcon}  alt="vaultway fund wallet icon"/>
               </div>
-              <p className={classes.walletBank}>Wema Bank</p>
-              <p className={classes.walletAcct}>0029314394</p>
+              <h5 className={classes.walletHeading}>Fund Wallet</h5>
             </div>
-            <button className={classes.walletAction}>+</button>
+            <p className={classes.walletBank}>Wema Bank</p>
+            <p className={classes.walletAcct}>0029314394</p>
           </div>
+          <button className={classes.walletAction}>+</button>
         </div>
       </div>
       <div className={classes.quick}>
