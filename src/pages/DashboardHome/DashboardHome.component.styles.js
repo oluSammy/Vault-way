@@ -168,6 +168,12 @@ const dashboardHomeStyles = makeStyles(theme => ({
   },
   dashboardDetails: {
     padding: '30px 0 50px 0',
+    display: 'grid',
+    gridTemplateColumns: '3.3fr 2fr',
+
+    '@media (max-width: 821px)': {
+      gridTemplateColumns: '1fr'
+    },
   },
   chartTitle: {
     fontSize: '14px',
@@ -178,8 +184,29 @@ const dashboardHomeStyles = makeStyles(theme => ({
   tooltipHeading: {
     color: '#6E80A3',
     fontSize: '14px',
-    marginLeft: '30px',
+    marginLeft: '40px',
     marginBottom: '15px'
+  },
+  dashboardPart: {
+    display: 'flex',
+    flexDirection: 'column',
+  },
+  referral: {
+    marginLeft: '15%',
+    marginTop: '20px',
+  },
+  referralHeading: {
+    color: '#6E80A3',
+    marginBottom: '7px'
+  },
+  referralSpan: {
+    color: theme.palette.primary.dark
+  },
+  referralImgBox: {
+    width: '80%'
+  },
+  referralImg: {
+    width: '85%',
   }
 }));
 

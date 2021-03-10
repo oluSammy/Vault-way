@@ -1,19 +1,11 @@
 import React from 'react'
-import ScrollMenu from 'react-horizontal-scrolling-menu';
-import './hello.css';
 import dashboardMenuStyles from './DashboardMenu.styles';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
-import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-import PropTypes from "prop-types";
+import Carousel from 'react-elastic-carousel';
+import './dashboardMenu.css'
 
-const list = [
-  { name: 'Add your BVN' },
-  { name: 'Verify your email address' },
-  { name: 'Add your debit card' },
-  { name: 'Edit your personal info' },
-];
 
-const MenuItem = ({text, selected}) => {
+const MenuItem = ({ text }) => {
   const classes = dashboardMenuStyles();
   return(
     <div className={classes.quickBox}>
@@ -22,55 +14,25 @@ const MenuItem = ({text, selected}) => {
     </div>
   )
 };
-
-const Menu = (list, selected) =>
-  list.map(el => {
-  const {name} = el;
-
-  return <MenuItem text={name} key={name} selected={selected} />;
-});
-
-
-const Arrow = ({ text, className }) => {
-  return (
-    <div style={{
-      height: '40px', width: '40px',
-      backgroundColor: '#FFFFFF',
-      display: 'flex',
-      alignItems: 'center',
-      cursor: 'pointer',
-      justifyContent: 'center',
-      borderRadius: '50%',
-      boxShadow: '0px 0px 24px rgba(0, 81, 33, 0.16)',
-    }}
-    >
-      <div className={className}>{text}</div>
-    </div>
-  );
-};
-
-Arrow.propTypes = {
-  text: PropTypes.string,
-  className: PropTypes.string
-};
-
-const ArrowLeft = Arrow({ text: <ArrowBackIcon style={{color: '#AEBEC7',}} />, className: 'arrow-prev' }); 
-const ArrowRight = Arrow({ text: <ArrowForwardIcon style={{color: '#AEBEC7',}} />, className: 'arrow-next' });
-
-const selected = 'item1';
 const DashboardMenu = () => {
-  const menu = Menu(list, selected)
   const classes = dashboardMenuStyles();
+
+  const breakPoints = [
+    {width: 1, itemsToShow: 2},
+    {width: 550, itemsToShow: 3},
+    {width: 768, itemsToShow: 4},
+    {width: 1200, itemsToShow: 4},
+  ]
 
   return (
     <div className={classes.menuContainer}>
-      <ScrollMenu
-          data={menu}
-          arrowLeft={ArrowLeft}
-          arrowRight={ArrowRight}
-          hideArrows={true}
-          hideSingleArrow={true}
-        />
+      <Carousel breakPoints={breakPoints} pagination={false}>
+        <MenuItem text="Add &nbsp; &nbsp;  your &nbsp; &nbsp; BVN " />
+        <MenuItem text="Verify your email address" />
+        <MenuItem text="Add your debit card" />
+        <MenuItem text="Edit your personal info" />
+        <MenuItem text="Edit your personal info" />
+      </Carousel>
     </div>
   )
 }

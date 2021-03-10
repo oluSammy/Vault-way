@@ -4,7 +4,7 @@ const TooltipVideo = ({ number, embedId }) => {
   return (
     <div className="video-responsive">
       <iframe style={{borderRadius: '10px'}}
-        width="220"
+        width="280"
         height="180"
         src={`https://www.youtube.com/embed/${embedId}`}
         frameBorder="0"

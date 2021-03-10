@@ -1,5 +1,7 @@
 import React from "react";
 import { Area, AreaChart, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
+import { useTheme } from '@material-ui/core';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const data = [
   {
@@ -42,8 +44,11 @@ const data = [
 
 
 export default function ChartOne() {
+  const theme = useTheme();
+  const matchesSm = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
-    <ResponsiveContainer width="100%" height={300} >
+    <ResponsiveContainer width="99%" height={matchesSm ? 300 : 450} >
       <AreaChart
         data={data}
         margin={{

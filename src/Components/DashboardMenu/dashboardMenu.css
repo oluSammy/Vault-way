@@ -1,0 +1,18 @@
+button.rec-arrow {
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  line-height: 40px;
+  color: #AEBEC7;
+  box-shadow: 0px 0px 24px rgba(0, 81, 33, 0.16);
+}
+
+button.rec-arrow:hover {
+  background-color: #00A343 !important;
+  box-shadow: 0px 0px 24px rgba(0, 81, 33, 0.16) !important;
+}
+
+.rec.rec-arrow:disabled {
+  visibility: hidden;
+}
