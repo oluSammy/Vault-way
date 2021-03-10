@@ -1,0 +1,10 @@
+button.rec-dot{
+  background-color: #084622;
+  width: 5px;
+  height: 5px;
+  margin: 4px;
+}
+
+button.rec-dot_active{
+  background-color: #084622;
+}

@@ -165,6 +165,21 @@ const dashboardHomeStyles = makeStyles(theme => ({
   },
   quickText: {
     marginRight: 'auto'
+  },
+  dashboardDetails: {
+    padding: '30px 0 50px 0',
+  },
+  chartTitle: {
+    fontSize: '14px',
+    fontWeight: 600,
+    color: '#6E80A3',
+    marginBottom: '15px'
+  },
+  tooltipHeading: {
+    color: '#6E80A3',
+    fontSize: '14px',
+    marginLeft: '30px',
+    marginBottom: '15px'
   }
 }));
 

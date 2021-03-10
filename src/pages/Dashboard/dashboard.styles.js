@@ -110,7 +110,7 @@ const dashboardStyles = makeStyles((theme) => ({
   },
   mainContent: {
     transition: 'all .2s ease',
-    minHeight: '83vh',
+    // minHeight: '83vh',
   },
   activeNavLink: {
     background: '#F4FFF8',
