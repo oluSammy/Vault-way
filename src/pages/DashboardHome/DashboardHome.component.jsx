@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import dashboardHomeStyles from './DashboardHome.component.styles';
 import walletIcon from '../../assets/icons/wallet-icon.png';
 import balanceIcon from '../../assets/icons/dashboard-vault-icon.png';
@@ -10,6 +10,9 @@ import referralImg from '../../assets/img/referral.png';
 
 const DashboardHome = () => {
   const classes = dashboardHomeStyles();
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
   return (
     <div className={classes.root}>
       <div className={classes.balanceContainer}>

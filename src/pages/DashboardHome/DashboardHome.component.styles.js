@@ -1,8 +1,8 @@
 import { makeStyles } from '@material-ui/core';
 
-const dashboardHomeStyles = makeStyles(theme => ({
+const dashboardHomeStyles = makeStyles((theme) => ({
   root: {
-    marginTop: '40px'
+    marginTop: '40px',
   },
   balanceContainer: {
     display: 'grid',
@@ -30,7 +30,7 @@ const dashboardHomeStyles = makeStyles(theme => ({
   balanceTop: {
     display: 'flex',
     alignItems: 'center',
-    marginBottom: '25px'
+    marginBottom: '25px',
   },
   balanceTitle: {
     marginRight: 'auto',
@@ -40,18 +40,18 @@ const dashboardHomeStyles = makeStyles(theme => ({
     lineHeight: '17px',
 
     '@media (max-width: 624px)': {
-      fontSize: '12px'
+      fontSize: '12px',
     },
   },
   balanceIcon: {
-    width: '70%'
+    width: '70%',
   },
   amount: {
     color: '#161A35',
     fontSize: '28px',
 
     '@media (max-width: 624px)': {
-      fontSize: '20px'
+      fontSize: '20px',
     },
   },
   naira: {
@@ -74,7 +74,6 @@ const dashboardHomeStyles = makeStyles(theme => ({
     '@media (max-width: 1013px)': {
       width: '95%',
     },
-
   },
   walletContent: {
     marginRight: 'auto',
@@ -93,7 +92,6 @@ const dashboardHomeStyles = makeStyles(theme => ({
     '@media (max-width: 616px)': {
       marginBottom: '15px',
     },
-
   },
   walletHeading: {
     fontWeight: 'normal',
@@ -101,11 +99,11 @@ const dashboardHomeStyles = makeStyles(theme => ({
     marginLeft: '13px',
 
     '@media (max-width: 851px)': {
-      fontSize: '16px'
+      fontSize: '16px',
     },
 
     '@media (max-width: 624px)': {
-      fontSize: '15px'
+      fontSize: '15px',
     },
 
     '@media (max-width: 616px)': {
@@ -121,7 +119,7 @@ const dashboardHomeStyles = makeStyles(theme => ({
     fontWeight: 500,
 
     '@media (max-width: 624px)': {
-      fontSize: '13px'
+      fontSize: '13px',
     },
   },
   walletAcct: {
@@ -129,7 +127,7 @@ const dashboardHomeStyles = makeStyles(theme => ({
     fontWeight: 700,
 
     '@media (max-width: 624px)': {
-      fontSize: '15px'
+      fontSize: '15px',
     },
   },
   walletAction: {
@@ -148,7 +146,7 @@ const dashboardHomeStyles = makeStyles(theme => ({
   quickHeading: {
     fontSize: '14px',
     color: '#6E80A3',
-    marginBottom: '12px'
+    marginBottom: '12px',
   },
   quickContainer: {
     display: 'grid',
@@ -161,10 +159,10 @@ const dashboardHomeStyles = makeStyles(theme => ({
     background: '#EAF1F5',
     padding: '15px 10px',
     borderRadius: '8px',
-    width: '90%'
+    width: '90%',
   },
   quickText: {
-    marginRight: 'auto'
+    marginRight: 'auto',
   },
   dashboardDetails: {
     padding: '30px 0 50px 0',
@@ -172,42 +170,51 @@ const dashboardHomeStyles = makeStyles(theme => ({
     gridTemplateColumns: '3.3fr 2fr',
 
     '@media (max-width: 821px)': {
-      gridTemplateColumns: '1fr'
+      gridTemplateColumns: '1fr',
+      marginTop: '30px'
     },
   },
   chartTitle: {
     fontSize: '14px',
     fontWeight: 600,
     color: '#6E80A3',
-    marginBottom: '15px'
+    marginBottom: '15px',
   },
   tooltipHeading: {
     color: '#6E80A3',
     fontSize: '14px',
     marginLeft: '40px',
-    marginBottom: '15px'
+    marginBottom: '15px',
   },
   dashboardPart: {
     display: 'flex',
     flexDirection: 'column',
+
+    '@media (max-width: 821px)': {
+      marginTop: '40px',
+    },
   },
   referral: {
     marginLeft: '15%',
     marginTop: '20px',
+
+    '@media (max-width: 821px)': {
+      marginTop: '40px',
+    },
   },
   referralHeading: {
     color: '#6E80A3',
-    marginBottom: '7px'
+    marginBottom: '7px',
   },
   referralSpan: {
-    color: theme.palette.primary.dark
+    color: theme.palette.primary.dark,
   },
   referralImgBox: {
-    width: '80%'
+    width: '80%',
   },
   referralImg: {
     width: '85%',
-  }
+  },
 }));
 
 export default dashboardHomeStyles;
