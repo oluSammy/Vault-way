@@ -19,6 +19,8 @@ import Hidden from '@material-ui/core/Hidden';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import DashboardSidebar from './../../Components/DashboardSidebar/DashboardSidebar.component';
 import DashboardNavList from './../../Components/DashboardNavList/DashboardNavList.component';
+import DashboardTooltip from './../DashboardTooltip/DashboardTooltip.component';
+import DashboardReferral from './../DashboardReferral/DashboardReferral.component';
 
 
 const Dashboard = () => {
@@ -88,7 +90,7 @@ const Dashboard = () => {
           <Link to="/" className={classes.logoContainer}>
             <img src={logo} className={classes.logo} alt="vaultway logo"/>
           </Link>
-          <h2 className={classes.name}>Hello, Ayodeji 🙂</h2>
+          <h2 className={classes.name}>Hello, Ayodeji 🌞</h2>
           <div className={classes.switch}>
             <MuiSwitch />
           </div>
@@ -115,8 +117,8 @@ const Dashboard = () => {
         <Switch>
           <Route exact path={path} component={DashboardHome} />
           <Route path={`${path}/vaults`} component={Vault} />
-          <Route path={`${path}/tooltip`} component={Vault} />
-          <Route path={`${path}/referral`} component={Vault} />
+          <Route path={`${path}/tooltip`} component={DashboardTooltip} />
+          <Route path={`${path}/referral`} component={DashboardReferral} />
           <Route path={`${path}/settings`} component={Vault} />
         </Switch>
       </main>
