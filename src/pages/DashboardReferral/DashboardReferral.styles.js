@@ -8,7 +8,7 @@ const dashboardReferralStyles = makeStyles((theme) => ({
 
     '@media (max-width: 450px)': {
       marginLeft: '15px',
-      marginTop: '35px'
+      marginTop: '35px',
     },
   },
   referralHeading: {
@@ -24,7 +24,7 @@ const dashboardReferralStyles = makeStyles((theme) => ({
     },
 
     '@media (max-width: 354px)': {
-      fontSize: '20px'
+      fontSize: '20px',
     },
   },
   referralSubHeading: {
@@ -33,11 +33,11 @@ const dashboardReferralStyles = makeStyles((theme) => ({
     marginBottom: '50px',
 
     '@media (max-width: 450px)': {
-      fontSize: '18px'
+      fontSize: '18px',
     },
 
     '@media (max-width: 354px)': {
-      fontSize: '16px'
+      fontSize: '16px',
     },
   },
   copyBox: {
@@ -70,12 +70,15 @@ const dashboardReferralStyles = makeStyles((theme) => ({
 
     '@media (max-width: 384px)': {
       marginRight: '80px',
-      fontSize: '20px'
+      fontSize: '20px',
     },
+  },
+  share: {
+    marginTop: '30px',
   },
   shareTitle: {
     color: '#ADB8CD',
-    fontSize: '14px'
+    fontSize: '14px',
   },
   shareBtn: {
     display: 'flex',
@@ -88,7 +91,7 @@ const dashboardReferralStyles = makeStyles((theme) => ({
     marginRight: '20px',
 
     '@media (max-width: 636px)': {
-      marginBottom: '10px'
+      marginBottom: '10px',
     },
     '@media (max-width: 4126px)': {
       padding: '8px 15px',
@@ -102,14 +105,15 @@ const dashboardReferralStyles = makeStyles((theme) => ({
     letterSpacing: '1.5px',
 
     '@media (max-width: 636px)': {
-      fontSize: '12px'
+      fontSize: '12px',
     },
   },
   shareBtnBox: {
     display: 'flex',
     flexWrap: 'wrap',
-    alignItems: 'center'
-  }
+    alignItems: 'center',
+    marginTop: '20px',
+  },
 }));
 
 export default dashboardReferralStyles;
