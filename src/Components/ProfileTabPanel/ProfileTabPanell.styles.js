@@ -120,6 +120,9 @@ const profileTabPanelStyles = makeStyles((theme) => ({
     '@media (max-width: 482px)': {
       width: '100%',
     },
+  },
+  radioHidden: {
+    display: 'none'
   }
 }));
 

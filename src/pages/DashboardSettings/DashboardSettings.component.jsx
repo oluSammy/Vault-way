@@ -5,6 +5,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import tabsLogo from '../../assets/icons/diligent-logo.png';
 import ProfileTabPanel from '../../Components/ProfileTabPanel/ProfileTabPanel.component';
+import AccountsTabPanel from '../../Components/AccountsTabPanel/AccountsTabPanel.component';
 
 const DashboardSettings = () => {
   useEffect(() => {
@@ -34,10 +35,8 @@ const DashboardSettings = () => {
           <img src={tabsLogo} alt="vaultway diligent saver" className={classes.tabsLogo} />
         </figure>
       </Toolbar>
-      <TabPanel value={value} index={0}  > <ProfileTabPanel /> </TabPanel>
-      <TabPanel value={value} index={1}  >
-        <h2>Hello Account</h2>
-      </TabPanel>
+      <TabPanel value={value} index={0} > <ProfileTabPanel /> </TabPanel>
+      <TabPanel value={value} index={1} > <AccountsTabPanel /> </TabPanel>
       <TabPanel value={value} index={2}  >
         <h2>Card and Bank</h2>
       </TabPanel>
