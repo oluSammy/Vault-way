@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import dashboardHomeStyles from './DashboardHome.component.styles';
-// import Grid from '@material-ui/core/Grid';
 import walletIcon from '../../assets/icons/wallet-icon.png';
 import balanceIcon from '../../assets/icons/dashboard-vault-icon.png';
 import savingsIcon from '../../assets/icons/savings-icon.png';
 import DashboardMenu from './../../Components/DashboardMenu/DashboardMenu.component';
+import ChartOne from './../../Components/DashboardChart/DashboardChart.component';
+import TooltipSlider from './../../Components/TooltipSlider/TooltipSlider.component';
+import referralImg from '../../assets/img/referral.png';
 
 const DashboardHome = () => {
   const classes = dashboardHomeStyles();
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
   return (
     <div className={classes.root}>
       <div className={classes.balanceContainer}>
@@ -72,6 +77,23 @@ const DashboardHome = () => {
       <div className={classes.quick}>
         <h3 className={classes.quickHeading}>Quick Actions</h3>
         <DashboardMenu />
+      </div>
+      <div className={classes.dashboardDetails}>
+        <div className={classes.dashboardChart}>
+          <h2 className={classes.chartTitle}>How you are doing so far</h2>
+          <ChartOne />
+        </div>
+        <div className={classes.dashboardPart}>
+          <div>
+            <h6 className={classes.tooltipHeading}>Tool tip</h6>
+            <TooltipSlider />
+          </div>
+          <div className={classes.referral}>
+            <h4 className={classes.referralHeading}>Earn <span className={classes.referralSpan}>&#x20A6;500</span> per referral</h4>
+            <figure className={classes.referralImgBox}></figure>
+            <img src={referralImg} className={classes.referralImg} alt="earn referral"/>
+          </div>
+        </div>
       </div>
     </div>
   )

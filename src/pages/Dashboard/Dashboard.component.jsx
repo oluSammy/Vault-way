@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Switch, useRouteMatch, Route, Link } from 'react-router-dom';
 import DashboardHome from './../DashboardHome/DashboardHome.component';
 import Vault from './../Vault/Vault.component';
@@ -23,6 +23,10 @@ import DashboardNavList from './../../Components/DashboardNavList/DashboardNavLi
 
 const Dashboard = () => {
   let { path } = useRouteMatch();
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
 
   const [open, setOpen] = React.useState(true);
   const classes = dashboardStyles();

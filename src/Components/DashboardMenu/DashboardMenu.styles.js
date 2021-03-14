@@ -13,20 +13,18 @@ const dashboardMenuStyles = makeStyles(theme => ({
     alignItems: 'center',
     background: '#FFFFFF',
     padding: '12px 15px',
-    width: '250px',
+    width: '90%',
     borderRadius: '10px',
     cursor: 'pointer',
 
-    '@media (max-width: 1007px)': {
-      minWidth: '200px',
-    },
-    '@media (max-width: 750px)': {
-      width: '160px',
+    '@media (max-width: 482px)': {
+      padding: '8px 7px',
     },
   },
   quickBoxText: {
     marginRight: 'auto',
-    fontSize: '14px',
+    fontSize: '12px',
+    color: '#6E80A3',
 
     '@media (max-width: 1007px)': {
       fontSize: '12px',
@@ -38,7 +36,12 @@ const dashboardMenuStyles = makeStyles(theme => ({
   },
   arrowIcon: {
     color: theme.palette.primary.main,
-    fontSize: '20px'
+  },
+  arrowIconGreen: {
+
+    '@media (max-width: 482px)': {
+      fontSize: '7px',
+    },
   }
 }));
 
