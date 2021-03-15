@@ -48,7 +48,7 @@ const DashboardHome = () => {
         </div>
         <div className={classes.balance}>
           <div className={classes.balanceTop}>
-            <h5 className={classes.balanceTitle}>Wallet Ballance</h5>
+            <h5 className={classes.balanceTitle}>Vault Created</h5>
             <div className={classes.balanceIconBox}>
               <img src={balanceIcon} className={classes.balanceIcon} alt="vaultway wallet icon"/>
             </div>
