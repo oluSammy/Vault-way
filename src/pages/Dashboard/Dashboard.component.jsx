@@ -21,6 +21,7 @@ import DashboardSidebar from './../../Components/DashboardSidebar/DashboardSideb
 import DashboardNavList from './../../Components/DashboardNavList/DashboardNavList.component';
 import DashboardTooltip from './../DashboardTooltip/DashboardTooltip.component';
 import DashboardReferral from './../DashboardReferral/DashboardReferral.component';
+import DashboardSettings from './../DashboardSettings/DashboardSettings.component';
 
 
 const Dashboard = () => {
@@ -119,7 +120,7 @@ const Dashboard = () => {
           <Route path={`${path}/vaults`} component={Vault} />
           <Route path={`${path}/tooltip`} component={DashboardTooltip} />
           <Route path={`${path}/referral`} component={DashboardReferral} />
-          <Route path={`${path}/settings`} component={Vault} />
+          <Route path={`${path}/settings`} component={DashboardSettings} />
         </Switch>
       </main>
     </div>

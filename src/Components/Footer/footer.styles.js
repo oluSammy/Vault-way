@@ -33,7 +33,7 @@ const footerStyles = makeStyles((theme) => ({
   footerGreener: {
     display: 'flex',
     alignItems: 'center',
-    padding: '20px 80px',
+    padding: '50px 80px',
     backgroundColor: '#084622',
     clipPath: 'polygon(0 1%, 70% 0%, 55% 100%, 0% 100%)',
     webkitClipPath: 'polygon(0 1%, 70% 0%, 55% 100%, 0% 100%)',
