@@ -77,7 +77,7 @@ const profileTabPanelStyles = makeStyles((theme) => ({
 
     '@media (max-width: 482px)': {
       fontSize: '14px',
-      padding: '14px 15px'
+      padding: '14px 15px',
     },
   },
   labelBox: {
@@ -86,21 +86,25 @@ const profileTabPanelStyles = makeStyles((theme) => ({
     marginTop: '20px',
   },
   radioLabel: {
-    backgroundColor: '#F0F0F0',
     fontSize: '16px',
     fontWeight: 600,
-    color: '#ADB8CD',
     marginRight: '20px',
     padding: '20px 30px',
     borderRadius: '20px',
     cursor: 'pointer',
 
     '@media (max-width: 515px)': {
-      padding: '14px 15px'
+      padding: '14px 15px',
     },
   },
   radioLabelActive: {
     border: '1px solid #00A343',
+    backgroundColor: '#ADB8CD',
+    color: '#ffffff',
+  },
+  radioLabelInActive: {
+    backgroundColor: '#F0F0F0',
+    color: '#ADB8CD',
   },
   formInputVariant: {
     width: '90%',
@@ -110,8 +114,8 @@ const profileTabPanelStyles = makeStyles((theme) => ({
     },
   },
   radioHidden: {
-    display: 'none'
-  }
+    display: 'none',
+  },
 }));
 
 export default profileTabPanelStyles;

@@ -7,6 +7,7 @@ import tabsLogo from '../../assets/icons/diligent-logo.png';
 import ProfileTabPanel from '../../Components/ProfileTabPanel/ProfileTabPanel.component';
 import AccountsTabPanel from '../../Components/AccountsTabPanel/AccountsTabPanel.component';
 import CardBankPanel from '../../Components/CardBankPanel/CardBankPanel.component';
+import SecurityTabPanel from './../../Components/SecurityTabPanel/SecurityTabPanel.component';
 
 const DashboardSettings = () => {
   useEffect(() => {
@@ -39,9 +40,7 @@ const DashboardSettings = () => {
       <TabPanel value={value} index={0} > <ProfileTabPanel /> </TabPanel>
       <TabPanel value={value} index={1} > <AccountsTabPanel /> </TabPanel>
       <TabPanel value={value} index={2} > <CardBankPanel /> </TabPanel>
-      <TabPanel value={value} index={3}  >
-        <h2>Security</h2>
-      </TabPanel>
+      <TabPanel value={value} index={3}  > <SecurityTabPanel /> </TabPanel>
     </div>
   )
 }

@@ -1,7 +1,13 @@
 import { makeStyles } from '@material-ui/core';
 
 const accountsTabPanelStyles = makeStyles((theme) => ({
-  root: {},
+  root: {
+    paddingBottom: '60px',
+  },
+  form: {
+    paddingBottom: '50px',
+    marginBottom: '30px'
+  },
   formLabel: {
     color: '#6E80A3',
     fontSize: '14px',
@@ -53,6 +59,11 @@ const accountsTabPanelStyles = makeStyles((theme) => ({
     marginTop: '30px',
     cursor: 'pointer',
   },
+  line: {
+    marginRight: '5%',
+    marginBottom: '80px',
+    border: '1px solid #EAF1F5',
+  }
 }));
 
 export default accountsTabPanelStyles;
