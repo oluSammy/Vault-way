@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import accountsTabPanelStyles from './AccountsTabPanel.styles';
 import { Link } from 'react-router-dom';
+import DashboardBtn from './../DashboardBtn/DashboardBtn.component';
 
 const AccountsTabPanel = () => {
   const classes = accountsTabPanelStyles();
@@ -19,7 +20,7 @@ const AccountsTabPanel = () => {
            </div>
            <input className={classes.formInput} type="text" onChange={handleChange} value={values.bvn} name="bvn" id="bvn"/>
          </div>
-         <button type="submit" className={classes.formBtn}>Save</button>
+         <DashboardBtn text="Save" color="#ffffff" bg="#00A343" />
       </form>
     </div>
   )

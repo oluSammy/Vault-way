@@ -6,6 +6,7 @@ import Tab from '@material-ui/core/Tab';
 import tabsLogo from '../../assets/icons/diligent-logo.png';
 import ProfileTabPanel from '../../Components/ProfileTabPanel/ProfileTabPanel.component';
 import AccountsTabPanel from '../../Components/AccountsTabPanel/AccountsTabPanel.component';
+import CardBankPanel from '../../Components/CardBankPanel/CardBankPanel.component';
 
 const DashboardSettings = () => {
   useEffect(() => {
@@ -37,9 +38,7 @@ const DashboardSettings = () => {
       </Toolbar>
       <TabPanel value={value} index={0} > <ProfileTabPanel /> </TabPanel>
       <TabPanel value={value} index={1} > <AccountsTabPanel /> </TabPanel>
-      <TabPanel value={value} index={2}  >
-        <h2>Card and Bank</h2>
-      </TabPanel>
+      <TabPanel value={value} index={2} > <CardBankPanel /> </TabPanel>
       <TabPanel value={value} index={3}  >
         <h2>Security</h2>
       </TabPanel>

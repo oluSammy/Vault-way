@@ -6,6 +6,7 @@ const dashboardSettingsStyles = makeStyles((theme) => ({
   },
   tabBox: {
     marginTop: '40px',
+    marginBottom: '30px',
 
     '@media (max-width: 730px)': {
       flexWrap: 'wrap-reverse',

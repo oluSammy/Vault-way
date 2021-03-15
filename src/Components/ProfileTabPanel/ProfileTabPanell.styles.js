@@ -102,18 +102,6 @@ const profileTabPanelStyles = makeStyles((theme) => ({
   radioLabelActive: {
     border: '1px solid #00A343',
   },
-  formSubmit: {
-    backgroundColor: '#00A343',
-    color: '#ffffff',
-    fontStyle: 'Montserrat',
-    fontWeight: 600,
-    fontSize: '16px',
-    border: 'none',
-    padding: '13px 40px',
-    borderRadius: '30px',
-    marginTop: '30px',
-    cursor: 'pointer',
-  },
   formInputVariant: {
     width: '90%',
 

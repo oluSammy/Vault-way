@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import profileTabPanelStyles from './ProfileTabPanell.styles';
 import profileIcon from '../../assets/icons/profile-icon.png';
 import clsx from 'clsx';
+import DashboardBtn from '../DashboardBtn/DashboardBtn.component';
 
 const ProfileTabPanel = () => {
   const classes = profileTabPanelStyles();
@@ -89,7 +90,7 @@ const ProfileTabPanel = () => {
             />
           </div>
         </div>
-        <button className={classes.formSubmit} type="submit">Save</button>
+        <DashboardBtn text="Save" color="#ffffff" bg="#00A343" />
       </form>
     </div>
   )
