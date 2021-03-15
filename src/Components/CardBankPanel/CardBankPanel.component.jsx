@@ -7,6 +7,7 @@ import PaymentOutlinedIcon from '@material-ui/icons/PaymentOutlined';
 import SyncAltIcon from '@material-ui/icons/SyncAlt';
 import clsx from 'clsx';
 import DebitCardPanel from '../DebitCardPanel/DebitCardPanel.component';
+import WithdrawalPanel from '../WithdrawalPanel/WithdrawalPanel.component';
 
 const CardBankPanel = () => {
   const classes = cardBankStyles();
@@ -24,15 +25,15 @@ const CardBankPanel = () => {
           classes={{indicator: classes.indicator}}
           >
             <Tab icon={<SyncAltIcon className={clsx(classes.tabIcon, classes.rotatedIcon, value === 0 ? classes.activeIcon : '')} />}
-              className={value === 0 ? classes.activeTab : classes.inactiveTab} label="Withdrawal Bank" disableRipple
+              className={clsx(classes.tab, value === 0 ? classes.activeTab : '')} label="Withdrawal Bank" disableRipple
             />
             <Tab icon={<PaymentOutlinedIcon className={clsx(classes.tabIcon, value === 1 ? classes.activeIcon : '')} />}
-              className={value === 1 ? classes.activeTab : classes.inactiveTab} label="Funding Debit Card" disableRipple
+              className={clsx(classes.tab, value === 1 ? classes.activeTab : '')} label="Funding Debit Card" disableRipple
             />
         </Tabs>
       </Toolbar>
       <hr className={classes.dashedLine} />
-      <TabPanel value={value} index={0} > Bank </TabPanel>
+      <TabPanel value={value} index={0} > <WithdrawalPanel /> </TabPanel>
       <TabPanel value={value} index={1} > <DebitCardPanel /> </TabPanel>
     </div>
   )

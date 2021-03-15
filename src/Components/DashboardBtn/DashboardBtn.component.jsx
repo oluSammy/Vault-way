@@ -1,7 +1,7 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core';
 
-const DashboardBtn = ({ text, color, bg }) => {
+const DashboardBtn = ({ text, color, bg, icon }) => {
   const dashboardBtnStyles = makeStyles(theme => ({
     root: {
       fontStyle: 'Montserrat',
@@ -12,11 +12,16 @@ const DashboardBtn = ({ text, color, bg }) => {
       borderRadius: '30px',
       marginTop: '30px',
       cursor: 'pointer',
+      display: 'flex',
+      alignItems: 'center'
     }
   }));
   const classes = dashboardBtnStyles();
   return (
-    <button className={classes.root} type="submit" style={{ color: color, backgroundColor: bg }} >{text}</button>
+    <button className={classes.root} type="submit" style={{ color: color, backgroundColor: bg }} >
+      {icon}
+      {text}
+    </button>
   )
 }
 
