@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import Navbar from '../../Components/Navbar/Navbar.component';
-import NavMargin from '../../Components/NavMargin/NavMargin.component';
 import aboutStyles from './About.styles';
 // import Card from '@material-ui/core/Card';
 // import CardActionArea from '@material-ui/core/CardActionArea';
@@ -55,7 +54,6 @@ const About = () => {
   return (
     <div className={classes.root}>
       <Navbar navLinks={navLinks} />
-      <NavMargin />
       <Message />
       <div className={classes.lifestyle}>
         <h1 className={classes.lifestyleHeading}>

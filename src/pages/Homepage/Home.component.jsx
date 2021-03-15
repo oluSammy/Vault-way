@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import homeStyles from './Home.styles';
 import Navbar from '../../Components/Navbar/Navbar.component';
 import Message from '../../Components/Messgae/Message.component';
-import NavMargin from '../../Components/NavMargin/NavMargin.component';
 import secureIcon from '../../assets/icons/securityIcon.png'
 import authIcon from '../../assets/icons/authenticationIcon.png'
 import steerIcon from '../../assets/icons/steerIcon.png'
@@ -52,7 +51,6 @@ const Home = () => {
         <div className={classes.root}>
             <Navbar navLinks={navLinks} />
             <Message />
-            <NavMargin />
             <Grid className={classes.hero} container justify="center" alignItems="center">
                 <Grid container item lg={5} md={5} sm={6} xs={9}  justify={matchesXS ? 'flex-start' : 'center'} >
                     <div className={classes.heroText}>

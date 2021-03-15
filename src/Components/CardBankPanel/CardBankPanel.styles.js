@@ -67,6 +67,7 @@ const cardBankStyles = makeStyles((theme) => ({
     marginTop: '50px',
     width: '70%',
     marginLeft: 0,
+    marginBottom: '50px',
 
     '@media (max-width: 969px)': {
       width: '95%',

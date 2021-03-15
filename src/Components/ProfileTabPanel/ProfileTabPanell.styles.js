@@ -14,10 +14,18 @@ const profileTabPanelStyles = makeStyles((theme) => ({
     '@media (max-width: 1009px)': {
       width: '90%',
     },
+
+    '@media (max-width: 482px)': {
+      width: '95%',
+    },
+  },
+  profileImgBox: {
+    marginRight: '40px'
   },
   profileFileUpload: {
     display: 'flex',
     alignItems: 'center',
+    marginBottom: '30px'
   },
   profileFileInput: {
     display: 'none',
@@ -50,7 +58,7 @@ const profileTabPanelStyles = makeStyles((theme) => ({
     },
 
     '@media (max-width: 482px)': {
-      width: '100%',
+      // width: '100%',
       marginBottom: '20px',
       marginRight: '0',
     },
@@ -110,12 +118,17 @@ const profileTabPanelStyles = makeStyles((theme) => ({
     width: '90%',
 
     '@media (max-width: 482px)': {
-      width: '100%',
+      // width: '100%',
     },
   },
   radioHidden: {
     display: 'none',
   },
+  btnContainer: {
+    '@media (max-width: 673px)': {
+      marginLeft: '30px'
+    },
+  }
 }));
 
 export default profileTabPanelStyles;

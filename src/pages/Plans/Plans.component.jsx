@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import Message from '../../Components/Messgae/Message.component';
 import Navbar from '../../Components/Navbar/Navbar.component';
-import NavMargin from '../../Components/NavMargin/NavMargin.component';
 import plansStyles from './plans.styles';
 import Grid from '@material-ui/core/Grid';
 import vaultImg from '../../assets/img/vault-green.png'
@@ -45,7 +44,6 @@ const Plans = () => {
   return (
     <div className={classes.root}>
       <Navbar navLinks={navLinks} />
-      <NavMargin />
       <Message />
       <Grid container className={classes.hero} justify="space-evenly" alignItems="center">
         <Grid className={classes.heroText} container item justify="flex-end" lg={5} md={5} sm={5}>

@@ -90,7 +90,9 @@ const ProfileTabPanel = () => {
             />
           </div>
         </div>
-        <DashboardBtn text="Save" color="#ffffff" bg="#00A343" />
+        <div className={classes.btnContainer}>
+          <DashboardBtn text="Save" color="#ffffff" bg="#00A343" />
+        </div>
       </form>
     </div>
   )

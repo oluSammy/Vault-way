@@ -63,7 +63,7 @@ const accountsTabPanelStyles = makeStyles((theme) => ({
     marginRight: '5%',
     marginBottom: '80px',
     border: '1px solid #EAF1F5',
-  }
+  },
 }));
 
 export default accountsTabPanelStyles;

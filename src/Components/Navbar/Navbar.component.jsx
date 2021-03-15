@@ -68,76 +68,79 @@ const Navbar = () => {
     }
     return (
         <HideOnScroll>
-            <AppBar className={classes.appBarStyles} >
-                <SwipeableDrawer variant="temporary"
-                    open={open}
-                    onClose={() => setOpen(false)}
-                    onOpen={() => setOpen(true)}
-                    classes={{ paper: classes.swipeableDrawer }}
-                >
-                    <Sidebar />
-                </SwipeableDrawer>
-                <Toolbar className={classes.toolbarStyles}>
-                    <IconButton className={classes.iconBtn} onClick={handleDrawer}>
-                        <MenuIcon color="primary" className={classes.hamburger} />
-                    </IconButton>
-                    <Link to="/" className={classes.logoContainer}>
-                        <img className={classes.logo} src={logo} alt="vaultway"/>
-                    </Link>
-                    <ul className={classes.navLinks}>
-                        <NavLink arial-control="save-menu" className={`${classes.navLink} ${classes.navLinkWithIcon}`}
-                            activeClassName={classes.activeNavLink} to="/plans"
-                            onMouseOver={handleMenuClick} name={anchorEl} >
-                           <span>Save</span>
-                           <ArrowDropDownIcon className={Boolean(anchorEl) ? classes.rotateEndIcon : ''} />
-                        </NavLink>
-                        <NavLink className={classes.navLink} activeClassName={classes.activeNavLink} to="/about" >About </NavLink>
-                        <NavLink className={classes.navLink} activeClassName={classes.activeNavLink} to="/faq" >FAQ </NavLink>
-                        {/* {
-                            navLinks.map(link =>
-                                link.routerLink ?
-                                <NavLink className={classes.navLink} activeClassName={classes.activeNavLink}
-                                 to={link.link} key={link.link}>
-                                     {link.title}
-                                </NavLink>
-                                : <a className={classes.navLink} key={link.link} href={link.link}>Stories</a>
-                            )
-                        } */}
-                    </ul>
-                    <ul className={classes.navCta}>
-                        <span className={classes.navBtn}>
-                            <ButtonCta component={Link} to="/login" type="outlined" text="log in" bgColor="primary" paddingSide="20px" />
-                        </span>
-                        <span className={clsx(classes.navBtn, classes.create)}>
-                            <ButtonCta component={Link} to="/signup" type="contained" text="Create An Account"
-                                bgColor="primary" paddingSide="20px" paddingX="8px" fontSize="12px"
-                            />
-                        </span>
-                    </ul>
-                </Toolbar>
-                <Menu className={classes.navDropDown} id="save-menu" anchorEl={anchorEl} keepMounted open={Boolean(anchorEl)} onClose={handleCloseMenu}>
-                    <MenuItem onClick={handleCloseMenu}>
-                        <HashLink className={classes.menuItem} to="/plans#regular">
-                            <GraphicEqOutlinedIcon className={classes.dropIcon} />
-                            <span className={classes.menuItemLink}>Regular Vault</span>
-                        </HashLink>
-                    </MenuItem>
-                    <Divider />
-                    <MenuItem className={classes.menuItem} onClick={handleCloseMenu}>
-                        <HashLink className={classes.menuItem} to="/plans#quick">
-                            <GrainOutlinedIcon className={classes.dropIcon} />
-                            <span className={classes.menuItemLink}>Quick Vault</span>
-                        </HashLink>
-                    </MenuItem>
-                    <Divider />
-                    <MenuItem className={classes.menuItem} onClick={handleCloseMenu}>
-                        <HashLink className={classes.menuItem} to="/plans#fundMyVault">
-                            <BlurOnOutlinedIcon className={classes.dropIcon} />
-                            <span className={classes.menuItemLink}>FundMyVault</span>
-                        </HashLink>
-                    </MenuItem>
-                </Menu>
-            </AppBar>
+            <div>
+                <AppBar className={classes.appBarStyles} >
+                    <SwipeableDrawer variant="temporary"
+                        open={open}
+                        onClose={() => setOpen(false)}
+                        onOpen={() => setOpen(true)}
+                        classes={{ paper: classes.swipeableDrawer }}
+                    >
+                        <Sidebar />
+                    </SwipeableDrawer>
+                    <Toolbar className={classes.toolbarStyles}>
+                        <IconButton className={classes.iconBtn} onClick={handleDrawer}>
+                            <MenuIcon color="primary" className={classes.hamburger} />
+                        </IconButton>
+                        <Link to="/" className={classes.logoContainer}>
+                            <img className={classes.logo} src={logo} alt="vaultway"/>
+                        </Link>
+                        <ul className={classes.navLinks}>
+                            <NavLink arial-control="save-menu" className={`${classes.navLink} ${classes.navLinkWithIcon}`}
+                                activeClassName={classes.activeNavLink} to="/plans"
+                                onMouseOver={handleMenuClick} name={anchorEl} >
+                            <span>Save</span>
+                            <ArrowDropDownIcon className={Boolean(anchorEl) ? classes.rotateEndIcon : ''} />
+                            </NavLink>
+                            <NavLink className={classes.navLink} activeClassName={classes.activeNavLink} to="/about" >About </NavLink>
+                            <NavLink className={classes.navLink} activeClassName={classes.activeNavLink} to="/faq" >FAQ </NavLink>
+                            {/* {
+                                navLinks.map(link =>
+                                    link.routerLink ?
+                                    <NavLink className={classes.navLink} activeClassName={classes.activeNavLink}
+                                    to={link.link} key={link.link}>
+                                        {link.title}
+                                    </NavLink>
+                                    : <a className={classes.navLink} key={link.link} href={link.link}>Stories</a>
+                                )
+                            } */}
+                        </ul>
+                        <ul className={classes.navCta}>
+                            <span className={classes.navBtn}>
+                                <ButtonCta component={Link} to="/login" type="outlined" text="log in" bgColor="primary" paddingSide="20px" />
+                            </span>
+                            <span className={clsx(classes.navBtn, classes.create)}>
+                                <ButtonCta component={Link} to="/signup" type="contained" text="Create An Account"
+                                    bgColor="primary" paddingSide="20px" paddingX="8px" fontSize="12px"
+                                />
+                            </span>
+                        </ul>
+                    </Toolbar>
+                    <Menu className={classes.navDropDown} id="save-menu" anchorEl={anchorEl} keepMounted open={Boolean(anchorEl)} onClose={handleCloseMenu}>
+                        <MenuItem onClick={handleCloseMenu}>
+                            <HashLink className={classes.menuItem} to="/plans#regular">
+                                <GraphicEqOutlinedIcon className={classes.dropIcon} />
+                                <span className={classes.menuItemLink}>Regular Vault</span>
+                            </HashLink>
+                        </MenuItem>
+                        <Divider />
+                        <MenuItem className={classes.menuItem} onClick={handleCloseMenu}>
+                            <HashLink className={classes.menuItem} to="/plans#quick">
+                                <GrainOutlinedIcon className={classes.dropIcon} />
+                                <span className={classes.menuItemLink}>Quick Vault</span>
+                            </HashLink>
+                        </MenuItem>
+                        <Divider />
+                        <MenuItem className={classes.menuItem} onClick={handleCloseMenu}>
+                            <HashLink className={classes.menuItem} to="/plans#fundMyVault">
+                                <BlurOnOutlinedIcon className={classes.dropIcon} />
+                                <span className={classes.menuItemLink}>FundMyVault</span>
+                            </HashLink>
+                        </MenuItem>
+                    </Menu>
+                </AppBar>
+                <Toolbar />
+            </div>
         </HideOnScroll>
     )
 }

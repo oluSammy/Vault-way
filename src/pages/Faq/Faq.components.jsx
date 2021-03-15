@@ -2,7 +2,6 @@ import React, { useEffect} from 'react'
 import Message from '../../Components/Messgae/Message.component';
 import Navbar from '../../Components/Navbar/Navbar.component';
 import faqStyles from './Faq.styles';
-import NavMargin from '../../Components/NavMargin/NavMargin.component';
 import SearchIcon from '@material-ui/icons/Search';
 import Toolbar from '@material-ui/core/Toolbar';
 import Tabs from '@material-ui/core/Tabs';
@@ -43,7 +42,6 @@ const Faq = () => {
   return (
     <div className={classes.root}>
       <Navbar navLinks={navLinks} />
-      <NavMargin />
       <Message />
       <div className={classes.faqHeader}>
         <h1 className={classes.faqHeading} >Frequently asked < br /> questions</h1>

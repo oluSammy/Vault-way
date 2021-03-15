@@ -1,6 +1,7 @@
 import { makeStyles } from '@material-ui/core';
 
 const navbarStyles = makeStyles((theme) => ({
+  offset: theme.mixins.toolbar,
   appBarStyles: {
     backgroundColor: '#F5F7FA',
     boxShadow: 'none',
@@ -146,7 +147,7 @@ const navbarStyles = makeStyles((theme) => ({
     color: '#6E80A3',
     fontWeight: '500',
     fontSize: '14px'
-  }
+  },
 }));
 
 export default navbarStyles;

@@ -58,7 +58,9 @@ const AccountsTabPanel = () => {
             </select>
           </div>
         </div>
-        <DashboardBtn text="Save" color="#F9F9F9" bg="#CECECE" />
+        <div className={newClass.btnContainer}>
+          <DashboardBtn text="Save" color="#F9F9F9" bg="#CECECE" />
+        </div>
       </form>
       <hr className={classes.line} />
       <div className={classes.formGroup}>
