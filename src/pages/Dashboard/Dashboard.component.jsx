@@ -22,6 +22,7 @@ import DashboardNavList from './../../Components/DashboardNavList/DashboardNavLi
 import DashboardTooltip from './../DashboardTooltip/DashboardTooltip.component';
 import DashboardReferral from './../DashboardReferral/DashboardReferral.component';
 import DashboardSettings from './../DashboardSettings/DashboardSettings.component';
+import DashboardWallet from './../DashboardWallet/DashboardWallet.component';
 
 
 const Dashboard = () => {
@@ -118,6 +119,7 @@ const Dashboard = () => {
         <Switch>
           <Route exact path={path} component={DashboardHome} />
           <Route path={`${path}/vaults`} component={Vault} />
+          <Route path={`${path}/wallet`} component={DashboardWallet} />
           <Route path={`${path}/tooltip`} component={DashboardTooltip} />
           <Route path={`${path}/referral`} component={DashboardReferral} />
           <Route path={`${path}/settings`} component={DashboardSettings} />

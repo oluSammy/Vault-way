@@ -26,7 +26,7 @@ const DashboardHome = () => {
           <div className={classes.balanceBottom}>
             <p className={classes.amount}>
               <span className={classes.naira}>&#x20A6;</span>
-                200,000
+                <span className={classes.amountSpan}>200,000</span>
               <span className={classes.kobo}>.00</span>
             </p>
           </div>
@@ -41,7 +41,7 @@ const DashboardHome = () => {
           <div className={classes.balanceBottom}>
             <p className={classes.amount}>
               <span className={classes.naira}>&#x20A6;</span>
-                150,000
+              <span className={classes.amountSpan}>150,000</span>
               <span className={classes.kobo}>.00</span>
             </p>
           </div>
@@ -55,7 +55,7 @@ const DashboardHome = () => {
           </div>
           <div className={classes.balanceBottom}>
             <p className={classes.amount}>
-                5
+              <span className={classes.amountSpan}>5</span>
               <span className={classes.kobo}>vault(s)</span>
             </p>
           </div>

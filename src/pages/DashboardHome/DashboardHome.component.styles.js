@@ -55,14 +55,18 @@ const dashboardHomeStyles = makeStyles((theme) => ({
     },
   },
   naira: {
-    color: '#161A35',
+    color: '#6E80A3',
     fontSize: '12px',
     marginRight: '5px',
   },
   kobo: {
-    color: '#161A35',
+    color: '#6E80A3',
     fontSize: '12px',
     marginLeft: '5px',
+  },
+  amountSpan: {
+    color: '#6E80A3',
+    fontWeight: 'bold'
   },
   wallet: {
     background: '#FFFFFF',
