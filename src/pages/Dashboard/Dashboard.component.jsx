@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import { Switch, useRouteMatch, Route, Link } from 'react-router-dom';
 import DashboardHome from './../DashboardHome/DashboardHome.component';
-import Vault from './../Vault/Vault.component';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -23,6 +22,7 @@ import DashboardTooltip from './../DashboardTooltip/DashboardTooltip.component';
 import DashboardReferral from './../DashboardReferral/DashboardReferral.component';
 import DashboardSettings from './../DashboardSettings/DashboardSettings.component';
 import DashboardWallet from './../DashboardWallet/DashboardWallet.component';
+import DashboardVault from './../DashboardVault/DashboardVault.component';
 
 
 const Dashboard = () => {
@@ -118,7 +118,7 @@ const Dashboard = () => {
       <main className={classes.mainContent} style={{ marginLeft: open ? marginOpen : marginClosed }}>
         <Switch>
           <Route exact path={path} component={DashboardHome} />
-          <Route path={`${path}/vaults`} component={Vault} />
+          <Route path={`${path}/vaults`} component={DashboardVault} />
           <Route path={`${path}/wallet`} component={DashboardWallet} />
           <Route path={`${path}/tooltip`} component={DashboardTooltip} />
           <Route path={`${path}/referral`} component={DashboardReferral} />

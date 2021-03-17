@@ -33,6 +33,7 @@ const dashboardHomeStyles = makeStyles((theme) => ({
     marginBottom: '25px',
   },
   balanceTitle: {
+    margin: 0,
     marginRight: 'auto',
     color: '#737588',
     fontSize: '14px',
@@ -49,6 +50,7 @@ const dashboardHomeStyles = makeStyles((theme) => ({
   amount: {
     color: '#161A35',
     fontSize: '28px',
+    margin: 0,
 
     '@media (max-width: 624px)': {
       fontSize: '20px',
