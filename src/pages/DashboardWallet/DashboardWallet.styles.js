@@ -293,6 +293,11 @@ const dashboardWalletStyles = makeStyles((theme) => ({
       fontSize: '10px',
     },
   },
+  modal: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 }));
 
 export default dashboardWalletStyles;

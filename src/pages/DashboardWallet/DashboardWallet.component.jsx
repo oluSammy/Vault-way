@@ -10,10 +10,19 @@ import bankCardIcon from '../../assets/icons/bank-card-icon.png';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import CallMadeIcon from '@material-ui/icons/CallMade';
 import CallReceivedIcon from '@material-ui/icons/CallReceived';
+import Modal from '@material-ui/core/Modal';
+import Backdrop from '@material-ui/core/Backdrop';
+import Fade from '@material-ui/core/Fade';
+import DashboardFundPopup from '../../Components/DashboardPopup/DashboardFundPopup.component';
+import DashboardWithdrawPopup from './../../Components/DashboardPopup/DashboardWithdraw.component';
+
+
 
 const DashboardWallet = () => {
   const classes = dashboardWalletStyles();
   const [open, setOpen] = useState(false);
+  const [openFUndModal, setOpenFUndModal] = useState(false);
+  const [openWithdrawalModal, setOpenWithdrawalModal] = useState(false);
 
   const handleClick = () => {
     navigator.clipboard.writeText('0029314394');
@@ -27,6 +36,23 @@ const DashboardWallet = () => {
 
     setOpen(false);
   };
+
+  const handleOpenFUndModal = () => {
+    setOpenFUndModal(true);
+  };
+
+  const handleCloseFUndModal = () => {
+    setOpenFUndModal(false);
+  };
+
+  const handleOpenWithdrawalModal = () => {
+    setOpenWithdrawalModal(true);
+  };
+
+  const handleCloseWithdrawalModal = () => {
+    setOpenWithdrawalModal(false);
+  };
+
   return (
     <div className={classes.root}>
       <div className={classes.walletTop}>
@@ -38,7 +64,7 @@ const DashboardWallet = () => {
             <span className={classes.balanceNaira}>.00</span>
           </div>
         </div>
-        <div className={classes.withdraw}>
+        <div className={classes.withdraw} onClick={handleOpenWithdrawalModal}>
           <h6 className={classes.withdrawTitle}>Withdraw to bank</h6>
           <img src={withdrawIcon} alt="withdraw fund"/>
         </div>
@@ -66,7 +92,7 @@ const DashboardWallet = () => {
             </div>
           </div>
         </div>
-        <div className={classes.bankCard}>
+        <div className={classes.bankCard} onClick={handleOpenFUndModal}>
           <h6 className={classes.bankCardTitle}>Fund Wallet via <br/> bank Card</h6>
           <div className={classes.bankCardIcons}>
             <img src={bankCardIcon} alt="Fund Wallet via bank Card"/>
@@ -121,6 +147,38 @@ const DashboardWallet = () => {
         message="Account Number copied to clipboard"
         TransitionComponent={Slide}
       />
+      <Modal
+        aria-labelledby="transition-modal-title"
+        aria-describedby="transition-modal-description"
+        className={classes.modal}
+        open={openFUndModal}
+        onClose={handleCloseFUndModal}
+        closeAfterTransition
+        BackdropComponent={Backdrop}
+        BackdropProps={{
+          timeout: 500,
+        }}
+      >
+        <Fade in={openFUndModal}>
+          <DashboardFundPopup closeModal={handleCloseFUndModal} />
+        </Fade>
+      </Modal>
+      <Modal
+        aria-labelledby="transition-modal-title"
+        aria-describedby="transition-modal-description"
+        className={classes.modal}
+        open={openWithdrawalModal}
+        onClose={handleCloseWithdrawalModal}
+        closeAfterTransition
+        BackdropComponent={Backdrop}
+        BackdropProps={{
+          timeout: 500,
+        }}
+      >
+        <Fade in={openWithdrawalModal}>
+          <DashboardWithdrawPopup closeModal={handleCloseWithdrawalModal}  />
+        </Fade>
+      </Modal>
     </div>
   )
 }
