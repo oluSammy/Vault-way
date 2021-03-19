@@ -4,7 +4,7 @@ const dashboardVaultStyles = makeStyles((theme) => ({
   root: {
     minHeight: '85vh',
     paddingTop: '50px',
-    paddingBottom: '70px'
+    paddingBottom: '70px',
   },
   new: {
     backgroundColor: theme.palette.primary.main,
@@ -32,6 +32,7 @@ const dashboardVaultStyles = makeStyles((theme) => ({
     fontSize: 14,
     fontWeight: 600,
     color: '#6E80A3',
+    marginBottom: '20px',
   },
   myVaultBox: {
     marginRight: '30px',
@@ -55,7 +56,7 @@ const dashboardVaultStyles = makeStyles((theme) => ({
     },
 
     '@media (max-width: 390px)': {
-      padding: '15px'
+      padding: '15px',
     },
   },
   myVaultContent: {
@@ -110,16 +111,12 @@ const dashboardVaultStyles = makeStyles((theme) => ({
 
     '@media (max-width: 719px)': {
       fontSize: 12,
-      marginBottom: '15px'
+      marginBottom: '15px',
     },
   },
   myVaultProgress: {
-    height: 10,
+    height: 7,
     borderRadius: '15px',
-
-    '@media (max-width: 390px)': {
-      height: '8px',
-    },
   },
   myVaultComplete: {
     margin: 0,
@@ -128,7 +125,7 @@ const dashboardVaultStyles = makeStyles((theme) => ({
     fontWeight: 'normal',
 
     '@media (max-width: 960px)': {
-      marginTop: '7px'
+      marginTop: '7px',
     },
   },
 }));

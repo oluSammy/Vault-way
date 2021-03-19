@@ -73,7 +73,7 @@ const DashboardVault = () => {
       </div>
       <h6 className={classes.myVaultHeading}>My Vaults</h6>
       <div className={classes.myVaultBox}>
-        <Link to="/" className={classes.myVaultContainer}>
+        <Link to="/dashboard/vault/carId" className={classes.myVaultContainer}>
           <div className={classes.myVaultWrapper}>
             <div className={classes.myVaultContent}>
               <div className={classes.myVaultName}>
@@ -103,7 +103,7 @@ const DashboardVault = () => {
             </div>
           </div>
         </Link>
-        <Link to="/" className={classes.myVaultContainer}>
+        <Link to="/dashboard/vault/npmId" className={classes.myVaultContainer}>
           <div className={classes.myVaultWrapper}>
             <div className={classes.myVaultContent}>
               <div className={classes.myVaultName}>
@@ -133,7 +133,7 @@ const DashboardVault = () => {
             </div>
           </div>
         </Link>
-        <Link to="/" className={classes.myVaultContainer}>
+        <Link to="/dashboard/vault/yarnId" className={classes.myVaultContainer}>
           <div className={classes.myVaultWrapper}>
             <div className={classes.myVaultContent}>
               <div className={classes.myVaultName}>

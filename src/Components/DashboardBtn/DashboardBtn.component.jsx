@@ -10,7 +10,7 @@ const DashboardBtn = ({ text, color, bg, icon }) => {
       border: 'none',
       padding: '13px 40px',
       borderRadius: '30px',
-      marginTop: '30px',
+      // marginTop: '30px',
       cursor: 'pointer',
       display: 'flex',
       alignItems: 'center'
