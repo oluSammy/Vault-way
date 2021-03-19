@@ -9,13 +9,15 @@ import dot from '../../assets/icons/dot.png';
 import clsx from 'clsx';
 import btnArrow from '../../assets/icons/withdraw-arrow.png';
 import addIcon from '../../assets/icons/add-money-icon.png';
+import { useHistory } from "react-router-dom";
 
 const VaultDetail = () => {
   // let { id } = useParams();
+  let history = useHistory();
   const classes = vaultDetailStyles();
   return (
     <div className={classes.root}>
-      <div className={classes.arrowBack}>
+      <div className={classes.arrowBack} onClick={() => history.goBack()}>
         <ArrowBackIcon className={classes.arrowBackIcon} />
       </div>
       <div className={classes.vaultOverview}>
