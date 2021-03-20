@@ -13,7 +13,7 @@ const DashboardBtn = ({ text, color, bg, icon }) => {
       // marginTop: '30px',
       cursor: 'pointer',
       display: 'flex',
-      alignItems: 'center'
+      alignItems: 'center',
     }
   }));
   const classes = dashboardBtnStyles();

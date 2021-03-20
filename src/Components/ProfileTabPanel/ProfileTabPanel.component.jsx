@@ -69,13 +69,15 @@ const ProfileTabPanel = () => {
           <div className={classes.formInput}>
             <label className={classes.profileInputLabel}>Gender</label>
             <div className={classes.labelBox}>
-              <label htmlFor="male" className={clsx(classes.radioLabel, values.gender === 'male' ? classes.radioLabelActive : classes.radioLabelInActive )}>
+              <label htmlFor="male"
+              className={clsx(classes.radioLabel, values.gender === 'male' ? classes.radioLabelActive : classes.radioLabelInActive )}>
               <input value='male' id="male" onChange={handleChange}  checked={values.gender === 'male'}
                 className={clsx(classes.formTextField, classes.radioHidden) } type="radio" name="gender"
               />
                 Male
               </label>
-              <label htmlFor="female" className={clsx(classes.radioLabel, values.gender === 'female' ? classes.radioLabelActive : classes.radioLabelInActive )}>
+              <label htmlFor="female"
+                className={clsx(classes.radioLabel, values.gender === 'female' ? classes.radioLabelActive : classes.radioLabelInActive )}>
                 Female
               <input value='female' id="female" onChange={handleChange} checked={values.gender === 'female'}
                 className={clsx(classes.formTextField, classes.radioHidden) } type="radio" name="gender"

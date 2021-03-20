@@ -22,8 +22,7 @@ import DashboardTooltip from './../DashboardTooltip/DashboardTooltip.component';
 import DashboardReferral from './../DashboardReferral/DashboardReferral.component';
 import DashboardSettings from './../DashboardSettings/DashboardSettings.component';
 import DashboardWallet from './../DashboardWallet/DashboardWallet.component';
-import DashboardVault from './../DashboardVault/DashboardVault.component';
-import VaultDetail from './../VaultDetail/VaultDetail.components';
+import VaultsRoutesPage from './../VaultsRoutesPage/VaultsRoutesPage.component';
 
 
 const Dashboard = () => {
@@ -119,8 +118,7 @@ const Dashboard = () => {
       <main className={classes.mainContent} style={{ marginLeft: open ? marginOpen : marginClosed }}>
         <Switch>
           <Route exact path={path} component={DashboardHome} />
-          <Route path={`${path}/vaults`} component={DashboardVault} />
-          <Route path={`${path}/vault/:id`} component={VaultDetail} />
+          <Route path={`${path}/vaults`} component={VaultsRoutesPage} />
           <Route path={`${path}/wallet`} component={DashboardWallet} />
           <Route path={`${path}/tooltip`} component={DashboardTooltip} />
           <Route path={`${path}/referral`} component={DashboardReferral} />

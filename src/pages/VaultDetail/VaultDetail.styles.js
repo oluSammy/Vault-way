@@ -342,6 +342,7 @@ const vaultDetailStyles = makeStyles((theme) => ({
     alignItems: 'center',
     fontWeight: 700,
     borderRadius: '28px',
+    cursor: 'pointer',
   },
   iconBox: {
     marginLeft: '10px',
@@ -361,6 +362,11 @@ const vaultDetailStyles = makeStyles((theme) => ({
   },
   spanText: {
     marginRight: '20px',
+  },
+  modal: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 }));
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 // import { useParams } from 'react-router-dom';
 import vaultDetailStyles from './VaultDetail.styles';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
@@ -10,11 +10,35 @@ import clsx from 'clsx';
 import btnArrow from '../../assets/icons/withdraw-arrow.png';
 import addIcon from '../../assets/icons/add-money-icon.png';
 import { useHistory } from "react-router-dom";
+import Modal from '@material-ui/core/Modal';
+import Backdrop from '@material-ui/core/Backdrop';
+import Fade from '@material-ui/core/Fade';
+import CashOutModal from '../../Components/vaultModal/cashoutModal.component';
+import TopUpModal from './../../Components/vaultModal/topupModal.component';
 
 const VaultDetail = () => {
   // let { id } = useParams();
   let history = useHistory();
   const classes = vaultDetailStyles();
+  const [openCashOutModal, setCashOutModal] = useState(false);
+  const [openTopModal, setTopModal] = useState(false);
+
+  const handleOpenCashOutModal = () => {
+    setCashOutModal(true);
+  };
+
+  const handleCloseCashOutModal = () => {
+    setCashOutModal(false);
+  };
+
+  const handleOpenTopModal = () => {
+    setTopModal(true);
+  };
+
+  const handleCloseTopModal = () => {
+    setTopModal(false);
+  };
+
   return (
     <div className={classes.root}>
       <div className={classes.arrowBack} onClick={() => history.goBack()}>
@@ -74,7 +98,9 @@ const VaultDetail = () => {
               <p className={classes.summaryTitle}>Interest P/A </p>
               <div className={classes.summaryDetail}>
                 <p className={clsx(classes.summaryNumber, classes.marginDetail) }>24,000.00</p>
-                <p className={clsx(classes.summaryWithdraw, classes.marginDetail) }>You can withdraw your next <br/> interest on february 24, 2021 </p>
+                <p className={clsx(classes.summaryWithdraw, classes.marginDetail) }>You can withdraw your next <br/>
+                  interest on february 24, 2021
+                </p>
                 <button className={classes.btnWithdraw}>
                   <div className={classes.subBtn}>20.000<span className={classes.subBtnKb}>.00</span>
                   <img src={btnArrow} alt="withdraw"/> </div>
@@ -109,14 +135,46 @@ const VaultDetail = () => {
             </div>
           </div>
           <div className={classes.vaultSummaryBtn}>
-            <button className={classes.withdrawBtn}>Withdraw from vault</button>
-            <button className={classes.addMoneyBtn}>
+            <button className={classes.withdrawBtn} onClick={handleOpenCashOutModal}>Withdraw from vault</button>
+            <button className={classes.addMoneyBtn} onClick={handleOpenTopModal}>
               <span className={classes.spanText}>Add money</span>
               <div className={classes.iconBox}> <img src={addIcon} alt="add money"/> </div>
             </button>
           </div>
         </div>
       </div>
+      <Modal
+        aria-labelledby="transition-modal-title"
+        aria-describedby="transition-modal-description"
+        className={classes.modal}
+        open={openCashOutModal}
+        onClose={handleCloseCashOutModal}
+        closeAfterTransition
+        BackdropComponent={Backdrop}
+        BackdropProps={{
+          timeout: 500,
+        }}
+      >
+        <Fade in={openCashOutModal}>
+          <CashOutModal closeModal={handleCloseCashOutModal} />
+        </Fade>
+      </Modal>
+      <Modal
+        aria-labelledby="transition-modal-title"
+        aria-describedby="transition-modal-description"
+        className={classes.modal}
+        open={openTopModal}
+        onClose={handleCloseTopModal}
+        closeAfterTransition
+        BackdropComponent={Backdrop}
+        BackdropProps={{
+          timeout: 500,
+        }}
+      >
+        <Fade in={openTopModal}>
+          <TopUpModal closeModal={handleCloseTopModal} />
+        </Fade>
+      </Modal>
     </div>
   )
 }
