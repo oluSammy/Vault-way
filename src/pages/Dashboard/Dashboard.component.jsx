@@ -24,6 +24,7 @@ import DashboardSettings from './../DashboardSettings/DashboardSettings.componen
 import DashboardWallet from './../DashboardWallet/DashboardWallet.component';
 import VaultsRoutesPage from './../VaultsRoutesPage/VaultsRoutesPage.component';
 import CreateVault from './../CreateVault/CreateVault.component';
+import RegularVault from './../RegularVault/RegularVault.component';
 
 
 const Dashboard = () => {
@@ -121,6 +122,7 @@ const Dashboard = () => {
           <Route exact path={path} component={DashboardHome} />
           <Route path={`${path}/vaults`} component={VaultsRoutesPage} />
           <Route path={`${path}/vault/create`} component={CreateVault} />
+          <Route path={`${path}/vault/regular-vault`} component={RegularVault} />
           <Route path={`${path}/wallet`} component={DashboardWallet} />
           <Route path={`${path}/tooltip`} component={DashboardTooltip} />
           <Route path={`${path}/referral`} component={DashboardReferral} />

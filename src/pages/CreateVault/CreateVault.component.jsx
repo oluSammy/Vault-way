@@ -27,7 +27,12 @@ const CreateVault = () => {
         <h5 className={classes.vaultTitle}>Regular Vaults</h5>
       </div>
       <div className={classes.regularContainer}>
-        <Link to={'/'} className={classes.regularVault}>
+        <Link to={{
+          pathname:'/dashboard/vault/regular-vault',
+          state: {
+            type: 'Tyro'
+          }
+        }} className={classes.regularVault}>
           <div className={classes.vaultTop}>
             <h4 className={classes.vaultTopText}>Tyro Vault</h4>
             <img className={classes.vaultTopIcon} src={tyroIcon} alt="Tyro vault"/>
@@ -47,7 +52,12 @@ const CreateVault = () => {
             </li>
           </ul>
         </Link>
-        <Link to={'/'} className={classes.regularVault}>
+        <Link to={{
+          pathname:'/dashboard/vault/regular-vault',
+          state: {
+            type: 'Reaper'
+          }
+        }} className={classes.regularVault}>
           <div className={classes.vaultTop}>
             <h4 className={classes.vaultTopText}>Reaper Vault</h4>
             <img className={classes.vaultTopIcon} src={reaperIcon} alt="Reaper vault"/>
@@ -67,7 +77,12 @@ const CreateVault = () => {
             </li>
           </ul>
         </Link>
-        <Link to={'/'} className={classes.regularVault}>
+        <Link to={{
+          pathname:'/dashboard/vault/regular-vault',
+          state: {
+            type: 'Ace'
+          }
+        }} className={classes.regularVault}>
           <div className={classes.vaultTop}>
             <h4 className={classes.vaultTopText}>Ace Vault</h4>
             <img className={classes.vaultTopIcon} src={aceIcon} alt="Ace vault"/>
@@ -87,7 +102,13 @@ const CreateVault = () => {
             </li>
           </ul>
         </Link>
-        <Link to={'/'} className={classes.regularVault}>
+        <Link to={{
+            pathname:'/dashboard/vault/regular-vault',
+            state: {
+              type: 'Stellar'
+            }
+          }}
+          className={classes.regularVault}>
           <div className={classes.vaultTop}>
             <h4 className={classes.vaultTopText}>Stellar Vault</h4>
             <img className={classes.vaultTopIcon} src={stellarIcon} alt="Stellar vault"/>
