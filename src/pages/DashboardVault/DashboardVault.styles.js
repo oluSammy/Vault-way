@@ -13,6 +13,7 @@ const dashboardVaultStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     flexDirection: 'column',
     color: '#ffffff',
+    textDecoration: 'none',
   },
   createIcon: {
     fontSize: '40px',

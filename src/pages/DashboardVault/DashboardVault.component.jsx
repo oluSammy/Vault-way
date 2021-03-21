@@ -66,10 +66,10 @@ const DashboardVault = () => {
             </p>
           </div>
         </div>
-        <div className={clsx(newClass.wallet, classes.new)} >
+        <Link to="/dashboard/vault/create" className={clsx(newClass.wallet, classes.new)} >
           <p className={classes.createIcon}>+</p>
           <p className={classes.createText}>Create New Vault</p>
-        </div>
+        </Link>
       </div>
       <h6 className={classes.myVaultHeading}>My Vaults</h6>
       <div className={classes.myVaultBox}>
