@@ -1,15 +1,27 @@
 import React from 'react'
+import InterestSavings from '../InterestSavings/InterestSavings.component';
 import SavingsReason from '../SavingsReason/SavingsReason.component';
 
-const RegularVaultContent = ({ values, handleChange }) => {
-  switch (values.step) {
+const RegularVaultContent = ({ values, handleChange, nextStep, step, setStep }) => {
+  switch (step) {
     case 1:
       return (
-        <SavingsReason />
+        <SavingsReason
+          values={values}
+          handleChange={handleChange}
+          nextStep={nextStep}
+          step={step}
+        />
       );
     case 2:
       return (
-        <h1>hello content 2</h1>
+        <InterestSavings
+          values={values}
+          handleChange={handleChange}
+          nextStep={nextStep}
+          step={step}
+          setStep={setStep}
+        />
       )
     default:
       return (

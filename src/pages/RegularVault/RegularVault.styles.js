@@ -6,11 +6,35 @@ const regularVaultStyles = makeStyles((theme) => ({
     paddingTop: '40px',
     paddingRight: '50px',
     position: 'relative',
+
+    '@media (max-width: 609px)': {
+      paddingRight: '30px',
+    },
+
+    '@media (max-width: 466px)': {
+      paddingRight: '20px',
+    },
   },
   regularTopTop: {
     display: 'grid',
     gridTemplateColumns: '.1fr 1fr',
     alignItems: 'center',
+
+    '@media (max-width: 783px)': {
+      gridTemplateColumns: '.1.5fr 1fr',
+    },
+    '@media (max-width: 692px)': {
+      gridTemplateColumns: '.2fr 1fr',
+    },
+
+    '@media (max-width: 411px)': {
+      gridTemplateColumns: '.3fr 1fr',
+    },
+
+    '@media (max-width: 363px)': {
+      gridTemplateColumns: '.3.5fr 1fr',
+    },
+
   },
   arrowBackBox: {
     display: 'flex',
