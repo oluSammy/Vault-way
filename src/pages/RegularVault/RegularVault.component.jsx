@@ -10,8 +10,9 @@ import { useHistory } from "react-router-dom";
 const RegularVault = () => {
   let location = useLocation();
   const [values, setValues] =
-  useState({ type: location.state.type, reason: '', interest: '', automate: "false", date: '', freq: '',
+  useState({ type: location.state.type, reason: '', interest: '', automate: "", date: '', freq: '',
   amount: '', method: '', step: 1 });
+  const [selectedDate, setSelectedDate] = React.useState(Date.now());
   const [step, setStep] = useState(1);
   const classes = regularVaultStyles();
   let history = useHistory();
@@ -28,8 +29,11 @@ const RegularVault = () => {
 
   const nextStep = () => {
     setStep(prevState => prevState + 1);
-    console.log(step);
   }
+
+  const handleDateChange = (date) => {
+    setSelectedDate(date);
+  };
 
   return (
     <div className={classes.root}>
@@ -57,6 +61,8 @@ const RegularVault = () => {
           prevStep={handlePrevStep}
           nextStep ={nextStep}
           setStep={setStep}
+          selectedDate={selectedDate}
+          handleDateChange={handleDateChange}
         />
       </div>
     </div>
