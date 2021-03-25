@@ -7,15 +7,13 @@ import clsx from 'clsx';
 import regularContentStyles from '../RegularVaultContent/RegularVaultContent.styles';
 import Button from '@material-ui/core/Button';
 
-const InterestSavings = ({ values, handleChange, nextStep }) => {
+const InterestSavings = ({ values, handleChange, nextStep, vaultDetail }) => {
     const classes = interestSavingsStyles();
 		const btnStyles = regularContentStyles();
-    const interestArray = [
-        { firstMonth: 5, others: 1 },
-      ]
+
     return (
 			<div className={classes.root}>
-				<RegularVaultDetail title="Do you want interest on your savings?" interest={interestArray} />
+				<RegularVaultDetail title="Do you want interest on your savings?" interest={vaultDetail} />
 				<div className={classes.btnBox}>
 					<Button onClick={nextStep}
 						disabled={values.interest ? false : true}

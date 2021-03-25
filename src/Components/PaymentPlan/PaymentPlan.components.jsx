@@ -7,10 +7,21 @@ import vaultWayIcon from '../../assets/icons/vaultway-card-icon.png';
 import masterCard from '../../assets/icons/Mastercard.png';
 import clsx from 'clsx';
 
-const PaymentPlan = ({ values, handleChange, nextStep }) => {
+const PaymentPlan = ({ values, handleChange, nextStep, vaultDetail }) => {
 		const classes = savingsAmountStyles();
 		const btnStyles = regularContentStyles();
 		const newStyles = paymentPlanStyles();
+
+		const { firstMonth, others, months } = vaultDetail[0];
+    let firstMonthInterest = (firstMonth / 100) * values.amount;
+    let otherMonthsInterest = (others / 100) * values.amount;
+    let totalEarnings = +values.amount + firstMonthInterest + ((months - 1) * otherMonthsInterest )
+
+    let FormatDecimalNumberWithCommas = num => {
+        let numberArr = num.toString().split('.');
+        numberArr[0] = numberArr[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        return numberArr.join('.');
+    }
 		return (
 			<div className={clsx(classes.root, newStyles.root)}>
 					<div className={classes.amount}>
@@ -58,7 +69,7 @@ const PaymentPlan = ({ values, handleChange, nextStep }) => {
 										<div className={newStyles.cardFooter}>
 												<div className={newStyles.expires}>Expires in 19/24</div>
 												<div className={newStyles.walletIconBox}>
-																		<img src={masterCard} alt="vaultway icon" className={newStyles.walletIcon}/>
+													<img src={masterCard} alt="vaultway icon" className={newStyles.walletIcon}/>
 												</div>
 										</div>
 									</label>
@@ -69,23 +80,31 @@ const PaymentPlan = ({ values, handleChange, nextStep }) => {
 							<div className={classes.amountDetailsFlex}>
 								<div className={classes.amountDetailBox}>
 										<p className={classes.amountDetailTitle}>Principal</p>
-										<p className={classes.amountDetailNumber}>200,000.00</p>
+										<p className={classes.amountDetailNumber}>
+											{FormatDecimalNumberWithCommas((+values.amount).toFixed(2))}
+										</p>
 								</div>
 								<div className={classes.amountDetailBox}>
-										<p className={classes.amountDetailTitle}>First month 5% Interest</p>
-										<p className={classes.amountDetailNumber}>20,000.00</p>
+										<p className={classes.amountDetailTitle}>First month {firstMonth}% Interest</p>
+										<p className={classes.amountDetailNumber}>
+											{FormatDecimalNumberWithCommas(firstMonthInterest.toFixed(2))}
+										</p>
 								</div>
 								<div className={classes.amountDetailBox}>
-										<p className={classes.amountDetailTitle}>Other month 1% Interest</p>
-										<p className={classes.amountDetailNumber}>4,000.00</p>
+										<p className={classes.amountDetailTitle}>Other month {others}% Interest</p>
+										<p className={classes.amountDetailNumber}>
+											{FormatDecimalNumberWithCommas(otherMonthsInterest.toFixed(2))}
+										</p>
 								</div>
 								<div className={classes.amountDetailBox}>
 										<p className={classes.amountDetailTitle}>Duration</p>
-										<p className={classes.amountDetailNumber}>2 months</p>
+										<p className={classes.amountDetailNumber}>{months} months</p>
 								</div>
 								<div className={classes.amountDetailBox}>
 										<p className={classes.amountDetailTitle}>Total Earnings</p>
-										<p className={classes.amountDetailNumber}>224,000.00</p>
+										<p className={classes.amountDetailNumber}>
+											{FormatDecimalNumberWithCommas(totalEarnings.toFixed(2))}
+										</p>
 								</div>
 						</div>
 						<div className={classes.btnBox}>

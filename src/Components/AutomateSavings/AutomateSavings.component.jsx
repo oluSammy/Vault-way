@@ -8,15 +8,12 @@ import regularContentStyles from '../RegularVaultContent/RegularVaultContent.sty
 import RegularVaultDetail from '../RegularVaultDetail/RegularVaultDetail.component';
 
 
-const AutomateSavings = ({ values, handleChange, nextStep }) => {
+const AutomateSavings = ({ values, handleChange, nextStep, vaultDetail }) => {
     const classes = interestSavingsStyles();
     const btnStyles = regularContentStyles();
-    const interestArray = [
-        { firstMonth: 5, others: 1 },
-      ]
     return (
 			<div className={classes.root}>
-					<RegularVaultDetail title="Do you want to automate your savings?" interest={interestArray} />
+					<RegularVaultDetail title="Do you want to automate your savings?" interest={vaultDetail} />
 					<div className={classes.btnBox}>
 							<Button onClick={nextStep}
 								disabled={values.automate ? false : true}

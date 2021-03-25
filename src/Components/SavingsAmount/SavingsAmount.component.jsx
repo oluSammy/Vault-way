@@ -3,9 +3,19 @@ import savingsAmountStyles from './SavingsAmount.styles';
 import Button from '@material-ui/core/Button';
 import regularContentStyles from '../RegularVaultContent/RegularVaultContent.styles';
 
-const SavingsAmount = ({ values, handleChange, nextStep }) => {
+const SavingsAmount = ({ values, handleChange, nextStep, vaultDetail }) => {
     const classes = savingsAmountStyles();
     const btnStyles = regularContentStyles();
+    const { firstMonth, others, months } = vaultDetail[0];
+    let firstMonthInterest = (firstMonth / 100) * values.amount;
+    let otherMonthsInterest = (others / 100) * values.amount;
+    let totalEarnings = +values.amount + firstMonthInterest + ((months - 1) * otherMonthsInterest )
+
+    let FormatDecimalNumberWithCommas = num => {
+        let numberArr = num.toString().split('.');
+        numberArr[0] = numberArr[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        return numberArr.join('.');
+    }
     return (
         <div className={classes.root}>
            <div className={classes.amount}>
@@ -26,28 +36,34 @@ const SavingsAmount = ({ values, handleChange, nextStep }) => {
                <div className={classes.amountDetailsFlex}>
                     <div className={classes.amountDetailBox}>
                         <p className={classes.amountDetailTitle}>Principal</p>
-                        <p className={classes.amountDetailNumber}>200,000.00</p>
+                        <p className={classes.amountDetailNumber}>
+                            {FormatDecimalNumberWithCommas((+values.amount).toFixed(2))}
+                        </p>
                     </div>
                     <div className={classes.amountDetailBox}>
-                        <p className={classes.amountDetailTitle}>First month 5% Interest</p>
-                        <p className={classes.amountDetailNumber}>20,000.00</p>
+                        <p className={classes.amountDetailTitle}>First month {firstMonth}% Interest</p>
+                        <p className={classes.amountDetailNumber}>
+                            {FormatDecimalNumberWithCommas(firstMonthInterest.toFixed(2))}
+                        </p>
                     </div>
                     <div className={classes.amountDetailBox}>
-                        <p className={classes.amountDetailTitle}>Other month 1% Interest</p>
-                        <p className={classes.amountDetailNumber}>4,000.00</p>
+                        <p className={classes.amountDetailTitle}>Other month {others}% Interest</p>
+                        <p className={classes.amountDetailNumber}>
+                            {FormatDecimalNumberWithCommas(otherMonthsInterest.toFixed(2))}
+                        </p>
                     </div>
                     <div className={classes.amountDetailBox}>
                         <p className={classes.amountDetailTitle}>Duration</p>
-                        <p className={classes.amountDetailNumber}>2 months</p>
+                        <p className={classes.amountDetailNumber}>{months} months</p>
                     </div>
                     <div className={classes.amountDetailBox}>
                         <p className={classes.amountDetailTitle}>Total Earnings</p>
-                        <p className={classes.amountDetailNumber}>224,000.00</p>
+                        <p className={classes.amountDetailNumber}>{FormatDecimalNumberWithCommas(totalEarnings.toFixed(2))}</p>
                     </div>
                </div>
                 <div className={classes.btnBox}>
                     <Button onClick={nextStep}
-                        disabled={values.amount ? false : true}
+                        disabled={values.amount && +values.amount > 0 ? false : true}
                         className={btnStyles.btn} variant="contained" color="primary" >
                             Continue
                     </Button>

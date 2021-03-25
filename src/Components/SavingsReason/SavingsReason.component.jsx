@@ -13,15 +13,12 @@ import fees from '../../assets/icons/vault-school.png';
 import project from '../../assets/icons/vault-project.png';
 import clsx from 'clsx';
 
-const SavingsReason = ({ values, handleChange, nextStep, step }) => {
+const SavingsReason = ({ values, handleChange, nextStep, vaultDetail}) => {
   const classes = savingsReasonStyles();
   const btnStyles = regularContentStyles();
-  const interestArray = [
-    { firstMonth: 5, others: 1 },
-  ]
   return (
     <div className={classes.root}>
-      <RegularVaultDetail title="What are you saving for?" interest={interestArray} />
+      <RegularVaultDetail title="What are you saving for?" interest={vaultDetail} />
       <form>
         <div className={classes.formTop}>
           <input type="text" name="reason" className={classes.formInput}

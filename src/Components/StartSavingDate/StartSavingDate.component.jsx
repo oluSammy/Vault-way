@@ -11,15 +11,14 @@ import {
   KeyboardDatePicker,
 } from '@material-ui/pickers';
 
-const StartSavingDate = ({ nextStep, selectedDate, handleDateChange }) => {
+const StartSavingDate = ({ nextStep, selectedDate, handleDateChange, vaultDetail }) => {
     const classes = savingDateStyles();
     const btnStyles = regularContentStyles();
-    const interestArray = [ { firstMonth: 5, others: 1 } ];
     return (
         <div className={classes.root}>
-            <RegularVaultDetail title="When do you want to start saving?" interest={interestArray} />
+            <RegularVaultDetail title="When do you want to start saving?" interest={vaultDetail} />
             <div className={classes.savingsTop}>
-                <h2 className={classes.savingsTopTitle}>You’ll save this day for 2 months</h2>
+                <h2 className={classes.savingsTopTitle}>You’ll save this day for {vaultDetail[0].months} months</h2>
                 <Button onClick={nextStep}
                     disabled={selectedDate ? false : true}
                     className={btnStyles.btn} variant="contained" color="primary" >
@@ -38,6 +37,7 @@ const StartSavingDate = ({ nextStep, selectedDate, handleDateChange }) => {
                         KeyboardButtonProps={{
                             'aria-label': 'change date',
                         }}
+                        minDate={new Date()}
                     />
                 </MuiPickersUtilsProvider>
             </div>

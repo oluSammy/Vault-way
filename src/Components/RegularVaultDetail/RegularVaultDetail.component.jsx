@@ -2,13 +2,13 @@ import React from 'react'
 import regularVaultDetailStyles from './RegularVaultDetail.styles';
 import clsx from 'clsx';
 
-const RegularVaultDetail = ({ title, interest }) => {
+const RegularVaultDetail = ({ title, interest, questionMark }) => {
   const classes = regularVaultDetailStyles();
   const re = /\b[\w']+(?:\s+[\w']+){0,2}/g;
   const wordList = title.match(re);
   return (
     <div className={classes.root}>
-      <h3 className={classes.title}>{wordList.join("\r\n")}</h3>
+      <h3 className={classes.title}>{wordList.join("\r\n")} {questionMark ? '?' : ''}</h3>
       <div className={classes.interestBox}>
         <div className={clsx(classes.interestContainer, classes.marginInterest) }>
           <p className={classes.interestTitle}>{interest[0].firstMonth}% interest</p>
