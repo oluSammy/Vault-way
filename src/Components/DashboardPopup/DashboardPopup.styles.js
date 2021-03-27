@@ -181,6 +181,7 @@ const dashBoardPopupStyles = makeStyles((theme) => ({
   dashboardBtnBox: {
     display: 'flex',
     justifyContent: 'center',
+    marginTop: 40
   },
   destination: {
     margin: 0,

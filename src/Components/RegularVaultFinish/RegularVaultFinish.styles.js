@@ -50,6 +50,9 @@ const regularFinishStyles = makeStyles(theme => ({
     zIndex: theme.zIndex.drawer + 1,
     color: '#fff',
   },
+  finishEmoji: {
+    marginBottom: '15px'
+  }
 }));
 
 export default regularFinishStyles;

@@ -130,7 +130,7 @@ const CreateVault = () => {
         </Link>
       </div>
       <div className={classes.irregularVaultContainer}>
-        <Link to="/" className={clsx(classes.irregularVaultBox) }>
+        <Link to="/dashboard/vaults/fundmyvault" className={clsx(classes.irregularVaultBox) }>
           <div className={classes.vaultTitleBox}>
             <img className={classes.vaultIcon} src={fundIcon} alt="fund my vault"/>
             <h5 className={classes.vaultTitle}>FundMyVault</h5>
@@ -146,7 +146,7 @@ const CreateVault = () => {
             <img className={classes.irregularContentFrame} src={fundFrame} alt="fund my vault"/>
           </div>
         </Link>
-        <Link to="/" className={classes.irregularVaultBox}>
+        <Link to="/dashboard/vaults/quickvault" className={classes.irregularVaultBox}>
           <div className={classes.vaultTitleBox}>
             <img className={classes.vaultIcon} src={quickVault} alt="quick vaults"/>
             <h5 className={classes.vaultTitle}>Quick Vault</h5>
