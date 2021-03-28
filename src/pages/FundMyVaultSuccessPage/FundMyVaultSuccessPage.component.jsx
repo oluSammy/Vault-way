@@ -48,10 +48,11 @@ const FundMyVaultSuccessPage = () => {
   }
 
   useEffect(() => {
+    let intervals = interval.current
     startTimer();
 
     return () => {
-      clearInterval(interval.current)
+      clearInterval(intervals)
     }
   });
 
