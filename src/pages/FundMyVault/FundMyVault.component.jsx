@@ -31,6 +31,7 @@ const FundMyVault = () => {
   const handleDateChange = (date) => {
     setSelectedDate(date);
   };
+
   return (
     <div className={classes.root}>
       <div className={topStyles.regularTop}>
@@ -44,7 +45,7 @@ const FundMyVault = () => {
             </div>
           }
           <div>
-            <LinearProgress variant="determinate" value={(step/5)*100} />
+            <LinearProgress variant="determinate" value={(step/6)*100} />
           </div>
         </div>
         <h6 className={topStyles.regularTitle}>FundMyVault</h6>

@@ -8,7 +8,6 @@ const amountStyles = makeStyles(theme => ({
     marginBottom: 50,
     border: '1px solid #E3EDF3',
     padding: 20,
-    width: 'max-content',
     borderRadius: 20,
     width: '40%',
 

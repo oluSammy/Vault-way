@@ -37,7 +37,11 @@ const FundDetail = ({ values, handleChange, nextStep }) => {
             <p className={classes.fileLabelName}>{file ? file.name : 'upload'}</p>
           </div>
         </label>
-        <input type="file" name="file" id="file" inputProps={{ accept: 'image/*' }} onChange={fileSelectHandler} className={classes.fileLabelInput} />
+        <input type="file" name="file" id="file"
+          onChange={fileSelectHandler}
+          className={classes.fileLabelInput}
+          accept="image/x-png,image/gif,image/jpeg"
+        />
         {file && file.name}
       </div>
       <div className={classes.detailContainer}>

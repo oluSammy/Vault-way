@@ -26,9 +26,6 @@ const fundReasonStyles = makeStyles(theme => ({
 
     '@media (max-width: 425px)': {
       padding: 20,
-    },
-
-    '@media (max-width: 425px)': {
       width: '105%',
     },
   },
