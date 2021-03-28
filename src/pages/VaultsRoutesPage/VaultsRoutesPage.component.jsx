@@ -6,6 +6,7 @@ import CreateVaultSuccess from '../CreateVaultSuccess/CreateVaultSuccess.compone
 import FundMyVault from '../FundMyVault/FundMyVault.component';
 import QuickVault from '../QuickVault/QuickVault.component';
 import FundMyVaultSuccessPage from '../FundMyVaultSuccessPage/FundMyVaultSuccessPage.component';
+import QuickVaultSuccess from '../QuickVaultSuccess/QuickVaultSuccess.component';
 
 const VaultsRoutesPage = () => {
   let { path } = useRouteMatch();
@@ -14,6 +15,7 @@ const VaultsRoutesPage = () => {
       <Route exact path={path} component={DashboardVault} />
       <Route path={`${path}/success`} component={CreateVaultSuccess} />
       <Route path={`${path}/fund-my-vault-Success`} component={FundMyVaultSuccessPage} />
+      <Route path={`${path}/quick-vault-success`} component={QuickVaultSuccess} />
       <Route path={`${path}/fundmyvault`} component={FundMyVault} />
       <Route path={`${path}/quickvault`} component={QuickVault} />
       <Route path={`${path}/:id`} component={VaultDetail} />

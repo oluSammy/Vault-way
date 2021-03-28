@@ -1,8 +1,8 @@
-import React from 'react';
-import fundTimelineStyles from './FundTimeline.styles';
+import React from 'react'
 import fundReasonStyles from '../FundReason/FundReason.styles';
-import Button from '@material-ui/core/Button';
 import regularContentStyles from '../RegularVaultContent/RegularVaultContent.styles';
+import fundTimelineStyles from '../FundTimeline/FundTimeline.styles';
+import Button from '@material-ui/core/Button';
 
 import 'date-fns';
 import DateFnsUtils from '@date-io/date-fns';
@@ -11,25 +11,23 @@ import {
   KeyboardDatePicker,
 } from '@material-ui/pickers';
 
-const FundTimeline = ({ selectedDate, handleDateChange, nextStep }) => {
-  const classes = fundTimelineStyles();
+const QuickVaultTimeline = ({ selectedDate, handleDateChange, handleNextStep }) => {
   const titleStyles = fundReasonStyles();
   const btnStyles = regularContentStyles();
+  const dateStyles = fundTimelineStyles();
 
   const now = Date.now()
   const date = new Date(now)
   return (
-    <div className={classes.root}>
-      <h1 className={titleStyles.title}>
-        What’s your <br/> timeline for this <br/> vault?
-      </h1>
-      <div className={classes.timelineBox}>
-        <div className={classes.today}>
-          <p className={classes.label}>From</p>
-          <p className={classes.todayDate}>{date.toLocaleDateString()}</p>
+    <div>
+      <h1 className={titleStyles.title}>What’s your  timeline<br/> for this vault?</h1>
+      <div className={dateStyles.timelineBox}>
+        <div className={dateStyles.today}>
+          <p className={dateStyles.label}>From</p>
+          <p className={dateStyles.todayDate}>{date.toLocaleDateString()}</p>
         </div>
 
-        <div className={classes.deadline}>
+        <div className={dateStyles.deadline}>
           <MuiPickersUtilsProvider utils={DateFnsUtils} >
               <KeyboardDatePicker
                   margin="normal"
@@ -46,13 +44,13 @@ const FundTimeline = ({ selectedDate, handleDateChange, nextStep }) => {
           </MuiPickersUtilsProvider>
         </div>
       </div>
-      <Button onClick={nextStep}
-        disabled={new Date(selectedDate) > Date.now() ? false : true}
-        className={btnStyles.btn} variant="contained" color="primary" >
-            Continue
-      </Button>
+      <Button onClick={handleNextStep}
+      disabled={new Date(selectedDate) > Date.now() ? false : true}
+      className={btnStyles.btn} variant="contained" color="primary" >
+          Continue
+    </Button>
     </div>
   )
 }
 
-export default FundTimeline
+export default QuickVaultTimeline
