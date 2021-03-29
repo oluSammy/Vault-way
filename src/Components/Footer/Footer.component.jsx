@@ -40,7 +40,10 @@ const Footer = () => {
             <div className={classes.test}>
               <img src={vaultWayLogo} className={classes.footerLogo} alt="vaultway logo"/>
             </div>
-            <Link to="/dashboard" className={classes.footerLink}>Dashboard</Link>
+            <div className={classes.footerList}>
+              <Link to="/dashboard" className={classes.footerLink}>Dashboard</Link>
+              <Link to="/donate/id" className={classes.footerLink}>Donate</Link>
+            </div>
           </Grid>
           <Grid item lg={2} md={2} xs={4}>
             <h6 className={classes.footerListHeading} >Products</h6>
