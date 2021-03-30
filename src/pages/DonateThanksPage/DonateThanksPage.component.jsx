@@ -67,7 +67,7 @@ const DonateThanksPage = () => {
               </div>
             </div>
           </Grid>
-          <Grid item md={11} container className={classes.thanksBox} justify="flex-start">
+          <Grid item md={11} container className={classes.thanksBox} justify="flex-start" direction="column">
             <p className={classes.thanks}>Thanks for <br/> donating 🙏🏾</p>
             <div className={classes.linkBox}>
               <Button component={Link} to="/donate/id/pay"  className={classes.fundBtn} variant="contained" color="primary" >
