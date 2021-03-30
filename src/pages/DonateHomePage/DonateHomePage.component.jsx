@@ -44,7 +44,7 @@ const DonateHomePage = () => {
               <p className={classes.raisedText}>Raised</p>
               <p className={classes.raisedAmount}>180,000 <span className={classes.raisedAmount}>.00</span></p>
               <p className={classes.raisedAmountGoal}>Goal is 200,000.00</p>
-              <Button component={Link} to="/"  className={classes.raisedBtn} variant="contained" color="primary" >
+              <Button component={Link} to="/donate/id/pay"  className={classes.raisedBtn} variant="contained" color="primary" >
                 Fund Vault
 							</Button>
             </div>

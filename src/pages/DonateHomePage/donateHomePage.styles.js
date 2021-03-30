@@ -8,24 +8,23 @@ const donateHomepageStyles = makeStyles((theme) => ({
   fundDetailsBox: {
     paddingBottom: 270,
     padding: "0 200px",
-    marginTop: 50,
+    marginTop: 100,
 
-    '@media (max-width: 1180px)': {
+    "@media (max-width: 1180px)": {
       padding: "0 80px",
     },
 
-    '@media (max-width: 960px)': {
+    "@media (max-width: 960px)": {
       padding: "0 30px",
     },
   },
   imgBox: {
     width: "100%",
     height: "100%",
-
   },
   gridImg: {
-    '@media (max-width: 960px)': {
-      marginBottom: '80px'
+    "@media (max-width: 960px)": {
+      marginBottom: "80px",
     },
   },
   img: {
@@ -43,7 +42,7 @@ const donateHomepageStyles = makeStyles((theme) => ({
     margin: 0,
     marginBottom: 20,
 
-    '@media (max-width: 473px)': {
+    "@media (max-width: 473px)": {
       marginBottom: 2,
     },
   },
@@ -54,7 +53,7 @@ const donateHomepageStyles = makeStyles((theme) => ({
     color: "#6E80A3",
     marginBottom: 10,
 
-    '@media (max-width: 473px)': {
+    "@media (max-width: 473px)": {
       marginBottom: 2,
     },
   },
@@ -70,7 +69,7 @@ const donateHomepageStyles = makeStyles((theme) => ({
     marginTop: 30,
     borderRadius: "30px",
 
-    '@media (max-width: 473px)': {
+    "@media (max-width: 473px)": {
       marginBottom: 40,
     },
   },
@@ -116,16 +115,16 @@ const donateHomepageStyles = makeStyles((theme) => ({
   },
   fundText: {
     margin: 0,
-    color: '#6E80A3',
-    fontWeight: 'normal',
+    color: "#6E80A3",
+    fontWeight: "normal",
     fontSize: 14,
     marginLeft: -20,
     marginTop: 30,
 
-    '@media (max-width: 960px)': {
+    "@media (max-width: 960px)": {
       marginLeft: 0,
     },
-  }
+  },
 }));
 
 export default donateHomepageStyles;

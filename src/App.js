@@ -9,6 +9,7 @@ import Dashboard from './pages/Dashboard/Dashboard.component';
 import DonateRoutesPage from './pages/DonateRoutesPage/DonateRoutesPage.component';
 
 
+
 function App() {
   return (
     <Switch>
@@ -20,6 +21,7 @@ function App() {
       <Route exact path="/Faq" component={Faq} />
       <Route path="/dashboard" component={Dashboard} />
       <Route path="/donate/:id" component={DonateRoutesPage} />
+      {/* <Route path="/donate/pay/:id" component={DonateForm} /> */}
     </Switch>
   );
 }
