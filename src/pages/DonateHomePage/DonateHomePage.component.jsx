@@ -71,7 +71,7 @@ const DonateHomePage = () => {
               </div>
             </div>
           </Grid>
-          <Grid item md={10}>
+          <Grid item md={10} className={classes.fundTextBox}>
             <p className={classes.fundText}>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum asperiores voluptates harum non! Itaque delectus atque
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, totam quis perferendis voluptatum ullam nihil praesentium

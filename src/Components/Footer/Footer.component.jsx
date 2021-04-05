@@ -43,7 +43,7 @@ const Footer = () => {
             <div className={classes.footerList}>
               <Link to="/dashboard" className={classes.footerLink}>Dashboard</Link>
               <Link to="/donate/id" className={classes.footerLink}>Donate</Link>
-              <Link to="/donate/id/thanks" className={classes.footerLink}>Donate Thanks Page</Link>
+              <Link to="/donate/id/thanks" className={classes.footerLink}>Donate Thanks <br/> Page</Link>
             </div>
           </Grid>
           <Grid item lg={2} md={2} xs={4}>

@@ -39,9 +39,9 @@ const Dashboard = () => {
 
   const [openTemporaryDrawer, setOpenTemporaryDrawer] = React.useState(false);
 
-    const handleTemporaryDrawer = () => {
-      setOpenTemporaryDrawer(true);
-    }
+  const handleTemporaryDrawer = () => {
+    setOpenTemporaryDrawer(true);
+  }
 
   const handleDrawer = () => {
     setOpen(!open);

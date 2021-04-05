@@ -73,8 +73,10 @@ const DonateThanksPage = () => {
               <Button component={Link} to="/donate/id/pay"  className={classes.fundBtn} variant="contained" color="primary" >
                 Fund Vault again
               </Button>
-              <p className={classes.or}>OR</p>
-              <Link className={classes.homeLink} to="/">GO HOME</Link>
+              <div className={classes.linkBox2}>
+                <p className={classes.or}>OR</p>
+                <Link className={classes.homeLink} to="/">GO HOME</Link>
+              </div>
             </div>
           </Grid>
         </Grid>

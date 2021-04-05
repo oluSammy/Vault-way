@@ -6,10 +6,17 @@ const donateThanksStyles = makeStyles((theme) => ({
     fontSize: 30,
     fontWeight: 600,
     margin: 0,
+    marginLeft: 25,
+
+    "@media (max-width: 475px)": {
+      marginLeft: 0,
+      textAlign: 'center'
+    },
   },
   linkBox: {
     display: "flex",
     alignItems: "center",
+    justifyContent: 'center',
     marginTop: 10,
     flexWrap: 'wrap',
     "@media (max-width: 428px)": {
@@ -24,21 +31,12 @@ const donateThanksStyles = makeStyles((theme) => ({
     "@media (max-width: 428px)": {
       marginRight: 7,
     },
-
-    "@media (max-width: 384px)": {
-      padding: "8px 20px",
-    },
   },
   or: {
     color: "#ADB8CD",
     fontSize: 14,
     fontWeight: 600,
     marginRight: 20,
-
-    "@media (max-width: 428px)": {
-      marginRight: 10,
-      fontSize: 12,
-    },
   },
   homeLink: {
     fontSize: 14,
@@ -50,26 +48,21 @@ const donateThanksStyles = makeStyles((theme) => ({
     "@media (max-width: 428px)": {
       fontSize: 12,
     },
-    "@media (max-width: 359px)": {
-      fontSize: 10,
-    },
-    "@media (max-width: 346px)": {
-      marginTop: 20,
-      marginLeft: 50
-
-    },
   },
   paddingSpace: {
     height: 10,
-    "@media (max-width: 1180px)": {
-      height: 250,
-    },
+
   },
   thanksBox: {
+
     "@media (max-width: 832px)": {
       marginTop: 20,
     },
   },
+  linkBox2: {
+    display: 'flex',
+    alignItems: 'center',
+  }
 }));
 
 export default donateThanksStyles;

@@ -11,11 +11,11 @@ const donateHomepageStyles = makeStyles((theme) => ({
     marginTop: 100,
 
     "@media (max-width: 1180px)": {
-      padding: "0 80px",
+      padding: "0 80px 200px 80px",
     },
 
     "@media (max-width: 960px)": {
-      padding: "0 30px",
+      padding: "0 30px 200px 30px",
     },
   },
   imgBox: {
@@ -125,6 +125,8 @@ const donateHomepageStyles = makeStyles((theme) => ({
       marginLeft: 0,
     },
   },
+  fundTextBox: {
+  }
 }));
 
 export default donateHomepageStyles;

@@ -7,6 +7,7 @@ import Signup from './pages/Signup/Signup.component';
 import Faq from './pages/Faq/Faq.components';
 import Dashboard from './pages/Dashboard/Dashboard.component';
 import DonateRoutesPage from './pages/DonateRoutesPage/DonateRoutesPage.component';
+import AdminDashboard from './pages/AdminDashboard/AdminDashboard.component';
 
 
 
@@ -20,8 +21,8 @@ function App() {
       <Route exact path="/signup" component={Signup} />
       <Route exact path="/Faq" component={Faq} />
       <Route path="/dashboard" component={Dashboard} />
+      <Route path="/admin" component={AdminDashboard} />
       <Route path="/donate/:id" component={DonateRoutesPage} />
-      {/* <Route path="/donate/pay/:id" component={DonateForm} /> */}
     </Switch>
   );
 }

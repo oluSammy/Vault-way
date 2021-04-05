@@ -33,6 +33,9 @@ const dashboardStyles = makeStyles((theme) => ({
     '@media (max-width: 960px)': {
       padding: '14px 6%',
     },
+    '@media (max-width: 608px)': {
+      flexWrap: 'wrap',
+    },
   },
   menuIcon: {
     color: '#6E80A3',
@@ -110,7 +113,6 @@ const dashboardStyles = makeStyles((theme) => ({
   },
   mainContent: {
     transition: 'all .2s ease',
-    // minHeight: '83vh',
   },
   activeNavLink: {
     background: '#F4FFF8',
