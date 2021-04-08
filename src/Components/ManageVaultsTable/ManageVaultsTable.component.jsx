@@ -40,7 +40,7 @@ const ManageVaultsTable = () => {
         </TableHead>
         <TableBody className={classes.tableBody}>
           {rows.map((row) => (
-            <TableRow key={row.name} component={Link} to="/" className={classes.tableRow} >
+            <TableRow key={row.name} component={Link} to="/admin/vaults/456789" className={classes.tableRow} >
               <TableCell className={clsx(classes.tableCellBold, classes.tablePadding,)} component="th" scope="row">
                 <div className={classes.dotCell}>
                   <div className={classes.dot}></div>
