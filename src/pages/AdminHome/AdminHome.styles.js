@@ -154,7 +154,7 @@ const adminHomeStyles = makeStyles((theme) => ({
     marginTop: 40,
     justifyContent: 'space-between',
     backgroundColor: '#ffffff',
-    padding: '25px 40px',
+    padding: '18px 35px',
     borderRadius: '20px 20px 0 0',
 
     '@media (max-width: 487px)': {

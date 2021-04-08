@@ -19,6 +19,8 @@ import SearchIcon from '@material-ui/icons/Search';
 import AdminNavList from '../../Components/AdminNavList/AdminNavList.component';
 import AdminSidebar from '../../Components/AdminSidebar/AdminSidebar.component';
 import AdminHome from '../AdminHome/AdminHome.component';
+import AdminUsersPage from '../AdminUsersPage/AdminUsersPage.component';
+import AdminVaultsRoutePage from '../AdminVaultsRoutePage/AdminVaultsRoutePage.component';
 
 const AdminDashboard = () => {
   const classes = dashboardStyles();
@@ -109,6 +111,8 @@ const AdminDashboard = () => {
       <main style={{ marginLeft: open ? marginOpen : marginClosed }} className={clsx(classes.mainContent, adminStyles.main) }>
         <Switch>
           <Route exact path={path} component={AdminHome} />
+          <Route exact path={`${path}/users`} component={AdminUsersPage} />
+          <Route path={`${path}/vaults`} component={AdminVaultsRoutePage} />
         </Switch>
       </main>
     </div>

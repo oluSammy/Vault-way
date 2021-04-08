@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core';
 
-const activityTablePanel = makeStyles((theme) => ({
+const manageVaults = makeStyles((theme) => ({
   root: {},
   tableHeader: {
     background: '#F5F7FA',
@@ -23,9 +23,19 @@ const activityTablePanel = makeStyles((theme) => ({
   tableBody: {
     background: '#fff',
   },
+  tableRow: {
+    textDecoration: 'none',
+
+    '&:hover': {
+      background: '#F5F7FA',
+    }
+  },
+  tableCell: {
+    color: '#ADB8CD'
+  },
   pagination: {
     display: 'flex',
-    marginTop: 20,
+    marginTop: 30,
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -50,6 +60,29 @@ const activityTablePanel = makeStyles((theme) => ({
   active: {
     color: theme.palette.primary.main,
   },
+  tableCellBold: {
+    color: '#6E80A3',
+    fontWeight: 600,
+    fontStyle: 'normal',
+  },
+  tablePadding: {
+    paddingTop: '23px !important',
+    paddingBottom: '23px !important',
+  },
+  dotCell: {
+    display: 'flex',
+    alignItems: 'center'
+  },
+  dot: {
+    background: '#FF8876',
+    height: 10,
+    width: 10,
+    borderRadius: '50%',
+    marginRight: 10
+  },
+  tableArrow: {
+    color: '#ADB8CD'
+  }
 }));
 
-export default activityTablePanel;
+export default manageVaults;

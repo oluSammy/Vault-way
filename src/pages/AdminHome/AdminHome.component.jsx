@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import adminHomeStyles from './AdminHome.styles';
 import peopleIcon from '../../assets/icons/people-icon.png';
 import vaultIcon from '../../assets/icons/dashboard-vault-icon.png';
@@ -8,11 +8,17 @@ import AdminChart from '../../Components/AdminChart/AdminChart.component';
 import Toolbar from '@material-ui/core/Toolbar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import ActivityTablePanel from '../../Components/ActivityTablePanel/ActivityTablePanel.component';
+import ManageVaultsTable from '../../Components/ManageVaultsTable/ManageVaultsTable.component';
+import ActivityTable from '../../Components/ActivityTable/ActivityTable.component';
+
 
 const AdminHome = () => {
   const classes = adminHomeStyles();
   const [value, setValue] = useState(0);
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
 
   const handleTabs = (e, value) => {
       setValue(value)
@@ -118,11 +124,11 @@ const AdminHome = () => {
             />
         </Tabs>
       </Toolbar>
-      <TabPanel value={value} index={0} ><ActivityTablePanel /> </TabPanel>
-      <TabPanel value={value} index={1} > <h1>Tab Panel 2</h1> </TabPanel>
-      <TabPanel value={value} index={2} > <h1>Tab Panel 3</h1> </TabPanel>
-      <TabPanel value={value} index={3} > <h1>Tab Panel 4</h1> </TabPanel>
-      <TabPanel value={value} index={4} > <h1>Tab Panel 5</h1> </TabPanel>
+      <TabPanel value={value} index={0} > <ActivityTable />  </TabPanel>
+      <TabPanel value={value} index={1} > <ManageVaultsTable /> </TabPanel>
+      <TabPanel value={value} index={2} > <ManageVaultsTable /> </TabPanel>
+      <TabPanel value={value} index={3} > <ManageVaultsTable /> </TabPanel>
+      <TabPanel value={value} index={4} > <ManageVaultsTable /> </TabPanel>
     </div>
   )
 }

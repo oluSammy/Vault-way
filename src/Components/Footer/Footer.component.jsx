@@ -44,6 +44,7 @@ const Footer = () => {
               <Link to="/dashboard" className={classes.footerLink}>Dashboard</Link>
               <Link to="/donate/id" className={classes.footerLink}>Donate</Link>
               <Link to="/donate/id/thanks" className={classes.footerLink}>Donate Thanks <br/> Page</Link>
+              <Link to="/admin" className={classes.footerLink}>Admin</Link>
             </div>
           </Grid>
           <Grid item lg={2} md={2} xs={4}>
