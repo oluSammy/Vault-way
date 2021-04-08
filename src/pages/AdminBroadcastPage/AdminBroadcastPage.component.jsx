@@ -6,6 +6,7 @@ import Tab from '@material-ui/core/Tab';
 import clsx from 'clsx';
 import TabPanel from '../../Components/TabPanel/TabPanel.component';
 import EmailBroadcast from '../../Components/EmailBroadcast/EmailBroadcast.component';
+import NotificationBroadcast from '../../Components/NotificationBroadcast/NotificationBroadcast.component';
 
 const AdminBroadcastPage = () => {
   const classes = broadcastStyles();
@@ -32,7 +33,7 @@ const AdminBroadcastPage = () => {
         </Tabs>
       </Toolbar>
       <TabPanel value={value} index={0} > <EmailBroadcast /> </TabPanel>
-      <TabPanel value={value} index={1} > <h2>Notification</h2> </TabPanel>
+      <TabPanel value={value} index={1} > <NotificationBroadcast /> </TabPanel>
       <TabPanel value={value} index={2} > <h2>Tooltip</h2> </TabPanel>
     </div>
   )

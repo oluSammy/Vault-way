@@ -30,7 +30,7 @@ const DebitCardPanel = () => {
   }
 
   return (
-    <div>
+    <div className={classes.root}>
       <form className={classes.debitForm}>
         <div className={classes.formGroup}>
           <div className={clsx(classes.formInput, classes.cardInput)}>
@@ -82,10 +82,12 @@ const DebitCardPanel = () => {
             <img src={visa} className={classes.visaCardImg} alt="card"/>
         </div>
       </div>
+      <div className={classes.btnBox}>
         <DashboardBtn
           text="Add new card" color="#ffffff" bg="#00A343"
           icon={<AddIcon className={classes.newCardIcon} />}
         />
+      </div>
     </div>
   )
 }

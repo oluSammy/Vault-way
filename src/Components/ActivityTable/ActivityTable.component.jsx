@@ -10,15 +10,15 @@ import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 // import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 
 
-function createData(name, balance, arrow) {
-  return { name, balance, arrow };
+function createData(name, balance, arrow, key) {
+  return { name, balance, arrow, key };
 }
 
 const rows = [
-  createData('Ayodeji Osindele', 'N 5,000'),
-  createData('Ayodeji Osindele', 'N 5,000'),
-  createData('Ayodeji Osindele', 'New user joined'),
-  createData('Fund my vault', 'New vault created'),
+  createData('Ayodeji Osindele', 'N 5,000', 1),
+  createData('Ayodeji Osindele', 'N 5,000', 2),
+  createData('Ayodeji Osindele', 'New user joined', 3),
+  createData('Fund my vault', 'New vault created', 4),
 ];
 
 const ActivityTable = () => {
@@ -28,7 +28,7 @@ const ActivityTable = () => {
       <Table  aria-label="simple table" className={classes.table} >
         <TableBody className={classes.tableBody}>
           {rows.map((row) => (
-            <TableRow key={row.name}>
+            <TableRow key={row.key}>
               <TableCell className={clsx(classes.tablePadding,)} component="th" scope="row">
                 <div className={classes.nameCell}>
                   <div className={clsx(classes.iconBox)} >

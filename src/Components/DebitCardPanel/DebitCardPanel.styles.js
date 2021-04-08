@@ -1,6 +1,9 @@
 import { makeStyles } from '@material-ui/core';
 
 const debitCardPanelStyles = makeStyles((theme) => ({
+  root: {
+    paddingBottom: 100,
+  },
   debitForm: {
     width: '70%',
 
@@ -126,7 +129,7 @@ const debitCardPanelStyles = makeStyles((theme) => ({
   visaCardDot: {
     fontSize: '15px',
     margin: 0,
-    marginLeft: 'auto'
+    marginLeft: 'auto',
   },
   visaCardNumber: {
     margin: 0,
@@ -138,7 +141,7 @@ const debitCardPanelStyles = makeStyles((theme) => ({
   },
   visaCardFooter: {
     display: 'flex',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   visaCardExpires: {
     margin: 0,
@@ -154,11 +157,14 @@ const debitCardPanelStyles = makeStyles((theme) => ({
     marginTop: '5px',
 
     '@media (max-width: 429px)': {
-      width: '25%'
+      width: '25%',
     },
   },
   newCardIcon: {
-    marginRight: '6px'
+    marginRight: '6px',
+  },
+  btnBox: {
+    marginTop: 30
   }
 }));
 

@@ -14,9 +14,6 @@ const FundDetail = ({ values, handleChange, nextStep }) => {
   const fileSelectHandler = e => {
     setFile(e.target.files[0])
     // setSelectedFile(e.target.files[0]);
-
-    console.log(file);
-
     // const fd = new FormData();
     // fd.append('image', e.target.files[0], e.target.files[0].name)
     //send data in upload

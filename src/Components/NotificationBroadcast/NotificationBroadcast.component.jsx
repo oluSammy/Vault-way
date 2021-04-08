@@ -1,29 +1,16 @@
-import React, { useState } from 'react'
-import broadcastEmailStyles from './EmailBroadcast.styles';
+import React, { useState } from 'react';
 import clsx from 'clsx';
 import Button from '@material-ui/core/Button';
 import SendIcon from '@material-ui/icons/Send';
-import fileIcon from '../../assets/icons/file-icon-dashboard.png';
 import AdminMessage from '../AdminMessage/AdminMessage.component';
+import broadcastEmailStyles from '../EmailBroadcast/EmailBroadcast.styles';
 
-
-const EmailBroadcast = () => {
+const NotificationBroadcast = () => {
   const classes = broadcastEmailStyles();
   const [values, setValues] = useState({ to: '', subject: '', message: '' });
-  const [file, setFile] = useState(null);
   const handleChange = e => {
     const { name, value } = e.target;
     setValues({ ...values, [name]: value });
-  }
-  const fileSelectHandler = e => {
-    setFile(e.target.files[0])
-    // setSelectedFile(e.target.files[0]);
-
-    console.log(file);
-
-    // const fd = new FormData();
-    // fd.append('image', e.target.files[0], e.target.files[0].name)
-    //send data in upload
   }
   const handleSubmit = e => {
     e.preventDefault();
@@ -52,23 +39,11 @@ const EmailBroadcast = () => {
               <textarea onChange={handleChange} className={classes.inputText} id="message" name="message" cols="30" rows="2"></textarea>
             </div>
           </div>
-          <div className={clsx(classes.formInput, classes.formInputFile) }>
-              <div className={classes.fileBox}>
-                <p className={classes.fileName}>{file && file.name}</p>
-                <div>
-                  <label htmlFor="file" className={classes.fileLabel}>
-                    <p className={classes.importTxt}>Import file</p>
-                    <img src={fileIcon} alt="import file"/>
-                  </label>
-                  <input type="file" id="file" name="file" className={classes.inputFile} onChange={fileSelectHandler} />
-                </div>
-              </div>
-          </div>
         </div>
         <div className={classes.btnBox}>
           <Button disabled={send ? false : true} type="submit" variant="contained" color="primary" className={classes.sendBtn}
             endIcon={<SendIcon className={classes.sendIcon} />}>
-            Send Broadcast
+            Send Notification
           </Button>
         </div>
       </form>
@@ -82,4 +57,4 @@ const EmailBroadcast = () => {
   )
 }
 
-export default EmailBroadcast
+export default NotificationBroadcast
