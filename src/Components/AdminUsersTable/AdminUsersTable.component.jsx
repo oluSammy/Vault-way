@@ -14,11 +14,11 @@ function createData(name, calories, fat, carbs, protein,  arrow) {
 }
 
 const rows = [
-  createData('Ayodeji Osindele', 'Quick vault', 'Febuary 12, 2020', 'Febuary 12, 2020', 'Ayodeji Osindele', '75,000.00'),
-  createData('Ayodeji Osindele', 'Tyro vault', 'Febuary 12, 2020', 'Febuary 12, 2020', 'Ayodeji Osindele', '00.00'),
-  createData('Ayodeji Osindele', 'Febuary 12, 2020', 'Febuary 12, 2020', 'Ayodeji Osindele', '75,000.00'),
-  createData('Ayodeji Osindele', 'Febuary 12, 2020', 'Febuary 12, 2020', 'Ayodeji Osindele', '75,000.00'),
-  createData('Ayodeji Osindele', 'Stella vault', 'Febuary 12, 2020', 'Febuary 12, 2020', 'Ayodeji Osindele', '75,000.00'),
+  createData('Ayodeji Osindelea', 'Quick vault', 'Febuary 12, 2020', 'Febuary 12, 2020', 'Ayodeji Osindele', '75,000.00'),
+  createData('Ayodeji Osindeles', 'Tyro vault', 'Febuary 12, 2020', 'Febuary 12, 2020', 'Ayodeji Osindele', '00.00'),
+  createData('Ayodeji Osindeled', 'Febuary 12, 2020', 'Febuary 12, 2020', 'Ayodeji Osindele', '75,000.00'),
+  createData('Ayodeji Osindele4', 'Febuary 12, 2020', 'Febuary 12, 2020', 'Ayodeji Osindele', '75,000.00'),
+  createData('Ayodeji Osindelef', 'Stella vault', 'Febuary 12, 2020', 'Febuary 12, 2020', 'Ayodeji Osindele', '75,000.00'),
 ];
 
 const AdminUsersTable = () => {

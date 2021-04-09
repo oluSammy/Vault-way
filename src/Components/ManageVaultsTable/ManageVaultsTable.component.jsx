@@ -15,11 +15,11 @@ function createData(name, calories, fat, carbs, protein, balance, arrow, key) {
 }
 
 const rows = [
-  createData('Buy a car', 'Quick vault', 'Febuary 12, 2020', 'Febuary 12, 2020', 'Ayodeji Osindele', '75,000.00', '1'),
-  createData('Pay my rent', 'Tyro vault', 'Febuary 12, 2020', 'Febuary 12, 2020', 'Ayodeji Osindele', '00.00', '2'),
-  createData('Grow my money', 'Stella vault', 'Febuary 12, 2020', 'Febuary 12, 2020', 'Ayodeji Osindele', '75,000.00', '3'),
-  createData('Buy a car', 'Stella vault', 'Febuary 12, 2020', 'Febuary 12, 2020', 'Ayodeji Osindele', '75,000.00', '4'),
-  createData('Buy a car', 'Stella vault', 'Febuary 12, 2020', 'Febuary 12, 2020', 'Ayodeji Osindele', '75,000.00', '5'),
+  createData('Buy a cara', 'Quick vault', 'Febuary 12, 2020', 'Febuary 12, 2020', 'Ayodeji Osindele', '75,000.00', '1dhdh'),
+  createData('Pay my rent', 'Tyro vault', 'Febuary 12, 2020', 'Febuary 12, 2020', 'Ayodeji Osindele', '00.00', '2ddd'),
+  createData('Grow my money', 'Stella vault', 'Febuary 12, 2020', 'Febuary 12, 2020', 'Ayodeji Osindele', '75,000.00', 'aaa3'),
+  createData('Buy a cars', 'Stella vault', 'Febuary 12, 2020', 'Febuary 12, 2020', 'Ayodeji Osindele', '75,000.00', 'caa4'),
+  createData('Buy a carf', 'Stella vault', 'Febuary 12, 2020', 'Febuary 12, 2020', 'Ayodeji Osindele', '75,000.00', 'dzfg5'),
 ];
 
 const ManageVaultsTable = () => {
@@ -40,8 +40,8 @@ const ManageVaultsTable = () => {
         </TableHead>
         <TableBody className={classes.tableBody}>
           {rows.map((row) => (
-            <TableRow key={row.key} component={Link} to="/admin/vaults/456789" className={classes.tableRow} >
-              <TableCell className={clsx(classes.tableCellBold, classes.tablePadding,)} component="th" scope="row">
+            <TableRow key={row.name} component={Link} to="/admin/vaults/456789" className={classes.tableRow} >
+              <TableCell className={clsx(classes.tableCellBold, classes.tablePadding,)} scope="row">
                 <div className={classes.dotCell}>
                   <div className={classes.dot}></div>
                   {row.name}

@@ -15,9 +15,9 @@ function createData(name, balance, arrow, key) {
 }
 
 const rows = [
-  createData('Ayodeji Osindele', 'N 5,000', 1),
-  createData('Ayodeji Osindele', 'N 5,000', 2),
-  createData('Ayodeji Osindele', 'New user joined', 3),
+  createData('Ayodeji Osindeleq', 'N 5,000', 1),
+  createData('Ayodeji Osindelew', 'N 5,000', 2),
+  createData('Ayodeji Osindeled', 'New user joined', 3),
   createData('Fund my vault', 'New vault created', 4),
 ];
 
@@ -28,7 +28,7 @@ const ActivityTable = () => {
       <Table  aria-label="simple table" className={classes.table} >
         <TableBody className={classes.tableBody}>
           {rows.map((row) => (
-            <TableRow key={row.key}>
+            <TableRow key={row.name}>
               <TableCell className={clsx(classes.tablePadding,)} component="th" scope="row">
                 <div className={classes.nameCell}>
                   <div className={clsx(classes.iconBox)} >
