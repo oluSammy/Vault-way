@@ -43,7 +43,7 @@ const AdminNavList = ({ temporarySidebar, closeSidebar }) => {
     {
       icon: <BusinessOutlinedIcon />,
       text: 'Admin Roles',
-      route: '/admin/role'
+      route: '/admin/roles'
     },
     {
       icon: <SettingsOutlinedIcon />,
