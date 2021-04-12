@@ -4,12 +4,20 @@ const addAdminStyles = makeStyles((theme) => ({
   root: {},
   form: {
     width: '90%',
+
+    '@media (max-width: 713px)': {
+      width: '100%',
+    },
   },
   formGroup: {
     display: 'grid',
     gridTemplateColumns: '1fr 1fr',
     gridGap: 30,
     marginBottom: 20,
+
+    '@media (max-width: 557px)': {
+      gridTemplateColumns: '1fr',
+    },
   },
   formInput: {
     display: 'flex',
@@ -31,8 +39,8 @@ const addAdminStyles = makeStyles((theme) => ({
     fontWeight: 600,
   },
   btn: {
-    marginTop: 30
-  }
+    marginTop: 30,
+  },
 }));
 
 export default addAdminStyles;

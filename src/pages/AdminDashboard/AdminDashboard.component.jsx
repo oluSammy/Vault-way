@@ -23,6 +23,7 @@ import AdminUsersPage from '../AdminUsersPage/AdminUsersPage.component';
 import AdminVaultsRoutePage from '../AdminVaultsRoutePage/AdminVaultsRoutePage.component';
 import AdminBroadcastPage from '../AdminBroadcastPage/AdminBroadcastPage.component';
 import AdminRoles from '../AdminRoles/AdminRoles.component';
+import AdminSettings from '../AdminSettings/AdminSettings.component';
 
 const AdminDashboard = () => {
   const classes = dashboardStyles();
@@ -117,6 +118,7 @@ const AdminDashboard = () => {
           <Route path={`${path}/vaults`} component={AdminVaultsRoutePage} />
           <Route path={`${path}/broadcast`} component={AdminBroadcastPage} />
           <Route path={`${path}/roles`} component={AdminRoles} />
+          <Route path={`${path}/settings`} component={AdminSettings} />
         </Switch>
       </main>
     </div>
