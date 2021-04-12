@@ -7,12 +7,30 @@ const adminVaultsStyles = makeStyles((theme) => ({
   vaultsTop: {
     display: 'flex',
     marginBottom: 40,
+
+    '@media (max-width: 447px)': {
+      flexDirection: 'column'
+    },
   },
   vaultContainer: {
     border: '1px solid #E3EDF3',
     width: 370,
     padding: 15,
     borderRadius: 20,
+
+    '@media (max-width: 447px)': {
+      marginBottom: 10
+    },
+
+    '@media (max-width: 395px)': {
+      width: 320,
+      margin: '0 auto 10px auto'
+    },
+
+    '@media (max-width: 345px)': {
+      width: 300,
+      margin: '0 auto 10px auto'
+    },
 
     '&:not(:last-child)': {
       marginRight: 20,

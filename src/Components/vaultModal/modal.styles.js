@@ -39,6 +39,11 @@ const modalStyles = makeStyles((theme) => ({
     fontWeight: 600,
     color: '#ADB8CD',
     textAlign: 'center',
+
+    '@media (max-width: 621px)': {
+      fontSize: 18,
+      marginBottom: 10,
+    },
   },
 
   cancelBox: {
@@ -154,11 +159,11 @@ const modalStyles = makeStyles((theme) => ({
 
     '@media (max-width: 560px)': {
       marginBottom: '10px',
-      width: '60%'
+      width: '60%',
     },
 
     '@media (max-width: 399px)': {
-      width: '75%'
+      width: '75%',
     },
   },
   topUpInput: {

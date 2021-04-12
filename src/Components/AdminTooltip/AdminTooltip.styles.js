@@ -7,6 +7,10 @@ const adminTooltipStyles = makeStyles((theme) => ({
     display: 'grid',
     gridTemplateColumns: '3fr 1fr',
     gridGap: 40,
+
+    '@media (max-width: 797px)': {
+      gridTemplateColumns: '1fr',
+    },
   },
   coverBox: {
     border: '1px solid #E3EDF3',
@@ -66,7 +70,7 @@ const adminTooltipStyles = makeStyles((theme) => ({
     marginRight: 20
   },
   deleteIcon: {
-    cursor: 'pointer'
+    cursor: 'pointer',
   }
 }));
 

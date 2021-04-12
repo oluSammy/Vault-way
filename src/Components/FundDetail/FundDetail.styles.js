@@ -1,8 +1,8 @@
 import { makeStyles } from '@material-ui/core';
 
-const fundDetailStyles = makeStyles(theme => ({
+const fundDetailStyles = makeStyles((theme) => ({
   root: {
-    paddingBottom: '80px'
+    paddingBottom: '80px',
   },
   fileContainer: {
     border: '1px solid #E3EDF3',
@@ -30,6 +30,7 @@ const fundDetailStyles = makeStyles(theme => ({
     display: 'flex',
     alignItems: 'center',
     cursor: 'pointer',
+    maxWidth: 350
   },
   fileImageIcon: {
     margin: 0,
@@ -46,17 +47,24 @@ const fundDetailStyles = makeStyles(theme => ({
       width: '40px',
       height: '40px',
     },
-
   },
   fileLabelName: {
     margin: 0,
     fontSize: '30px',
     color: '#E1E9EE',
     fontWeight: 600,
+    whiteSpace: 'nowrap',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
 
     '@media (max-width: 453px)': {
       fontSize: '20px',
     },
+  },
+  fileLabel1: {
+    whiteSpace: 'nowrap',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
   },
   detailContainer: {
     display: 'flex',
@@ -69,14 +77,18 @@ const fundDetailStyles = makeStyles(theme => ({
     marginBottom: '40px',
 
     '@media (max-width: 943px)': {
-      maxWidth: '100%'
+      maxWidth: '100%',
+    },
+
+    '@media (max-width: 511px)': {
+      padding: '15px',
     },
   },
   detailLabel: {
     marginBottom: '20px',
     fontSize: 14,
     fontWeight: 'bold',
-    color: '#AEBEC7'
+    color: '#AEBEC7',
   },
   textArea: {
     border: 'none',
@@ -84,7 +96,12 @@ const fundDetailStyles = makeStyles(theme => ({
     padding: '20px',
     fontSize: '23px',
     color: '#737588',
-  }
+
+    '@media (max-width: 511px)': {
+      fontSize: 16,
+      padding: '10px',
+    },
+  },
 }));
 
 export default fundDetailStyles;

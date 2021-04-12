@@ -7,7 +7,11 @@ const adminMessageStyles = makeStyles((theme) => ({
   messageBox: {
     background: '#ffffff',
     padding: '25px 35px',
-    borderRadius: 20
+    borderRadius: 20,
+
+    '@media (max-width: 483px)': {
+      padding: '20px 15px',
+    },
   },
   messageTop: {
     display: 'flex',

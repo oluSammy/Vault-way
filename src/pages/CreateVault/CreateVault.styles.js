@@ -31,6 +31,7 @@ const createVaultStyles = makeStyles((theme) => ({
     fontSize: 14,
     fontWeight: 600,
     color: '#6E80A3',
+    marginTop: 20,
   },
 
   vaultTitleBox: {

@@ -31,7 +31,7 @@ const FundDetail = ({ values, handleChange, nextStep }) => {
             <div className={classes.fileImageIcon}>
               <img src={uploadIcon} alt="upload"/>
             </div>
-            <p className={classes.fileLabelName}>{file ? file.name : 'upload'}</p>
+            <p className={classes.fileLabelName}>upload</p>
           </div>
         </label>
         <input type="file" name="file" id="file"
@@ -39,7 +39,7 @@ const FundDetail = ({ values, handleChange, nextStep }) => {
           className={classes.fileLabelInput}
           accept="image/x-png,image/gif,image/jpeg"
         />
-        {file && file.name}
+        <p className={classes.fileLabel1}>{file && file.name}</p>
       </div>
       <div className={classes.detailContainer}>
         <label htmlFor="details" className={classes.detailLabel}>

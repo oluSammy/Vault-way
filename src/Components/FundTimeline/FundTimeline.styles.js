@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core';
 
 const fundTimelineStyles = makeStyles(theme => ({
   root: {
-
+    paddingBottom: 60
   },
   timelineBox: {
     display: 'flex',
